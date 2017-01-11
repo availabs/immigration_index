@@ -1,6 +1,5 @@
 import React from 'react'
 import * as d3 from 'd3'
-import './HomeView.scss'
 
 class HomeView extends React.Component {
   constructor (props) {
