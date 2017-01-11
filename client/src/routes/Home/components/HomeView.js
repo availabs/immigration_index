@@ -1,12 +1,17 @@
 import React from 'react'
 import * as d3 from 'd3'
+import './HomeView.scss'
+
+const cats = ["Full Time", "Poverty", "Working Poor", "Homeownership", "Rent Burden", "Unemployment", "Income", "Naturalization"]
 
 class HomeView extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: {}
+      data: {},
+      activeCategory: cats[0]
     }
+    this.setActiveCategory = this.setActiveCategory.bind(this)
   }
 
   componentDidMount () {
@@ -22,10 +27,23 @@ class HomeView extends React.Component {
 
   dataTable () {
     if (!this.state.data.columns) return
+    
+    var categories = this.state.data.columns.filter(col => {
+      return col.includes('Grades')
+    })
+    .map(col => {
+      return col.split('_')[1]
+    })
 
-    var header = this.state.data.columns.map(col => {
+
+
+      console.log('categories' , categories)
+    var header = this.state.data.columns.filter(col => {
+    return col.includes(this.state.activeCategory) || col==='Regions' 
+    })
+    .map(col => {
       return (
-        <th>{col}</th>
+        <th>{col.split('_')[0]}</th>
       )
     })
 
@@ -35,7 +53,9 @@ class HomeView extends React.Component {
       return (
         <tr>
           {
-            Object.keys(this.state.data[row]).map(col => {
+            Object.keys(this.state.data[row]).filter(col => {
+              return col.includes(this.state.activeCategory) || col==='Regions' 
+              }).map(col => {
               return( 
                 <td>
                   {
@@ -65,11 +85,38 @@ class HomeView extends React.Component {
     )
   }
 
+  setActiveCategory (cat) {
+    this.setState({activeCategory:cat})    
+  }
+
+  
+  render_sidebar () {
+    var catButtons = cats.map (cat => {
+      var active = cat===this.state.activeCategory ? ' active' : ''
+      return(
+        <a onClick={this.setActiveCategory.bind(null,cat)} href="#" className={"list-group-item" + active}>{cat}</a>
+        )
+    })
+
+    return (
+      <div className="list-group">
+        {catButtons}
+      </div>
+      )
+  }
+
   render () {
     return (
-      <div className='container text-center'>
-        <h4>Welcome!</h4>
-        {this.dataTable()}
+      <div className='container-fluid text-center'>
+        <div className='row'>
+          <div className='col-md-9 sidebar' style={{overflow:'hidden'}}>
+            <h4>{this.state.activeCategory}</h4>
+            {this.dataTable()}
+          </div>
+          <div className='col-md-3'>
+            {this.render_sidebar()}
+          </div>
+        </div>
       </div>
     )
   }
