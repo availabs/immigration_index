@@ -21,13 +21,6 @@ export const Nav = () => (
           <li className='nav-item'>
             <Link to='/counter' activeClassName='active' className='nav-link'>Counter</Link>
           </li>
-          <li className='nav-item btn-group'>
-            <NavDropdown title={<span>Test 124</span>}>
-              <a className='dropdown-item'>Action</a>
-              <a className='dropdown-item'>Another action</a>
-              <a className='dropdown-item'>Something else here</a>
-            </NavDropdown>
-          </li>
         </ul>
 
         <form className='form-inline'>

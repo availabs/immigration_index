@@ -1,5 +1,7 @@
 import React from 'react'
 import * as d3 from 'd3'
+import geoData from '../assets/tl_2010_36_puma10_topo'
+import ResponsiveMap from 'components/ResponsiveMap'
 import './HomeView.scss'
 
 const cats = ["Full Time", "Poverty", "Working Poor", "Homeownership", "Rent Burden", "Unemployment", "Income", "Naturalization"]
@@ -27,19 +29,9 @@ class HomeView extends React.Component {
 
   dataTable () {
     if (!this.state.data.columns) return
-    
-    var categories = this.state.data.columns.filter(col => {
-      return col.includes('Grades')
-    })
-    .map(col => {
-      return col.split('_')[1]
-    })
 
-
-
-      console.log('categories' , categories)
     var header = this.state.data.columns.filter(col => {
-    return col.includes(this.state.activeCategory) || col==='Regions' 
+      return col.includes(this.state.activeCategory) || col === 'Regions'
     })
     .map(col => {
       return (
@@ -50,26 +42,27 @@ class HomeView extends React.Component {
     var rows = Object.keys(this.state.data)
       .filter(row => row !== 'columns')
       .map(row => {
-      return (
-        <tr>
-          {
-            Object.keys(this.state.data[row]).filter(col => {
-              return col.includes(this.state.activeCategory) || col==='Regions' 
-              }).map(col => {
-              return( 
-                <td>
-                  {
-                    isNaN(parseInt(this.state.data[row][col])) 
-                    ? this.state.data[row][col] 
-                    : (this.state.data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
-                  }
-                </td>
-              )
-            })
-          }
-        </tr>
-      )
-    })
+        return (
+          <tr>
+            {
+              Object.keys(this.state.data[row]).filter(col => { // Filter for Active category
+                return col.includes(this.state.activeCategory) || col === 'Regions'
+              })
+              .map(col => {
+                return (
+                  <td>
+                    {
+                      isNaN(parseInt(this.state.data[row][col]))
+                      ? this.state.data[row][col]
+                      : (this.state.data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
+                    }
+                  </td>
+                )
+              })
+            }
+          </tr>
+        )
+      })
 
     return (
       <table className='table table-hover'>
@@ -82,6 +75,13 @@ class HomeView extends React.Component {
           {rows}
         </tbody>
       </table>
+    )
+  }
+
+  renderMap () {
+    console.log(geoData)
+    return (
+      <ResponsiveMap geo={geoData} />
     )
   }
 
@@ -111,7 +111,9 @@ class HomeView extends React.Component {
         <div className='row'>
           <div className='col-md-9 sidebar' style={{overflow:'hidden'}}>
             <h4>{this.state.activeCategory}</h4>
+            {this.renderMap()}
             {this.dataTable()}
+
           </div>
           <div className='col-md-3'>
             {this.render_sidebar()}

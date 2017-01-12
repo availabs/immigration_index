@@ -1,0 +1,28 @@
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.msa {
+    fill:#7EC0EE;
+    stroke:white;
+}
+
+.msa:hover {
+    fill:darken(#7EC0EE,15%);
+}
+
+.state {
+    fill:#DCDCDC;
+    stroke-width:1px;
+    stroke:darken(#DCDCDC,20%);
+}
