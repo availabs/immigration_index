@@ -1,8 +1,11 @@
 import React from 'react'
 import * as d3 from 'd3'
-import geoData from '../assets/tl_2010_36_puma10_topo'
 import ResponsiveMap from 'components/ResponsiveMap'
 import './HomeView.scss'
+
+
+import geoData from '../assets/tl_2010_36_puma10_quant'
+import regions from '../assets/regions'
 
 const cats = ["Full Time", "Poverty", "Working Poor", "Homeownership", "Rent Burden", "Unemployment", "Income", "Naturalization"]
 
@@ -11,6 +14,7 @@ class HomeView extends React.Component {
     super(props)
     this.state = {
       data: {},
+      temp: [],
       activeCategory: cats[0]
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
@@ -23,6 +27,14 @@ class HomeView extends React.Component {
       console.log(data)
       this.setState({
         data:data
+      })
+    })
+
+    d3.csv('/step1_raw.csv', (err,data) =>{
+      if (err) console.log('error', err)
+      console.log(data)
+      this.setState({
+        temp:data
       })
     })
   }
@@ -79,7 +91,7 @@ class HomeView extends React.Component {
   }
 
   renderMap () {
-    console.log(geoData)
+    console.log('test', regions)
     return (
       <ResponsiveMap geo={geoData} />
     )
