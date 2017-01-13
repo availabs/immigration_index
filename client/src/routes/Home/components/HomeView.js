@@ -1,20 +1,28 @@
 import React from 'react'
 import * as d3 from 'd3'
 import ResponsiveMap from 'components/ResponsiveMap'
+import * as topojson from 'topojson'
 import './HomeView.scss'
-
 
 import geoData from '../assets/tl_2010_36_puma10_quant'
 import regions from '../assets/regions'
 
-const cats = ["Full Time", "Poverty", "Working Poor", "Homeownership", "Rent Burden", "Unemployment", "Income", "Naturalization"]
+const cats = [
+  'Full Time',
+  'Poverty',
+  'Working Poor',
+  'Homeownership',
+  'Rent Burden',
+  'Unemployment',
+  'Income',
+  'Naturalization'
+]
 
 class HomeView extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: {},
-      temp: [],
+      data: [],
       activeCategory: cats[0]
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
@@ -27,14 +35,6 @@ class HomeView extends React.Component {
       console.log(data)
       this.setState({
         data:data
-      })
-    })
-
-    d3.csv('/step1_raw.csv', (err,data) =>{
-      if (err) console.log('error', err)
-      console.log(data)
-      this.setState({
-        temp:data
       })
     })
   }
@@ -92,43 +92,64 @@ class HomeView extends React.Component {
 
   renderMap () {
     console.log('test', regions)
+    var regionGeo = {
+      'type': 'FeatureCollection',
+      'features': []
+    }
+
+    regionGeo.features = Object.keys(regions).map(region => {
+      return {
+        'type': 'Feature',
+        'properties': { region: region },
+        'geometry': topojson.merge(
+          geoData, geoData.objects.collection.geometries
+            .filter(function (d) {
+              return regions[region].includes(d.properties.NAMELSAD10)
+            })
+          )
+      }
+    })
+
     return (
-      <ResponsiveMap geo={geoData} />
+      <ResponsiveMap geo={regionGeo} />
     )
   }
 
   setActiveCategory (cat) {
-    this.setState({activeCategory:cat})    
+    this.setState({ activeCategory:cat })
   }
 
-  
-  render_sidebar () {
-    var catButtons = cats.map (cat => {
-      var active = cat===this.state.activeCategory ? ' active' : ''
-      return(
-        <a onClick={this.setActiveCategory.bind(null,cat)} href="#" className={"list-group-item" + active}>{cat}</a>
-        )
+  renderSidebar () {
+    var catButtons = cats.map(cat => {
+      var active = cat === this.state.activeCategory ? ' active' : ''
+      return (
+        <a
+          onClick={this.setActiveCategory.bind(null, cat)}
+          href='#'
+          className={'list-group-item' + active}
+        >{cat}</a>
+      )
     })
 
     return (
-      <div className="list-group">
+      <div className='list-group'>
         {catButtons}
       </div>
-      )
+    )
   }
 
   render () {
     return (
       <div className='container-fluid text-center'>
         <div className='row'>
-          <div className='col-md-9 sidebar' style={{overflow:'hidden'}}>
+          <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
             <h4>{this.state.activeCategory}</h4>
             {this.renderMap()}
             {this.dataTable()}
 
           </div>
           <div className='col-md-3'>
-            {this.render_sidebar()}
+            {this.renderSidebar()}
           </div>
         </div>
       </div>
