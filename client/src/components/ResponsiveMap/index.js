@@ -10,13 +10,14 @@ export class ResponsiveMap extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    let firstGeo = getValue(this.props, 'geo', 'objects', 'collection', 'geometries', '0', 'id')
-    let nextFirstGeo = getValue(nextProps, 'geo', 'objects', 'collection', 'geometries', '0', 'id')
-    let firstChild = getValue(this.props, 'children', 'objects', 'collection', 'geometries', '0', 'id')
-    let nextChild = getValue(nextProps, 'children', 'objects', 'collection', 'geometries', '0', 'id')
-    if (firstGeo !== nextFirstGeo || firstChild !== nextChild) {
-      this._drawGraph(nextProps)
-    }
+    // let firstGeo = getValue(this.props, 'geo', 'objects', 'collection', 'geometries', '0', 'id')
+    // let nextFirstGeo = getValue(nextProps, 'geo', 'objects', 'collection', 'geometries', '0', 'id')
+    // let firstChild = getValue(this.props, 'children', 'objects', 'collection', 'geometries', '0', 'id')
+    // let nextChild = getValue(nextProps, 'children', 'objects', 'collection', 'geometries', '0', 'id')
+    // if (firstGeo !== nextFirstGeo || firstChild !== nextChild) {
+    //   this._drawGraph(nextProps)
+    // }
+    this._drawGraph(nextProps)
   }
 
   _drawGraph (props) {
@@ -68,8 +69,12 @@ export class ResponsiveMap extends React.Component {
     svg.selectAll('.state')
       .data(geo.features)
       .enter().append('path')
-      .attr('class', d => {return d.properties.GEOID10})
+      .attr('class', d => {return 'state'})
       .attr('d', path)
+      .attr('fill', d => {
+        console.log(d.properties)
+        return d.properties.fillColor || "#efefef"
+      })
 
     if (props.children) {
       svg.selectAll('.msa')
