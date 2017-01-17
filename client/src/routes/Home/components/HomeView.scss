@@ -10,13 +10,37 @@
 	margin-left: -15px;
 	border-top: 1px solid #efefef;
 }
+.list-group-item{
+	color: rgb(66, 146, 198);
+}
 
 .list-group-item.active{
-	background-color: rgb(66, 146, 198);
+	background-color: rgb(66, 146, 198)!important;
+	color: #efefef;
+	border: none;
+}
+.list-group-item.active:hover{
+	background-color: rgb(66, 146, 198)!important;
 	color: #efefef;
 }
+
 .list-group-item:hover{
-	background-color: rgb(66, 146, 198);
+	background-color: rgb(66, 146, 198)!important;
 	color: #efefef;
     transition: length 0.1s;
+}
+.legendRow{
+	display:flex;
+	justify-content: center;
+	flex-direction: row;
+}
+.legendContainer{
+	padding: 10px;
+	width:40%;
+	min-height: 50px;
+	background-color: #fff;
+	position: relative;
+	top:1rem;
+	left:1rem;
+	border-radius: 5px;
 }
