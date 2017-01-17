@@ -7,6 +7,7 @@ import colorbrewer from 'colorbrewer'
 import geoData from '../assets/tl_2010_36_puma10_quant'
 import regions from '../assets/regions'
 
+
 const cats = [
   'Full Time',
   'Poverty',
@@ -18,21 +19,25 @@ const cats = [
   'Naturalization'
 ]
 
+ var Blues = ["#08306b", "#08519c", "#2171b5", "#4292c6", "#6baed6", "#9ecae1", "#c6dbef", "#deebf7", "#f7fbff", "#fff"]
+
 class HomeView extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
       data: [],
-      activeCategory: cats[0]
+      activeCategory: cats[0],
+      activeRegion: null
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
+    this.mapClick = this.mapClick.bind(this)
   }
 
   componentDidMount () {
-    console.log(d3)
+    // console.log(d3)
     d3.csv('/final_score_1.csv', (err, data) => {
       if (err) console.log('error', err)
-      console.log(data)
+      // console.log(data)
       this.setState({
         data:data
       })
@@ -90,27 +95,52 @@ class HomeView extends React.Component {
     )
   }
 
+  renderLegend (scale) {
+    var colors=scale.domain().map(grade => {
+        return <div style={{backgroundColor:scale(grade),width:(100/scale.domain().length)+"%", height:20}}/>
+    })
+
+    var grades=scale.domain().map(grade => {
+        return <div style={{textAlign:'center', width:(100/scale.domain().length)+"%", height:20}}>{grade}</div>
+
+    })
+    return (
+      <div className='legendContainer'>
+          <h5>{this.state.activeCategory}</h5>
+          <div className='legendRow'>
+          {colors}
+          </div>
+          <div className='legendRow'>
+          {grades}
+          </div>
+      </div>
+      )
+  }
+
+  mapClick (d) {
+    this.setState({
+      activeRegion:d.properties.region
+    })
+  }
+
   renderMap () {
     if (this.state.data.length === 0) return
-    console.log('test', regions)
+    // console.log('test', regions)
     var regionGeo = {
       'type': 'FeatureCollection',
       'features': []
     }
-    console.log(colorbrewer)
-    var Blues = colorbrewer.Blues[9]
-    Blues.push('#fff')
+   
     var gradeScale = d3.scaleOrdinal()
       .domain(['A','A-','B','B-','C','C-','D','D-','E','E-'])
       .range(Blues)
-      console.log(this.state.data)
 
     regionGeo.features = Object.keys(regions).map(region => {
       var regionGrade = this.state.data
         .filter(reg => reg.Regions === region)
       regionGrade = regionGrade[0] || {}
       regionGrade = regionGrade['Grades_' + this.state.activeCategory] || 'E-'
-      console.log(regionGrade, region, gradeScale(regionGrade))
+      regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
       return {
         'type': 'Feature',
         'properties': { region: region, fillColor:gradeScale(regionGrade), grade:regionGrade },
@@ -122,10 +152,24 @@ class HomeView extends React.Component {
           )
       }
     })
-    console.log(regionGeo)
-
+    var childGeo = null
+    if (this.state.activeRegion){
+    console.log(regions[this.state.activeRegion], this.state.activeRegion)
+    childGeo = topojson.feature(geoData, geoData.objects.collection)
+      childGeo.features=childGeo.features.filter(puma => regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
+    console.log(childGeo.features.length)
+    }
     return (
-      <ResponsiveMap geo={regionGeo} />
+      <div>
+        {this.renderLegend(gradeScale)}
+        <ResponsiveMap 
+          geo={regionGeo} 
+          click={this.mapClick} 
+          activeRegion={this.state.activeRegion} 
+          activeCategory={this.state.activeCategory}
+          childGeo={childGeo}
+        />
+      </div>
     )
   }
 
@@ -157,7 +201,7 @@ class HomeView extends React.Component {
       <div className='container-fluid text-center'>
         <div className='row'>
           <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
-            <h4>{this.state.activeCategory}</h4>
+            {this.state.activeRegion}
             {this.renderMap()}
             {this.dataTable()}
 
