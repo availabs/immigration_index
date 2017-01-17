@@ -3,7 +3,7 @@ import * as d3 from 'd3'
 import ResponsiveMap from 'components/ResponsiveMap'
 import * as topojson from 'topojson'
 import './HomeView.scss'
-
+import colorbrewer from 'colorbrewer'
 import geoData from '../assets/tl_2010_36_puma10_quant'
 import regions from '../assets/regions'
 
@@ -129,16 +129,29 @@ class HomeView extends React.Component {
   }
 
   renderMap () {
+    if (this.state.data.length === 0) return
     console.log('test', regions)
     var regionGeo = {
       'type': 'FeatureCollection',
       'features': []
     }
+    console.log(colorbrewer)
+    var Blues = colorbrewer.Blues[9]
+    Blues.push('#fff')
+    var gradeScale = d3.scaleOrdinal()
+      .domain(['A','A-','B','B-','C','C-','D','D-','E','E-'])
+      .range(Blues)
+      console.log(this.state.data)
 
     regionGeo.features = Object.keys(regions).map(region => {
+      var regionGrade = this.state.data
+        .filter(reg => reg.Regions === region)
+      regionGrade = regionGrade[0] || {}
+      regionGrade = regionGrade['Grades_' + this.state.activeCategory] || 'E-'
+      console.log(regionGrade, region, gradeScale(regionGrade))
       return {
         'type': 'Feature',
-        'properties': { region: region },
+        'properties': { region: region, fillColor:gradeScale(regionGrade), grade:regionGrade },
         'geometry': topojson.merge(
           geoData, geoData.objects.collection.geometries
             .filter(function (d) {
@@ -147,6 +160,7 @@ class HomeView extends React.Component {
           )
       }
     })
+    console.log(regionGeo)
 
     return (
       <ResponsiveMap geo={regionGeo} />

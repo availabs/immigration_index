@@ -1,4 +1,22 @@
 .sidebar{
 	border-right: 5px solid #ccc;
+	border-top: 1px solid #ccc;
+	background-color: #efefef; 
 	height: 100%;
+}
+
+.list-group{
+	margin-right: -15px;
+	margin-left: -15px;
+	border-top: 1px solid #efefef;
+}
+
+.list-group-item.active{
+	background-color: rgb(66, 146, 198);
+	color: #efefef;
+}
+.list-group-item:hover{
+	background-color: rgb(66, 146, 198);
+	color: #efefef;
+    transition: length 0.1s;
 }
