@@ -139,7 +139,7 @@ class HomeView extends React.Component {
     var Blues = colorbrewer.Blues[9]
     Blues.push('#fff')
     var gradeScale = d3.scaleOrdinal()
-      .domain(['A','A-','B','B-','C','C-','D','D-','E','E-'])
+      .domain(['A', 'A-', 'B', 'B-', 'C','C-','D','D-','E','E-'])
       .range(Blues)
       console.log(this.state.data)
 
