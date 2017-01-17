@@ -23,7 +23,9 @@ class HomeView extends React.Component {
     super(props)
     this.state = {
       data: [],
-      activeCategory: cats[0]
+      puma_data: [],
+      activeCategory: cats[0],
+      activeRegions: null
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
   }
@@ -37,6 +39,42 @@ class HomeView extends React.Component {
         data:data
       })
     })
+
+    d3.csv('/puma_ratios.csv', (err, pumas) => {
+      if (err) console.log('error', err)
+      this.setState({
+        puma_data: pumas.reduce((prev, current) => {
+          current.geo = current.geo.replace(', New York', '').replace('; New York', '')
+          prev[current.geo] = current
+          return prev
+        }, {})
+      })
+    })
+  }
+
+  regionDataTable () {
+
+    
+    return (
+      <table className='table table-hover'>
+        <thead>
+          <tr>
+            <th>
+              Region
+            </th>
+            <th>
+              BABS
+            </th>
+            <th>
+              HS
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows}
+        </tbody>
+      </table>
+    )
   }
 
   dataTable () {
@@ -139,6 +177,7 @@ class HomeView extends React.Component {
   }
 
   render () {
+    console.log('pumas', this.state.puma_data)
     return (
       <div className='container-fluid text-center'>
         <div className='row'>
