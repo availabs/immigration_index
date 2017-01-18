@@ -191,10 +191,8 @@ class HomeView extends React.Component {
     })
     var childGeo = null
     if (this.state.activeRegion){
-    console.log(regions[this.state.activeRegion], this.state.activeRegion)
     childGeo = topojson.feature(geoData, geoData.objects.collection)
       childGeo.features=childGeo.features.filter(puma => regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
-    console.log(childGeo.features.length)
     }
     return (
       <div>
@@ -234,7 +232,6 @@ class HomeView extends React.Component {
   }
 
   render () {
-    console.log('pumas', this.state.puma_data)
     return (
       <div className='container-fluid text-center'>
         <div className='row'>
