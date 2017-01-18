@@ -3,10 +3,8 @@ import * as d3 from 'd3'
 import ResponsiveMap from 'components/ResponsiveMap'
 import * as topojson from 'topojson'
 import './HomeView.scss'
-import colorbrewer from 'colorbrewer'
 import geoData from '../assets/tl_2010_36_puma10_quant'
 import regions from '../assets/regions'
-
 
 const cats = [
   'Full Time',
@@ -19,7 +17,7 @@ const cats = [
   'Naturalization'
 ]
 
- var Blues = ["#08306b", "#08519c", "#2171b5", "#4292c6", "#6baed6", "#9ecae1", "#c6dbef", "#deebf7", "#f7fbff", "#fff"]
+var Blues = ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
 
 class HomeView extends React.Component {
   constructor (props) {
@@ -35,10 +33,8 @@ class HomeView extends React.Component {
   }
 
   componentDidMount () {
-    // console.log(d3)
     d3.csv('/final_score_1.csv', (err, data) => {
       if (err) console.log('error', err)
-      // console.log(data)
       this.setState({
         data:data
       })
@@ -67,7 +63,7 @@ class HomeView extends React.Component {
           <td>{this.state.puma_data[puma][this.state.activeCategory + '_BABS']}</td>
           <td>{this.state.puma_data[puma][this.state.activeCategory + '_HS']}</td>
         </tr>
-        )
+      )
     })
     return (
       <table className='table table-hover'>
@@ -143,25 +139,26 @@ class HomeView extends React.Component {
   }
 
   renderLegend (scale) {
-    var colors=scale.domain().map(grade => {
-        return <div style={{backgroundColor:scale(grade),width:(100/scale.domain().length)+"%", height:20}}/>
+    var colors = scale.domain().map(grade => {
+      return <div style={{ backgroundColor:scale(grade), width:(100 / scale.domain().length) + '%', height:20 }} />
     })
 
-    var grades=scale.domain().map(grade => {
-        return <div style={{textAlign:'center', width:(100/scale.domain().length)+"%", height:20}}>{grade}</div>
-
+    var grades = scale.domain().map(grade => {
+      return <div style={{ textAlign:'center', width:(100 / scale.domain().length) + '%', height:20 }}>{grade}</div>
     })
     return (
       <div className='legendContainer'>
-          <h5>{this.state.activeCategory}  <span style={{fontSize:'.8em' , float:'right'}}> {this.state.activeRegion}</span></h5>
-          <div className='legendRow'>
+        <h5>{this.state.activeCategory}
+          <span style={{ fontSize:'.8em', float:'right' }}> {this.state.activeRegion}</span>
+        </h5>
+        <div className='legendRow'>
           {colors}
-          </div>
-          <div className='legendRow'>
+        </div>
+        <div className='legendRow'>
           {grades}
-          </div>
+        </div>
       </div>
-      )
+    )
   }
 
   mapClick (d) {
@@ -176,14 +173,13 @@ class HomeView extends React.Component {
 
   renderMap () {
     if (this.state.data.length === 0) return
-    // console.log('test', regions)
     var regionGeo = {
       'type': 'FeatureCollection',
       'features': []
     }
-   
+
     var gradeScale = d3.scaleOrdinal()
-      .domain(['A', 'A-', 'B', 'B-', 'C','C-','D','D-','E','E-'])
+      .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E', 'E-'])
       .range(Blues)
 
     regionGeo.features = Object.keys(regions).map(region => {
@@ -204,17 +200,17 @@ class HomeView extends React.Component {
       }
     })
     var childGeo = null
-    if (this.state.activeRegion){
-    childGeo = topojson.feature(geoData, geoData.objects.collection)
-      childGeo.features=childGeo.features.filter(puma => regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
+    if (this.state.activeRegion) {
+      childGeo = topojson.feature(geoData, geoData.objects.collection)
+      childGeo.features = childGeo.features.filter(puma => regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
     }
     return (
       <div>
         {this.renderLegend(gradeScale)}
-        <ResponsiveMap 
-          geo={regionGeo} 
-          click={this.mapClick} 
-          activeRegion={this.state.activeRegion} 
+        <ResponsiveMap
+          geo={regionGeo}
+          click={this.mapClick}
+          activeRegion={this.state.activeRegion}
           activeCategory={this.state.activeCategory}
           childGeo={childGeo}
         />
@@ -246,7 +242,6 @@ class HomeView extends React.Component {
   }
 
   render () {
-    console.log(this.state.puma_data)
     return (
       <div className='container-fluid text-center'>
         <div className='row'>

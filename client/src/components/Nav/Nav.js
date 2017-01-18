@@ -18,9 +18,7 @@ export const Nav = () => (
           <li className='nav-item' activeClassName='active'>
             <Link to='/' className='nav-link active'>Home</Link>
           </li>
-          <li className='nav-item'>
-            <Link to='/counter' activeClassName='active' className='nav-link'>Counter</Link>
-          </li>
+          
         </ul>
 
         <form className='form-inline'>

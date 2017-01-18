@@ -35,29 +35,29 @@ export class ResponsiveMap extends React.Component {
     // if (firstGeo !== nextFirstGeo || firstChild !== nextChild) {
     //   this._drawGraph(nextProps)
     // }
-    console.log((this.props.activeRegion !== nextProps.activeRegion), this.props.activeRegion , nextProps.activeRegion)
+    console.log((this.props.activeRegion !== nextProps.activeRegion), this.props.activeRegion, nextProps.activeRegion)
     if (this.props.activeRegion !== nextProps.activeRegion) {
       this.zoomto(nextProps)
-    } 
-    if (!nextProps.activeRegion){
+    }
+    if (!nextProps.activeRegion) {
       this.reset()
     }
-    
-    if (this.props.activeCategory !== nextProps.activeCategory){
+
+    if (this.props.activeCategory !== nextProps.activeCategory) {
       this.updateColor(nextProps)
-    } 
+    }
   }
 
-  updateColor(props) {
+  updateColor (props) {
     console.log('updateColor')
     let g = d3.select('#mapContainer')
     g.selectAll('.state')
       .data(props.geo.features)
       .enter().append('path')
-      .attr('class', d => {return 'region'})
+      .attr('class', d => { return 'region' })
       .attr('d', path)
       .attr('fill', d => {
-        return d.properties.fillColor || "#efefef"
+        return d.properties.fillColor || '#efefef'
       })
       .on('mouseover', this.mouseover || null)
       .on('mouseout', this.mouseout || null)
@@ -65,39 +65,39 @@ export class ResponsiveMap extends React.Component {
       .on('click', props.click || null)
   }
 
-  reset() {
-  let g = d3.select('#mapContainer')
-  g.transition()
+  reset () {
+    let g = d3.select('#mapContainer')
+    g.transition()
       .duration(750)
-      .style("stroke-width", "1.5px")
-      .attr("transform", "");
-       g.selectAll('.puma').remove()
+      .style('stroke-width', '1.5px')
+      .attr('transform', '')
+    g.selectAll('.puma').remove()
   }
 
-  zoomto(props){
+  zoomto (props) {
     // var region = d3.select('.' + props.activeRegion)
-    if( !props.activeRegion) return
+    if (!props.activeRegion) return
     var region = props.geo.features.filter(d => d.properties.region === props.activeRegion)[0]
     console.log(path.bounds(region), region)
     var bounds = path.bounds(region),
-          dx = bounds[1][0] - bounds[0][0],
-          dy = bounds[1][1] - bounds[0][1],
-          x = (bounds[0][0] + bounds[1][0]) / 2,
-          y = (bounds[0][1] + bounds[1][1]) / 2,
-          scale = .9 / Math.max(dx / this.state.width, dy / this.state.height),
-          translate = [this.state.width / 2 - scale * x, this.state.height / 2 - scale * y];
-      let divName = this.props.mapDiv || 'mapDiv'
-      let g = d3.select('#mapContainer')
-      g.selectAll('.puma').remove()
-      g.transition()
+      dx = bounds[1][0] - bounds[0][0],
+      dy = bounds[1][1] - bounds[0][1],
+      x = (bounds[0][0] + bounds[1][0]) / 2,
+      y = (bounds[0][1] + bounds[1][1]) / 2,
+      scale = 0.9 / Math.max(dx / this.state.width, dy / this.state.height),
+      translate = [this.state.width / 2 - scale * x, this.state.height / 2 - scale * y]
+    let divName = this.props.mapDiv || 'mapDiv'
+    let g = d3.select('#mapContainer')
+    g.selectAll('.puma').remove()
+    g.transition()
           .duration(750)
-          .style("stroke-width", 1.5 / scale + "px")
-          .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
-      if (props.childGeo) {
-        g.selectAll('.puma')
+          .style('stroke-width', 1.5 / scale + 'px')
+          .attr('transform', 'translate(' + translate + ')scale(' + scale + ')')
+    if (props.childGeo) {
+      g.selectAll('.puma')
           .data(props.childGeo.features)
           .enter().append('path')
-          .attr('class', d => {return 'puma'})
+          .attr('class', d => { return 'puma' })
           // .attr('id',function(d){return 'msa'+d.properties.id})
           .attr('fill', props.childColor || '#7EC0EE')
           .attr('d', path)
@@ -105,9 +105,7 @@ export class ResponsiveMap extends React.Component {
           .on('mouseover', props.mouseover || null)
           .on('mouseout', props.mouseout || null)
     }
-
   }
-
 
   _drawGraph (props) {
     if (!props.geo) return
@@ -130,8 +128,8 @@ export class ResponsiveMap extends React.Component {
       height: height
     })
 
-    var projection =  d3.geoTransverseMercator()
-      .rotate([76 + 35 / 60, -40]);
+    var projection = d3.geoTransverseMercator()
+      .rotate([76 + 35 / 60, -40])
 
     path = d3.geoPath()
       .projection(projection)
@@ -155,15 +153,13 @@ export class ResponsiveMap extends React.Component {
 
     var g = svg.append('g').attr('id', 'mapContainer')
 
-    
-
     g.selectAll('.state')
       .data(geo.features)
       .enter().append('path')
-      .attr('class', d => {return 'region'})
+      .attr('class', d => { return 'region' })
       .attr('d', path)
       .attr('fill', d => {
-        return d.properties.fillColor || "#efefef"
+        return d.properties.fillColor || '#efefef'
       })
       .on('mouseover', this.mouseover || null)
       .on('mouseout', this.mouseout || null)
@@ -173,12 +169,12 @@ export class ResponsiveMap extends React.Component {
 
   mousemove (e) {
     let divName = this.props.mapDiv || 'mapDiv'
-    var mouse = d3.mouse(d3.select('#' + divName +'> svg').node()).map(function(d) {
-        return parseInt(d);
-    });
+    var mouse = d3.mouse(d3.select('#' + divName + '> svg').node()).map(function (d) {
+      return parseInt(d)
+    })
     this.setState({
       left: mouse[0] + 40,
-      top:mouse[1] - 20,
+      top:mouse[1] - 20
     })
   }
 
@@ -192,19 +188,18 @@ export class ResponsiveMap extends React.Component {
     this.setState({
       show: 0.0
     })
- 
   }
 
   renderToolTip () {
     // if (!this.props.ToolTip) return
-      return (
-        <ToolTip top={this.state.top} left={this.state.left} show={this.state.show}>
-          <div style={{textAlign:'center', fontSize:'1.1em', fontWeight:'600'}}>{this.state.info.region}</div>
-         <div style={{textAlign:'center'}}>
-         <span style={{fontSize:'.75em', fontWeight:'400'}}>Grade</span> <br/>
-         <span style={{fontSize:'2em', fontWeight:'600'}}>{this.state.info.grade}</span></div>
-        </ToolTip>
-        )
+    return (
+      <ToolTip top={this.state.top} left={this.state.left} show={this.state.show}>
+        <div style={{ textAlign:'center', fontSize:'1.1em', fontWeight:'600' }}>{this.state.info.region}</div>
+        <div style={{ textAlign:'center' }}>
+          <span style={{ fontSize:'.75em', fontWeight:'400' }}>Grade</span> <br />
+          <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.grade}</span></div>
+      </ToolTip>
+    )
   }
 
   render () {
@@ -212,7 +207,7 @@ export class ResponsiveMap extends React.Component {
     return (
       <div id={divName} className={classes['svg-container']}>
         {this.renderToolTip()}
-        <svg className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet'/>
+        <svg className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet' />
       </div>
     )
   }

@@ -13,24 +13,24 @@ export const Login = () => (
               height: '96px',
               margin: '0 auto 10px',
               display: 'block',
-              borderRadius: '50%'}}
+              borderRadius: '50%' }}
               src='https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120'
               alt='' />
             <a href='#'>
-              <div className='mask'></div>
+              <div className='mask' />
             </a>
           </div>
           <div className='card-block'>
-              <h4 className='card-title' style={{ textAlign: 'center' }}>Sign In</h4>
-              <p className='card-text'>
-                <form className='form-signin'>
-                  <input type='text' className='form-control' placeholder='Login' required autoFocus />
-                  <input type='password' className='form-control' placeholder='Password' required />
-                  <button className='btn btn-lg btn-primary btn-block' type='submit'>
+            <h4 className='card-title' style={{ textAlign: 'center' }}>Sign In</h4>
+            <p className='card-text'>
+              <form className='form-signin'>
+                <input type='text' className='form-control' placeholder='Login' required autoFocus />
+                <input type='password' className='form-control' placeholder='Password' required />
+                <button className='btn btn-lg btn-primary btn-block' type='submit'>
                     Sign
                   </button>
-                </form>
-              </p>
+              </form>
+            </p>
           </div>
         </div>
         <a href='#' className='text-right new-account'>Forgot Password?</a>
