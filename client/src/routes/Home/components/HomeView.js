@@ -57,8 +57,18 @@ class HomeView extends React.Component {
   }
 
   regionDataTable () {
-
-    
+    var rows = Object.keys(this.state.puma_data).filter(puma => {
+      return regions[this.state.activeRegion].includes(puma)
+    })
+    .map(puma => {
+      return (
+        <tr>
+          <td>{puma}</td>
+          <td>{this.state.puma_data[puma][this.state.activeCategory + '_BABS']}</td>
+          <td>{this.state.puma_data[puma][this.state.activeCategory + '_HS']}</td>
+        </tr>
+        )
+    })
     return (
       <table className='table table-hover'>
         <thead>
@@ -143,7 +153,7 @@ class HomeView extends React.Component {
     })
     return (
       <div className='legendContainer'>
-          <h5>{this.state.activeCategory}</h5>
+          <h5>{this.state.activeCategory}  <span style={{fontSize:'.8em' , float:'right'}}> {this.state.activeRegion}</span></h5>
           <div className='legendRow'>
           {colors}
           </div>
@@ -155,8 +165,12 @@ class HomeView extends React.Component {
   }
 
   mapClick (d) {
+    var nextRegion = d.properties.region
+    if (this.state.activeRegion === d.properties.region) {
+      nextRegion = null
+    }
     this.setState({
-      activeRegion:d.properties.region
+      activeRegion:nextRegion
     })
   }
 
@@ -232,13 +246,13 @@ class HomeView extends React.Component {
   }
 
   render () {
+    console.log(this.state.puma_data)
     return (
       <div className='container-fluid text-center'>
         <div className='row'>
           <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
-            {this.state.activeRegion}
             {this.renderMap()}
-            {this.dataTable()}
+            {this.state.activeRegion ? this.regionDataTable() : this.dataTable()}
 
           </div>
           <div className='col-md-3'>

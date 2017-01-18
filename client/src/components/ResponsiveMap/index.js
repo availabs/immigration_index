@@ -38,9 +38,11 @@ export class ResponsiveMap extends React.Component {
     console.log((this.props.activeRegion !== nextProps.activeRegion), this.props.activeRegion , nextProps.activeRegion)
     if (this.props.activeRegion !== nextProps.activeRegion) {
       this.zoomto(nextProps)
-    } else {
+    } 
+    if (!nextProps.activeRegion){
       this.reset()
     }
+    
     if (this.props.activeCategory !== nextProps.activeCategory){
       this.updateColor(nextProps)
     } 
@@ -52,7 +54,7 @@ export class ResponsiveMap extends React.Component {
     g.selectAll('.state')
       .data(props.geo.features)
       .enter().append('path')
-      .attr('class', d => {return 'state'})
+      .attr('class', d => {return 'region'})
       .attr('d', path)
       .attr('fill', d => {
         return d.properties.fillColor || "#efefef"
@@ -158,7 +160,7 @@ export class ResponsiveMap extends React.Component {
     g.selectAll('.state')
       .data(geo.features)
       .enter().append('path')
-      .attr('class', d => {return 'state'})
+      .attr('class', d => {return 'region'})
       .attr('d', path)
       .attr('fill', d => {
         return d.properties.fillColor || "#efefef"
