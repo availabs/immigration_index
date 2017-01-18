@@ -52,7 +52,7 @@ export class ResponsiveMap extends React.Component {
     g.selectAll('.state')
       .data(props.geo.features)
       .enter().append('path')
-      .attr('class', d => {return d.properties.NAMELSAD10})
+      .attr('class', d => {return 'state'})
       .attr('d', path)
       .attr('fill', d => {
         return d.properties.fillColor || "#efefef"
@@ -158,7 +158,7 @@ export class ResponsiveMap extends React.Component {
     g.selectAll('.state')
       .data(geo.features)
       .enter().append('path')
-      .attr('class', d => {return d.properties.NAMELSAD10})
+      .attr('class', d => {return 'state'})
       .attr('d', path)
       .attr('fill', d => {
         return d.properties.fillColor || "#efefef"

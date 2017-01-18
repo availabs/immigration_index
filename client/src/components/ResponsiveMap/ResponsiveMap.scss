@@ -23,11 +23,17 @@
 
 .state {
     stroke-width:1px;
-    stroke:#efefef
+    stroke:#fff
+}
+
+.state:hover {
+    //stroke:#333;
+    stroke-width: 2px;
+    //fill-opacity: 0.6
 }
 
 .puma{
     fill: none;
-    stroke: black;
-    stroke-width: 1px;
+    stroke: white;
+    stroke-width: 0.5px;
 }
