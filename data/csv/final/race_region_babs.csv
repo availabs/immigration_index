@@ -1,0 +1,11 @@
+Regions,Disparity Ratio_Full Time,Score_Full Time,Grades_Full Time,Disparity Ratio_Poverty,Score_Poverty,Grades_Poverty,Disparity Ratio_Working Poor,Score_Working Poor,Grades_Working Poor,Disparity Ratio_Homeownership,Score_Homeownership,Grades_Homeownership,Disparity Ratio-Rent Burden,Score_Rent Burden,Grades_Rent Burden,Disparity Ratio-Unemployment,Score_Unemployment,Grades_Unemployment
+Capital Region,0.902,-0.123,C,2.371,0.193,C,1.904,0.359,B-,0.587,-0.476,C-,0.725,0.568,B-,5.255,-2.524,E
+Central NY,0.891,-0.202,C,5.312,-1.362,D-,1.615,0.520,B-,0.398,-1.277,D-,3.371,-1.557,D-,2.255,-0.604,C-
+Finger Lakes,0.951,0.227,C,2.249,0.257,B-,2.160,0.215,C,0.668,-0.135,C,1.517,-0.068,C,0.910,0.256,B-
+Long Island,1.075,1.113,B,1.177,0.824,B,2.553,-0.004,C,0.903,0.858,B,0.303,0.907,B,0.906,0.259,B-
+Mid-Hudson,1.023,0.740,B-,2.005,0.387,B-,1.964,0.325,B-,0.781,0.342,B-,0.973,0.370,B-,1.082,0.146,C
+Mohawk Valley,0.598,-2.311,E,0.000,1.447,A-,0.000,1.422,A-,0.726,0.113,C,0.000,1.151,B,0.000,0.838,B
+New York City,1.011,0.657,B-,2.330,0.215,C,4.226,-0.939,D,1.017,1.340,A-,1.753,-0.258,C-,1.346,-0.023,C
+North Country,0.808,-0.804,D,2.798,-0.033,C,6.720,-2.332,E,1.035,1.414,A-,0.000,1.151,B,0.000,0.838,B
+Southern Tier,1.034,0.821,B,2.570,0.088,C,2.004,0.302,B-,0.492,-0.876,D,2.776,-1.079,D,0.000,0.838,B
+Western NY,0.903,-0.117,C,6.551,-2.017,E,2.311,0.131,C,0.391,-1.303,D-,2.908,-1.186,D,1.349,-0.025,C
