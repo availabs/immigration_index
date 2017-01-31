@@ -1,10 +1,7 @@
 import React from 'react'
 import * as d3 from 'd3'
-import ResponsiveMap from 'components/ResponsiveMap'
-import * as topojson from 'topojson'
 import './HomeView.scss'
-import geoData from '../assets/tl_2010_36_puma10_quant'
-import regions from '../assets/regions'
+
 
 const cats = [
   'Full Time',
@@ -22,251 +19,26 @@ var Blues = ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '
 class HomeView extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {
-      data: [],
-      puma_data: [],
-      activeCategory: cats[0],
-      activeRegions: null
-    }
-    this.setActiveCategory = this.setActiveCategory.bind(this)
-    this.mapClick = this.mapClick.bind(this)
+    this.state = {}
   }
 
-  componentDidMount () {
-    d3.csv('/final/all_region_babs.csv', (err, data) => {
-      if (err) console.log('error', err)
-      this.setState({
-        data:data
-      })
-    })
-
-    d3.csv('/final/all_puma_babs.csv', (err, pumas) => {
-      if (err) console.log('error', err)
-      console.log('test', pumas)
-      this.setState({
-        puma_data: pumas.reduce((prev, current) => {
-          current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
-          prev[current.Regions] = current
-          return prev
-        }, {})
-      })
-    })
-  }
-
-  regionDataTable () {
-    var rows = Object.keys(this.state.puma_data).filter(puma => {
-      return regions[this.state.activeRegion].includes(puma)
-    })
-    .map(row => {
-      return (
-        <tr key={row}>
-            {
-              Object.keys(this.state.puma_data[row]).filter(col => { // Filter for Active category
-                return col.includes(this.state.activeCategory) || col === 'Regions'
-              })
-              .map(col => {
-                return (
-                  <td>
-                    {
-                      isNaN(parseInt(this.state.puma_data[row][col]))
-                      ? this.state.puma_data[row][col]
-                      : (this.state.puma_data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
-                    }
-                  </td>
-                )
-              })
-            }
-          </tr>
-      )
-    })
-
-    var header = this.state.data.columns.filter(col => {
-      return col.includes(this.state.activeCategory) || col === 'Regions'
-    })
-    .map(col => {
-      return (
-        <th>{col.split('_')[0]}</th>
-      )
-    })
-    return (
-      <table className='table table-hover'>
-        <thead>
-          <tr>
-            {header}
-          </tr>
-        </thead>
-        <tbody>
-          {rows}
-        </tbody>
-      </table>
-    )
-  }
-
-  dataTable () {
-    if (!this.state.data.columns) return
-
-    var header = this.state.data.columns.filter(col => {
-      return col.includes(this.state.activeCategory) || col === 'Regions'
-    })
-    .map(col => {
-      return (
-        <th>{col.split('_')[0]}</th>
-      )
-    })
-
-    var rows = Object.keys(this.state.data)
-      .filter(row => row !== 'columns')
-      .map(row => {
-        return (
-          <tr key={row}>
-            {
-              Object.keys(this.state.data[row]).filter(col => { // Filter for Active category
-                return col.includes(this.state.activeCategory) || col === 'Regions'
-              })
-              .map(col => {
-                return (
-                  <td>
-                    {
-                      isNaN(parseInt(this.state.data[row][col]))
-                      ? this.state.data[row][col]
-                      : (this.state.data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
-                    }
-                  </td>
-                )
-              })
-            }
-          </tr>
-        )
-      })
-
-    return (
-      <table className='table table-hover'>
-        <thead>
-          <tr>
-            {header}
-          </tr>
-        </thead>
-        <tbody>
-          {rows}
-        </tbody>
-      </table>
-    )
-  }
-
-  renderLegend (scale) {
-    var colors = scale.domain().map(grade => {
-      return <div style={{ backgroundColor:scale(grade), width:(100 / scale.domain().length) + '%', height:20 }} />
-    })
-
-    var grades = scale.domain().map(grade => {
-      return <div style={{ textAlign:'center', width:(100 / scale.domain().length) + '%', height:20 }}>{grade}</div>
-    })
-    return (
-      <div className='legendContainer'>
-        <h5>{this.state.activeCategory}
-          <span style={{ fontSize:'.8em', float:'right' }}> {this.state.activeRegion}</span>
-        </h5>
-        <div className='legendRow'>
-          {colors}
-        </div>
-        <div className='legendRow'>
-          {grades}
-        </div>
-      </div>
-    )
-  }
-
-  mapClick (d) {
-    var nextRegion = d.properties.region
-    if (this.state.activeRegion === d.properties.region) {
-      nextRegion = null
-    }
-    this.setState({
-      activeRegion:nextRegion
-    })
-  }
-
-  renderMap () {
-    if (this.state.data.length === 0) return
-    var regionGeo = {
-      'type': 'FeatureCollection',
-      'features': []
-    }
-
-    var gradeScale = d3.scaleOrdinal()
-      .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E', 'E-'])
-      .range(Blues)
-
-    regionGeo.features = Object.keys(regions).map(region => {
-      var regionGrade = this.state.data
-        .filter(reg => reg.Regions === region)
-      regionGrade = regionGrade[0] || {}
-      regionGrade = regionGrade['Grades_' + this.state.activeCategory] || 'E-'
-      regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
-      return {
-        'type': 'Feature',
-        'properties': { region: region, fillColor:gradeScale(regionGrade), grade:regionGrade },
-        'geometry': topojson.merge(
-          geoData, geoData.objects.collection.geometries
-            .filter(function (d) {
-              return regions[region].includes(d.properties.NAMELSAD10)
-            })
-          )
-      }
-    })
-    var childGeo = null
-    if (this.state.activeRegion) {
-      childGeo = topojson.feature(geoData, geoData.objects.collection)
-      childGeo.features = childGeo.features.filter(puma => regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
-    }
-    return (
-      <div>
-        {this.renderLegend(gradeScale)}
-        <ResponsiveMap
-          geo={regionGeo}
-          click={this.mapClick}
-          activeRegion={this.state.activeRegion}
-          activeCategory={this.state.activeCategory}
-          childGeo={childGeo}
-        />
-      </div>
-    )
-  }
-
-  setActiveCategory (cat) {
-    this.setState({ activeCategory:cat })
-  }
-
-  renderSidebar () {
-    var catButtons = cats.map(cat => {
-      var active = cat === this.state.activeCategory ? ' active' : ''
-      return (
-        <a
-          onClick={this.setActiveCategory.bind(null, cat)}
-          href='#'
-          className={'list-group-item' + active}
-        >{cat}</a>
-      )
-    })
-
-    return (
-      <div className='list-group'>
-        {catButtons}
-      </div>
-    )
-  }
+  
 
   render () {
     return (
-      <div className='container-fluid text-center'>
-        <div className='row'>
-          <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
-            {this.renderMap()}
-            {this.state.activeRegion ? this.regionDataTable() : this.dataTable()}
-
-          </div>
-          <div className='col-md-3'>
-            {this.renderSidebar()}
+      <div className='container-fluid text-center' style={{minHeight:'100vh', backgroundColor:'#6baed6'}}>
+        <div className='container' style={{color:'#efefef'}}>
+          <div className='row'>
+            <div className='col-md-12' style={{ overflow:'hidden' }}>
+              <h1>Immigrant Integration Index</h1>
+              <div>
+                The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and gender in shaping the economic outcomes of foreign-born New York State residents. 
+                <br />
+                The Immigrant Integration index creates a profile for each community of New York State to illuminate areas of disparities that warrant targeted investments. It also creates a mechanism that allows for benchmarking and tracking progress over time to account for return on public investments.
+                <br />
+                The Immigrant Integration Index is designed as a policy tool to assist policy makers in making informed decisions about targeting investments to areas of greatest need and tailoring policy responses to the specific needs of each community. 
+              </div>
+            </div>
           </div>
         </div>
       </div>
