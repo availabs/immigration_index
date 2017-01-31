@@ -1,6 +1,7 @@
 import React from 'react'
 import * as d3 from 'd3'
 import ResponsiveMap from 'components/ResponsiveMap'
+import Sidebar from 'components/Sidebar/Sidebar'
 import * as topojson from 'topojson'
 import './DataExplorer.scss'
 import regions from '../assets/regions'
@@ -16,6 +17,25 @@ const cats = [
   'Naturalization'
 ]
 
+const analyses = {
+  'nativity': {
+    name: 'The Effects of Nativity Status',
+    info:'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.'
+  },
+  'race': {
+    name: 'The Effects of Race',
+    info:'Effects of nativity status and race on economic outcomes of foreign-born New Yorkers.'
+  },
+  'gender': {
+    name: 'The Effects of Gender',
+    info: 'Gender Info'
+  },
+  'women': {
+    name: 'Economic Outcomes of Foreign Born Women',
+    info: 'Foreign Women Info'
+  }
+}
+
 var Blues = ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
 
 class DataExplorer extends React.Component {
@@ -25,22 +45,24 @@ class DataExplorer extends React.Component {
       data: [],
       puma_data: [],
       activeCategory: cats[0],
+      activeAnalysis: this.props.params.analysis || 'nativity',
       activeRegions: null,
       geoData: null
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
+    this.setActiveAnalysis = this.setActiveAnalysis.bind(this)
     this.mapClick = this.mapClick.bind(this)
   }
 
   componentDidMount () {
-    d3.csv('/final/all_region_babs.csv', (err, data) => {
+    d3.csv('/final/nativity_region_babs.csv', (err, data) => {
       if (err) console.log('error', err)
       this.setState({
         data:data
       })
     })
 
-    d3.csv('/final/all_puma_babs.csv', (err, pumas) => {
+    d3.csv('/final/nativity_puma_babs.csv', (err, pumas) => {
       if (err) console.log('error', err)
       console.log('test', pumas)
       this.setState({
@@ -243,26 +265,24 @@ class DataExplorer extends React.Component {
     this.setState({ activeCategory:cat })
   }
 
-  renderSidebar () {
-    var catButtons = cats.map(cat => {
-      var active = cat === this.state.activeCategory ? ' active' : ''
-      return (
-        <a
-          onClick={this.setActiveCategory.bind(null, cat)}
-          href='#'
-          className={'list-group-item' + active}
-        >{cat}</a>
-      )
-    })
-
-    return (
-      <div className='list-group'>
-        {catButtons}
-      </div>
-    )
+  setActiveAnalysis (cat) {
+    this.setState({ activeAnalysis:cat })
   }
 
+  joinData(regions, pumas) {
+    if(!regions || ! pumas) return
+    
+    regions = regions.reduce((prev, current) => {
+          current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
+          prev[current.Regions] = current
+          return prev
+        }, {})
+    console.log('regions', regions)
+    console.log('pumas', pumas)
+
+  }
   render () {
+    this.joinData(this.state.data, this.state.puma_data)
     return (
       <div className='container-fluid text-center'>
         <div className='row'>
@@ -272,7 +292,14 @@ class DataExplorer extends React.Component {
 
           </div>
           <div className='col-md-3'>
-            {this.renderSidebar()}
+            <Sidebar
+              categories={cats}
+              activeCategory={this.state.activeCategory}
+              categoryClick={this.setActiveCategory}
+              analyses={analyses}
+              activeAnalysis={this.state.activeAnalysis}
+              analysisClick={this.setActiveAnalysis}
+            />
           </div>
         </div>
       </div>
