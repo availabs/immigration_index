@@ -44,3 +44,40 @@
 	left:1rem;
 	border-radius: 5px;
 }
+
+.paddedDiv{
+	padding: 40px;
+}
+
+.studiesContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.studiesDiv{
+		flex-basis: 25%;
+		padding: 5px;
+}
+
+.studiesbutton{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+	text-align: center;
+	padding: 5px;
+	min-height: 250px;
+	border: 2px solid #efefef;
+	border-radius: 4px;
+	color: #efefef;
+	background-color: #efefef;
+	-webkit-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+}
+
+.studiesContent{
+	display: flex;
+	flex-direction:column;
+	justify-content: space-around;
+}

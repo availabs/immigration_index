@@ -1,5 +1,5 @@
 import React from 'react'
-import * as d3 from 'd3'
+import {Link} from 'react-router'
 import './HomeView.scss'
 
 
@@ -29,15 +29,37 @@ class HomeView extends React.Component {
       <div className='container-fluid text-center' style={{minHeight:'100vh', backgroundColor:'#6baed6'}}>
         <div className='container' style={{color:'#efefef'}}>
           <div className='row'>
-            <div className='col-md-12' style={{ overflow:'hidden' }}>
-              <h1>Immigrant Integration Index</h1>
-              <div>
-                The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and gender in shaping the economic outcomes of foreign-born New York State residents. 
+            <div className='col-md-12 paddedDiv' style={{overflow:'hidden', textAlign:'justify' }}>
+                <h4>The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and 
+                gender in shaping the economic outcomes of foreign-born New York State residents</h4>
                 <br />
-                The Immigrant Integration index creates a profile for each community of New York State to illuminate areas of disparities that warrant targeted investments. It also creates a mechanism that allows for benchmarking and tracking progress over time to account for return on public investments.
+                <h4>The Immigrant Integration index creates a profile for each community of New York State to illuminate areas of disparities that 
+                warrant targeted investments. It also creates a mechanism that allows for benchmarking and tracking progress over time to account for return on 
+                public investments</h4>
                 <br />
-                The Immigrant Integration Index is designed as a policy tool to assist policy makers in making informed decisions about targeting investments to areas of greatest need and tailoring policy responses to the specific needs of each community. 
-              </div>
+                <h4>The Immigrant Integration Index is designed as a policy tool to assist policy makers in making informed decisions 
+                about targeting investments to areas of greatest need and tailoring policy responses to the specific needs of each community.</h4>
+            </div>
+          </div>
+        </div>
+        <div className='studiesContainer'>
+          <div className='studiesDiv'>
+            <div className='studiesbutton'><Link to='data'>The Effects of Nativity Status</Link>
+            </div>
+          </div>
+          <div className='studiesDiv'>
+            <div className='studiesbutton'>
+              <p className='studiesContent'><Link to='data'>The Effects of Race</Link></p>
+            </div>
+          </div>
+          <div className='studiesDiv'>
+            <div className='studiesbutton'>
+              <p className='studiesContent'><Link to='data'>The Effects of Gender</Link></p>
+            </div>
+          </div>
+          <div className='studiesDiv'>
+            <div className='studiesbutton'>
+              <p className='studiesContent'><Link to='data'>Economic Outcomes of Foreign-born Women</Link></p>
             </div>
           </div>
         </div>
