@@ -33,19 +33,20 @@ class HomeView extends React.Component {
   }
 
   componentDidMount () {
-    d3.csv('/final_score_1.csv', (err, data) => {
+    d3.csv('/final/all_region_babs.csv', (err, data) => {
       if (err) console.log('error', err)
       this.setState({
         data:data
       })
     })
 
-    d3.csv('/puma_ratios.csv', (err, pumas) => {
+    d3.csv('/final/all_puma_babs.csv', (err, pumas) => {
       if (err) console.log('error', err)
+      console.log('test', pumas)
       this.setState({
         puma_data: pumas.reduce((prev, current) => {
-          current.geo = current.geo.replace(', New York', '').replace('; New York', '')
-          prev[current.geo] = current
+          current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
+          prev[current.Regions] = current
           return prev
         }, {})
       })
@@ -56,28 +57,42 @@ class HomeView extends React.Component {
     var rows = Object.keys(this.state.puma_data).filter(puma => {
       return regions[this.state.activeRegion].includes(puma)
     })
-    .map(puma => {
+    .map(row => {
       return (
-        <tr>
-          <td>{puma}</td>
-          <td>{this.state.puma_data[puma][this.state.activeCategory + '_BABS']}</td>
-          <td>{this.state.puma_data[puma][this.state.activeCategory + '_HS']}</td>
-        </tr>
+        <tr key={row}>
+            {
+              Object.keys(this.state.puma_data[row]).filter(col => { // Filter for Active category
+                return col.includes(this.state.activeCategory) || col === 'Regions'
+              })
+              .map(col => {
+                return (
+                  <td>
+                    {
+                      isNaN(parseInt(this.state.puma_data[row][col]))
+                      ? this.state.puma_data[row][col]
+                      : (this.state.puma_data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
+                    }
+                  </td>
+                )
+              })
+            }
+          </tr>
+      )
+    })
+
+    var header = this.state.data.columns.filter(col => {
+      return col.includes(this.state.activeCategory) || col === 'Regions'
+    })
+    .map(col => {
+      return (
+        <th>{col.split('_')[0]}</th>
       )
     })
     return (
       <table className='table table-hover'>
         <thead>
           <tr>
-            <th>
-              Region
-            </th>
-            <th>
-              BABS
-            </th>
-            <th>
-              HS
-            </th>
+            {header}
           </tr>
         </thead>
         <tbody>
@@ -103,7 +118,7 @@ class HomeView extends React.Component {
       .filter(row => row !== 'columns')
       .map(row => {
         return (
-          <tr>
+          <tr key={row}>
             {
               Object.keys(this.state.data[row]).filter(col => { // Filter for Active category
                 return col.includes(this.state.activeCategory) || col === 'Regions'
