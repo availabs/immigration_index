@@ -1,0 +1,6222 @@
+{
+   "Capital Region":{
+      "Full Time":{
+         "Ratio":"0.938",
+         "Score":"-0.416",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"2.222",
+         "Score":"-0.073",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.469",
+         "Score":"-0.672",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.665",
+         "Score":"-0.421",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.754",
+         "Score":"0.568",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"4.123",
+         "Score":"-1.921",
+         "Grade":"E"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Central NY":{
+      "Full Time":{
+         "Ratio":"0.926",
+         "Score":"-0.589",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"3.334",
+         "Score":"-0.982",
+         "Grade":"D"
+      },
+      "Working Poor":{
+         "Ratio":"1.681",
+         "Score":"0.757",
+         "Grade":"B"
+      },
+      "Homeownership":{
+         "Ratio":"0.601",
+         "Score":"-0.765",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"3.019",
+         "Score":"-1.678",
+         "Grade":"D-"
+      },
+      "Unemployment":{
+         "Ratio":"2.455",
+         "Score":"-0.614",
+         "Grade":"C-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Finger Lakes":{
+      "Full Time":{
+         "Ratio":"0.955",
+         "Score":"-0.160",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.038",
+         "Score":"0.077",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.709",
+         "Score":"0.708",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.780",
+         "Score":"0.194",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.268",
+         "Score":"0.058",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.956",
+         "Score":"-1.007",
+         "Grade":"D"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Long Island":{
+      "Full Time":{
+         "Ratio":"1.054",
+         "Score":"1.291",
+         "Grade":"A-"
+      },
+      "Poverty":{
+         "Ratio":"1.206",
+         "Score":"0.757",
+         "Grade":"B"
+      },
+      "Working Poor":{
+         "Ratio":"2.355",
+         "Score":"-0.464",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.918",
+         "Score":"0.936",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"0.636",
+         "Score":"0.685",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.730",
+         "Score":"0.736",
+         "Grade":"B-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Mid-Hudson":{
+      "Full Time":{
+         "Ratio":"1.019",
+         "Score":"0.778",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"1.731",
+         "Score":"0.328",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.712",
+         "Score":"0.701",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.822",
+         "Score":"0.421",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.388",
+         "Score":"-0.061",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.996",
+         "Score":"0.528",
+         "Grade":"B-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Mohawk Valley":{
+      "Full Time":{
+         "Ratio":"0.820",
+         "Score":"-2.134",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"0.405",
+         "Score":"1.411",
+         "Grade":"A-"
+      },
+      "Working Poor":{
+         "Ratio":"1.089",
+         "Score":"1.832",
+         "Grade":"A"
+      },
+      "Homeownership":{
+         "Ratio":"0.757",
+         "Score":"0.070",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.000",
+         "Score":"1.316",
+         "Grade":"A-"
+      },
+      "Unemployment":{
+         "Ratio":"0.515",
+         "Score":"0.905",
+         "Grade":"B"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "New York City":{
+      "Full Time":{
+         "Ratio":"1.005",
+         "Score":"0.576",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.840",
+         "Score":"0.239",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.817",
+         "Score":"-1.303",
+         "Grade":"D-"
+      },
+      "Homeownership":{
+         "Ratio":"1.063",
+         "Score":"1.713",
+         "Grade":"A-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.808",
+         "Score":"-0.477",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"1.297",
+         "Score":"0.292",
+         "Grade":"B-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "North Country":{
+      "Full Time":{
+         "Ratio":"0.946",
+         "Score":"-0.296",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"1.435",
+         "Score":"0.570",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"2.739",
+         "Score":"-1.161",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"0.858",
+         "Score":"0.615",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.000",
+         "Score":"1.316",
+         "Grade":"A-"
+      },
+      "Unemployment":{
+         "Ratio":"0.000",
+         "Score":"1.308",
+         "Grade":"A-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Southern Tier":{
+      "Full Time":{
+         "Ratio":"1.041",
+         "Score":"1.091",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"2.254",
+         "Score":"-0.100",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.000",
+         "Score":"0.180",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.505",
+         "Score":"-1.278",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.876",
+         "Score":"-0.544",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"1.205",
+         "Score":"0.365",
+         "Grade":"B-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Western NY":{
+      "Full Time":{
+         "Ratio":"0.957",
+         "Score":"-0.140",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"4.858",
+         "Score":"-2.227",
+         "Grade":"E"
+      },
+      "Working Poor":{
+         "Ratio":"2.417",
+         "Score":"-0.578",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.467",
+         "Score":"-1.482",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"2.519",
+         "Score":"-1.182",
+         "Grade":"D"
+      },
+      "Unemployment":{
+         "Ratio":"2.427",
+         "Score":"-0.593",
+         "Grade":"C-"
+      },
+      "Income":{
+
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Total GEOG-101":{
+      "Full Time":{
+         "Ratio":"1.0149573336",
+         "Score":"",
+         "Grade":""
+      },
+      "Poverty":{
+         "Ratio":"2.0143837521",
+         "Score":"",
+         "Grade":""
+      },
+      "Working Poor":{
+         "Ratio":"2.7405171766",
+         "Score":"",
+         "Grade":""
+      },
+      "Homeownership":{
+         "Ratio":"0.750515683",
+         "Score":"",
+         "Grade":""
+      },
+      "Rent Burden":{
+         "Ratio":"1.6957216633",
+         "Score":"",
+         "Grade":""
+      },
+      "Unemployment":{
+         "Ratio":"1.3767549619",
+         "Score":"",
+         "Grade":""
+      },
+      "Income":{
+         "Ratio":"0.8682233598",
+         "Score":"",
+         "Grade":""
+      },
+      "Naturalization":{
+
+      }
+   },
+   "St. Lawrence County PUMA":{
+      "Full Time":{
+         "Ratio":"1.2189922481",
+         "Score":"1.3333951206",
+         "Grade":"A-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.6146502511",
+         "Score":"-0.7597976862",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.8977608018",
+         "Score":"1.4210003076",
+         "Grade":"A-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Clinton, Franklin, Essex & Hamilton Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0.7002462315",
+         "Score":"-1.7440216644",
+         "Grade":"D-"
+      },
+      "Poverty":{
+         "Ratio":"2.3856188215",
+         "Score":"-0.0236599957",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"19.9179796182",
+         "Score":"-1.4559483971",
+         "Grade":"D-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1967836575",
+         "Score":"0.8984186376",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.733974709",
+         "Score":"-0.4655325905",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Warren & Washington Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.2100918282",
+         "Score":"1.2805941341",
+         "Grade":"A-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.2719753386",
+         "Score":"-1.7359126583",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.3824298718",
+         "Score":"-1.0353975378",
+         "Grade":"D"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Herkimer (North & Central) & Oneida (Outer) Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.1642897889",
+         "Score":"1.0088774173",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.0610278919",
+         "Score":"-2.3367998358",
+         "Grade":"E"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.2684948543",
+         "Score":"0.4009409351",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Oneida County (Central)--Greater Utica & Rome Cities PUMA":{
+      "Full Time":{
+         "Ratio":"0.74507698",
+         "Score":"-1.4780670476",
+         "Grade":"D-"
+      },
+      "Poverty":{
+         "Ratio":"0.4835494498",
+         "Score":"0.4557353081",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.586726626",
+         "Score":"0.2516575532",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8981540467",
+         "Score":"0.0477674123",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6551758307",
+         "Score":"-0.5932679855",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Otsego, Schoharie, Oneida (South) & Herkimer (South) Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0.7846777325",
+         "Score":"-1.2431389395",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"0.5804811508",
+         "Score":"0.4313047574",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8724772135",
+         "Score":"-0.0253734578",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"2.9863842663",
+         "Score":"-0.2717054031",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"3.7557497136",
+         "Score":"4.4328572355",
+         "Grade":"A"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Jefferson & Lewis Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0.8073916086",
+         "Score":"-1.108390794",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"3.6026662074",
+         "Score":"-0.3304031724",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8785082118",
+         "Score":"-0.0081940626",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.4973897374",
+         "Score":"0.7719865506",
+         "Grade":"B"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Oswego County PUMA":{
+      "Full Time":{
+         "Ratio":"0.8869080449",
+         "Score":"-0.6366662742",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8485120051",
+         "Score":"-0.0936387374",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8465517953",
+         "Score":"-0.2830416858",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Onondaga County (Central)--Syracuse City PUMA":{
+      "Full Time":{
+         "Ratio":"0.8912837205",
+         "Score":"-0.6107079493",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"2.0370051545",
+         "Score":"0.0642041786",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.3337320387",
+         "Score":"-1.5599977097",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.9777861597",
+         "Score":"0.060462859",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"3.5241666212",
+         "Score":"-0.4096113574",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"1.0617190951",
+         "Score":"0.0657510967",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Onondaga County (North) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1292671017",
+         "Score":"0.8011082931",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1419153927",
+         "Score":"0.7421255073",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9452757099",
+         "Score":"-0.1230071968",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Onondaga County (Central)--Syracuse City (Outer) PUMA":{
+      "Full Time":{
+         "Ratio":"0.7933124833",
+         "Score":"-1.1919140117",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"7.8233777656",
+         "Score":"-1.3941862972",
+         "Grade":"D-"
+      },
+      "Working Poor":{
+         "Ratio":"16.1396122429",
+         "Score":"-1.1039832251",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"0.644279652",
+         "Score":"-0.6753978637",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"5.6221910112",
+         "Score":"-0.5113190582",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"5.2817834157",
+         "Score":"-0.8603249578",
+         "Grade":"D"
+      },
+      "Income":{
+         "Ratio":"0.5725556197",
+         "Score":"-0.7271978778",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Cayuga & Onondaga (South) Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.1719801346",
+         "Score":"1.0544997412",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1626967544",
+         "Score":"0.8013215487",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.3361573824",
+         "Score":"0.5106239653",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Wayne & Seneca Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.0174247439",
+         "Score":"0.1376129829",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"3.9552408487",
+         "Score":"-0.4192656659",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"9.7178582294",
+         "Score":"-0.505779416",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.4183047315",
+         "Score":"-1.3190910408",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7191432816",
+         "Score":"-0.4895747885",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Monroe County (East) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1600341323",
+         "Score":"0.9836310952",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"2.4302324987",
+         "Score":"-0.0349043739",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.5416910075",
+         "Score":"-0.9676232593",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"13.6621315582",
+         "Score":"-3.0093354222",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"1.2431522894",
+         "Score":"0.3598598613",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Monroe County (Central)--Rochester City (East) PUMA":{
+      "Full Time":{
+         "Ratio":"0.8942515605",
+         "Score":"-0.5931014902",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"1.3681152923",
+         "Score":"0.2327903845",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.1220418636",
+         "Score":"0.2949441995",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.5011910615",
+         "Score":"1.7655279993",
+         "Grade":"A"
+      },
+      "Rent Burden":{
+         "Ratio":"3.2206028045",
+         "Score":"-0.1345264775",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"24.3475613292",
+         "Score":"-5.7494483632",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"0.8125333369",
+         "Score":"-0.3381866488",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Monroe County (Central)--Rochester City (West) PUMA":{
+      "Full Time":{
+         "Ratio":"0.7049975365",
+         "Score":"-1.7158349504",
+         "Grade":"D-"
+      },
+      "Poverty":{
+         "Ratio":"1.0015646719",
+         "Score":"0.3251753672",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.2171186623",
+         "Score":"0.9563432243",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"62.6578947368",
+         "Score":"-9.4598265244",
+         "Grade":"E"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.0271042747",
+         "Score":"0.0096394128",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Monroe County (Central)--Greece & Gates Towns PUMA":{
+      "Full Time":{
+         "Ratio":"0.5567007491",
+         "Score":"-2.5955930749",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"3.3083239177",
+         "Score":"-0.2562174915",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0082284627",
+         "Score":"0.3613161479",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Income":{
+         "Ratio":"0.8530364115",
+         "Score":"-0.2725299244",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Monroe County (North & West) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1568099053",
+         "Score":"0.9645036416",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8097069302",
+         "Score":"-0.2041756142",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.404885364",
+         "Score":"0.6220341283",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Monroe County (South) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9995773757",
+         "Score":"0.0317349833",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.0371838657",
+         "Score":"0.0641591364",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7077852298",
+         "Score":"-0.4945012089",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.7799704513",
+         "Score":"0.0914987756",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"6.2197599261",
+         "Score":"-1.1008545041",
+         "Grade":"D"
+      },
+      "Income":{
+         "Ratio":"0.9987034657",
+         "Score":"-0.0363991683",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Genesee & Orleans Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.215582894",
+         "Score":"1.3131694164",
+         "Grade":"A-"
+      },
+      "Poverty":{
+         "Ratio":"11.7514701629",
+         "Score":"-2.3842180365",
+         "Grade":"E"
+      },
+      "Working Poor":{
+         "Ratio":"23.5506282336",
+         "Score":"-1.7943394712",
+         "Grade":"E"
+      },
+      "Homeownership":{
+         "Ratio":"1.0788746546",
+         "Score":"0.562552956",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.4832553397",
+         "Score":"-0.8719563666",
+         "Grade":"D"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Niagara County (Southwest)--Greater Niagara Falls & North Tonawanda Area PUMA":{
+      "Full Time":{
+         "Ratio":"1.1590795896",
+         "Score":"0.9779683513",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"1.2512788522",
+         "Score":"0.262237702",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1076008575",
+         "Score":"0.6443800048",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.2314272801",
+         "Score":"-1.2801773635",
+         "Grade":"D-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Niagara County (North & East) PUMA":{
+      "Full Time":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Poverty":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Income":{
+         "Ratio":"#VALUE!",
+         "Score":"#VALUE!",
+         "Grade":"#VALUE!"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (Northwest) PUMA":{
+      "Full Time":{
+         "Ratio":"0.8843421845",
+         "Score":"-0.6518880232",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"2.8533407421",
+         "Score":"-0.1415440727",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.3453291112",
+         "Score":"-1.5269632632",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"15.5518789593",
+         "Score":"-2.0692184253",
+         "Grade":"E"
+      },
+      "Unemployment":{
+         "Ratio":"22.0112274937",
+         "Score":"-5.1503317423",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"0.8276055231",
+         "Score":"-0.3137541734",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (North Central) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0964981595",
+         "Score":"0.6067093203",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"6.9773166451",
+         "Score":"-1.1809460579",
+         "Grade":"D"
+      },
+      "Working Poor":{
+         "Ratio":"5.3323977546",
+         "Score":"-0.0972618747",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.3682347335",
+         "Score":"-1.4617162313",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.0539351475",
+         "Score":"0.2054086937",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.1888408929",
+         "Score":"0.18924675",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.2485295514",
+         "Score":"0.3685765676",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (Northeast) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0325056558",
+         "Score":"0.227079215",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"3.649219721",
+         "Score":"-0.3421364646",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0778584036",
+         "Score":"0.5596581488",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.8522360156",
+         "Score":"1.3472032349",
+         "Grade":"A-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (Central) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9343460681",
+         "Score":"-0.3552442214",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"5.1882161595",
+         "Score":"-0.7300232979",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"17.1757883291",
+         "Score":"-1.2005058387",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"0.9124037905",
+         "Score":"0.0883580357",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"7.8755622189",
+         "Score":"-0.8648574167",
+         "Grade":"D"
+      },
+      "Unemployment":{
+         "Ratio":"11.0244400737",
+         "Score":"-2.3329403005",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"0.8397106907",
+         "Score":"-0.2941313259",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (West Central)--Buffalo City (East) PUMA":{
+      "Full Time":{
+         "Ratio":"0.4998809701",
+         "Score":"-2.9326715988",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"8.4577665844",
+         "Score":"-1.5540769011",
+         "Grade":"D-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.3544998782",
+         "Score":"-1.5008401864",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8822836669",
+         "Score":"-0.2251192276",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (West Central)--Buffalo City (West) PUMA":{
+      "Full Time":{
+         "Ratio":"0.7965608163",
+         "Score":"-1.1726435517",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"3.5238084421",
+         "Score":"-0.3105279549",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"7.2988871882",
+         "Score":"-0.2804457007",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.1884099158",
+         "Score":"-1.9739501022",
+         "Grade":"E"
+      },
+      "Rent Burden":{
+         "Ratio":"2.1553934959",
+         "Score":"0.0325974963",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"4.3326779206",
+         "Score":"-0.6169415558",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"0.5939790565",
+         "Score":"-0.6924698307",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Erie County (South) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9191620823",
+         "Score":"-0.44532193",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.3839231129",
+         "Score":"-1.4170276316",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.4900937459",
+         "Score":"-0.8608711007",
+         "Grade":"D"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Livingston & Wyoming Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.1524448706",
+         "Score":"0.9386084428",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1201438849",
+         "Score":"0.6801090189",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.2650411891",
+         "Score":"0.395342438",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Ontario & Yates Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.2032005955",
+         "Score":"1.2397124798",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9945646818",
+         "Score":"0.3223946492",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"4.3677072019",
+         "Score":"5.4248590657",
+         "Grade":"A"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Madison & Cortland Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.0888230826",
+         "Score":"0.561177577",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.4895896131",
+         "Score":"-1.1160349148",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"3.0303427472",
+         "Score":"3.2569503271",
+         "Grade":"A"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Fulton & Montgomery Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0.9688238335",
+         "Score":"-0.1507077997",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.6824216315",
+         "Score":"-0.5667498247",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7297235063",
+         "Score":"-0.4724239202",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Schenectady County--Schenectady City PUMA":{
+      "Full Time":{
+         "Ratio":"0.9717528245",
+         "Score":"-0.1333318084",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.4128839477",
+         "Score":"-0.0305318657",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.8321733629",
+         "Score":"0.1356408107",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.8223702154",
+         "Score":"-0.1681040437",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.7185278706",
+         "Score":"0.1011386916",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9876327843",
+         "Score":"-0.054345082",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Saratoga County (South & Central) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9530181995",
+         "Score":"-0.244473384",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.5403065117",
+         "Score":"0.4414303257",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.8316120537",
+         "Score":"0.2288458112",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.8757405582",
+         "Score":"-0.0160777682",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"4.6098238032",
+         "Score":"-0.6880113242",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"1.0394454346",
+         "Score":"0.0296448109",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Saratoga County (Outer) PUMA":{
+      "Full Time":{
+         "Ratio":"0.8089869663",
+         "Score":"-1.0989264697",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"5.862077758",
+         "Score":"-0.8998625743",
+         "Grade":"D"
+      },
+      "Working Poor":{
+         "Ratio":"17.968866598",
+         "Score":"-1.2743832312",
+         "Grade":"D-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7087100931",
+         "Score":"-0.4918667211",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"19.9894041386",
+         "Score":"-4.6318664622",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"0.6094887762",
+         "Score":"-0.6673281",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Rensselaer County--Troy City PUMA":{
+      "Full Time":{
+         "Ratio":"0.7471641924",
+         "Score":"-1.4656848371",
+         "Grade":"D-"
+      },
+      "Poverty":{
+         "Ratio":"5.2043481631",
+         "Score":"-0.7340891889",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"25.2442687747",
+         "Score":"-1.9521066826",
+         "Grade":"E"
+      },
+      "Homeownership":{
+         "Ratio":"0.2987461845",
+         "Score":"-1.6596554753",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.8385973878",
+         "Score":"0.0823006147",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"4.9144336886",
+         "Score":"-0.7661238107",
+         "Grade":"D"
+      },
+      "Income":{
+         "Ratio":"0.6592718711",
+         "Score":"-0.5866281786",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Albany County (East Central)--Albany City PUMA":{
+      "Full Time":{
+         "Ratio":"0.4929122009",
+         "Score":"-2.9740132315",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"5.3082442222",
+         "Score":"-0.7602750281",
+         "Grade":"D"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8548691594",
+         "Score":"-0.0755302816",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.7024137194",
+         "Score":"-0.0532261937",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7534353651",
+         "Score":"-0.433986271",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Albany County (Outside Albany City) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0231898397",
+         "Score":"0.1718139251",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.3760068466",
+         "Score":"0.482840218",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.5847983799",
+         "Score":"-0.844831219",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"6.5996465166",
+         "Score":"-1.1982705355",
+         "Grade":"D"
+      },
+      "Income":{
+         "Ratio":"0.9568036703",
+         "Score":"-0.10432002",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Columbia & Greene Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0.9487861503",
+         "Score":"-0.2695796574",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.2033152033",
+         "Score":"0.9170238504",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"2.9084412921",
+         "Score":"3.0593443351",
+         "Grade":"A"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Broome County (West Central)--Greater Binghamton City & Greater Johnson City Village PUMA":{
+      "Full Time":{
+         "Ratio":"1.0342762948",
+         "Score":"0.2375833808",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.2691116179",
+         "Score":"0.0057043414",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.3071564622",
+         "Score":"-0.0017578668",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.4509897328",
+         "Score":"-1.2259872915",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"2.9887269865",
+         "Score":"-0.0981467652",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"6.3135578351",
+         "Score":"-1.1249075248",
+         "Grade":"D"
+      },
+      "Income":{
+         "Ratio":"1.2646270153",
+         "Score":"0.3946710496",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Broome (Outer West) & Tioga Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.1448004589",
+         "Score":"0.8932586184",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1308582308",
+         "Score":"0.7106290047",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.0558869314",
+         "Score":"0.0562969808",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Chenango, Delaware & Broome (East) Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.1711122966",
+         "Score":"1.049351366",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0.18860187",
+         "Score":"0.5300735456",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.1272084586",
+         "Score":"-2.1482834326",
+         "Grade":"E"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.1571235958",
+         "Score":"0.2204047142",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Tompkins County PUMA":{
+      "Full Time":{
+         "Ratio":"1.1777172136",
+         "Score":"1.0885344764",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"2.6296780203",
+         "Score":"-0.0851723861",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.4886532179",
+         "Score":"0.2607933572",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.4602231083",
+         "Score":"-1.1996858737",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"1.6000389175",
+         "Score":"0.1197287889",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.004911616",
+         "Score":"-0.0263355666",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Chemung (South) & Steuben (East) Counties--Greater Elmira & Greater Corning Cities PUMA":{
+      "Full Time":{
+         "Ratio":"1.0142707073",
+         "Score":"0.1189019279",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.3170028351",
+         "Score":"0.497711519",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.6320036593",
+         "Score":"0.3405925878",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.946667481",
+         "Score":"0.1859587062",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"2.430799622",
+         "Score":"2.2850725597",
+         "Grade":"A"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Steuben (North & West), Schuyler & Chemung (North) Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0",
+         "Score":"-5.8981730942",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"1.0905336376",
+         "Score":"0.5957637558",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Income":{
+         "Ratio":"#VALUE!",
+         "Score":"#VALUE!",
+         "Grade":"#VALUE!"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Cattaraugus & Allegany Counties PUMA":{
+      "Full Time":{
+         "Ratio":"1.1907489921",
+         "Score":"1.1658443983",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.2142790218",
+         "Score":"0.9482544629",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"4.7736226544",
+         "Score":"6.0828604455",
+         "Grade":"A"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Chautauqua County PUMA":{
+      "Full Time":{
+         "Ratio":"1.1460264248",
+         "Score":"0.900531557",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"3.1517552804",
+         "Score":"-0.2167561183",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"7.6363294118",
+         "Score":"-0.3118793593",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1984225452",
+         "Score":"0.9030870355",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.2811737715",
+         "Score":"-1.1995367774",
+         "Grade":"D"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Sullivan & Ulster (West) Counties PUMA":{
+      "Full Time":{
+         "Ratio":"0.9550212782",
+         "Score":"-0.2325902891",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.1897731558",
+         "Score":"0.2777395246",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.7085342715",
+         "Score":"0.2403108406",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.0770215817",
+         "Score":"0.5572744483",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9610637601",
+         "Score":"-0.0974142838",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Ulster County (East) PUMA":{
+      "Full Time":{
+         "Ratio":"0.6084279193",
+         "Score":"-2.288726021",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"3.1156942075",
+         "Score":"-0.2076673283",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"11.4208484436",
+         "Score":"-0.6644175748",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7671369366",
+         "Score":"-0.3254369224",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"3.6271597841",
+         "Score":"-0.1983124559",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.0783002008",
+         "Score":"0.2175931981",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.1676086325",
+         "Score":"0.2374012799",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Dutchess County (North & East) PUMA":{
+      "Full Time":{
+         "Ratio":"0.8117064169",
+         "Score":"-1.0827935594",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"2.1742081806",
+         "Score":"0.029623691",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0448848052",
+         "Score":"0.465732326",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8041844731",
+         "Score":"-0.3517204127",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Dutchess County (Southwest) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9905340945",
+         "Score":"-0.0219135158",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.5255240268",
+         "Score":"0.1931172741",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.968142646",
+         "Score":"0.2471310575",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.4494435276",
+         "Score":"0.1224192412",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.3005466344",
+         "Score":"0.4528978522",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Orange County (Northeast)--Greater Newburgh City PUMA":{
+      "Full Time":{
+         "Ratio":"1.0024996499",
+         "Score":"0.0490711278",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0532116502",
+         "Score":"0.4894514773",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7360913733",
+         "Score":"-0.4621014127",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Orange County (Northwest) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1408365151",
+         "Score":"0.8697428577",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9323553471",
+         "Score":"0.1451903639",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6802194854",
+         "Score":"-0.5526714543",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Orange County (Southeast) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0962258926",
+         "Score":"0.6050941202",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8635844633",
+         "Score":"-0.0507045992",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.3529084604",
+         "Score":"0.1585018485",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.6728455467",
+         "Score":"0.3215657635",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.4827334226",
+         "Score":"0.7482282155",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Rockland County (North)--New City & Congers PUMA":{
+      "Full Time":{
+         "Ratio":"0.8358331029",
+         "Score":"-0.9396640393",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"5.0889629406",
+         "Score":"-0.7050076346",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8202600955",
+         "Score":"-0.1741147542",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.499854165",
+         "Score":"-0.0214460005",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8877799934",
+         "Score":"-0.2162095141",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Rockland County (South)--Orangetown, Clarkstown (South) & Ramapo (Southeast) Towns PUMA":{
+      "Full Time":{
+         "Ratio":"1.1515547531",
+         "Score":"0.9333278962",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"1.1222483135",
+         "Score":"0.6861035175",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"4.3098697583",
+         "Score":"-0.3054249294",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7934965729",
+         "Score":"-0.3690458262",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Rockland County (West)--Spring Valley, Suffern Villages & Monsey PUMA":{
+      "Full Time":{
+         "Ratio":"1.1988714063",
+         "Score":"1.2140299322",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"3.7262879475",
+         "Score":"-0.3615606488",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"26.8857036485",
+         "Score":"-2.1050107945",
+         "Grade":"E"
+      },
+      "Homeownership":{
+         "Ratio":"0.7506468329",
+         "Score":"-0.3724092467",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.5370610871",
+         "Score":"0.1296095749",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9702735628",
+         "Score":"-0.0824849117",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Putnam County PUMA":{
+      "Full Time":{
+         "Ratio":"0.9359582502",
+         "Score":"-0.3456800876",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"41.8144486131",
+         "Score":"-9.9612553952",
+         "Grade":"E"
+      },
+      "Working Poor":{
+         "Ratio":"36.5516544226",
+         "Score":"-3.0054203335",
+         "Grade":"E"
+      },
+      "Homeownership":{
+         "Ratio":"0.8719892709",
+         "Score":"-0.0267633703",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"9.5334474508",
+         "Score":"-1.124968144",
+         "Grade":"D"
+      },
+      "Unemployment":{
+         "Ratio":"1.9564360948",
+         "Score":"-0.007591149",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.6046102593",
+         "Score":"-0.6752363253",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Westchester County (Northwest) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9526593061",
+         "Score":"-0.2466024886",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.5553424184",
+         "Score":"-0.0664369293",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.5392247223",
+         "Score":"0.2560824844",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8828676352",
+         "Score":"0.0042238245",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"3.0521134916",
+         "Score":"-0.2885606447",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"0.7276756934",
+         "Score":"-0.4757434877",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Westchester County (Northeast) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1486427443",
+         "Score":"0.9160526508",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"4.169455664",
+         "Score":"-0.4732561134",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"10.4708447545",
+         "Score":"-0.5759221537",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7833181269",
+         "Score":"-0.2793445429",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.7103540369",
+         "Score":"0.0555127828",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.5608224528",
+         "Score":"-0.7462177006",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Westchester County (Southeast) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1616165577",
+         "Score":"0.9930186996",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0.2548329104",
+         "Score":"0.5133807529",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.6864312666",
+         "Score":"-0.5553283149",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.7985927579",
+         "Score":"0.289319839",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6856111345",
+         "Score":"-0.5439314259",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Westchester County (Central)--White Plains City PUMA":{
+      "Full Time":{
+         "Ratio":"1.0965070354",
+         "Score":"0.6067619758",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.6814081372",
+         "Score":"0.1538284282",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.2014557813",
+         "Score":"0.0080884384",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.8129077256",
+         "Score":"-0.1950580974",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.2145645794",
+         "Score":"0.0233139625",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.1699052856",
+         "Score":"0.1941024932",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.9089750382",
+         "Score":"-0.1818516974",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Westchester County (Southwest)--Yonkers City PUMA":{
+      "Full Time":{
+         "Ratio":"0.9316794918",
+         "Score":"-0.3710634589",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0.8868538726",
+         "Score":"0.3540869407",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.5622148788",
+         "Score":"0.253940889",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7709185644",
+         "Score":"-0.314664895",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.0798215171",
+         "Score":"0.2013473013",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.4307904143",
+         "Score":"0.3836370526",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9963374839",
+         "Score":"-0.0402344974",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Westchester County (South Central)--New Rochelle & Mount Vernon Cities PUMA":{
+      "Full Time":{
+         "Ratio":"0.9247962111",
+         "Score":"-0.4118979384",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"2.7167142124",
+         "Score":"-0.1071088845",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7352357817",
+         "Score":"-0.4163078727",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.9911287913",
+         "Score":"0.0583694924",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.9248153753",
+         "Score":"0.0005174947",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.000611249",
+         "Score":"-0.0333065932",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Northwest)--North Hempstead Town (North) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1516034428",
+         "Score":"0.9336167442",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"1.7580877161",
+         "Score":"0.1345021983",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.0916099691",
+         "Score":"0.2977790131",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8573475015",
+         "Score":"-0.0684706847",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0.5171051792",
+         "Score":"0.3615029682",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6117476638",
+         "Score":"-0.6636663739",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Northeast)--Oyster Bay Town (North) & Glen Cove City PUMA":{
+      "Full Time":{
+         "Ratio":"1.1124725336",
+         "Score":"0.7014759409",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.4313204445",
+         "Score":"0.2168602331",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"3.8974498907",
+         "Score":"0.0364074119",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.8557925245",
+         "Score":"-0.0729000614",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.6210148238",
+         "Score":"0.1164378143",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.8417422281",
+         "Score":"0.2782548258",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.703525457",
+         "Score":"-0.5148917605",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (East Central)--Oyster Bay Town (Central) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0855311266",
+         "Score":"0.5416483269",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0.900059258",
+         "Score":"0.3507586711",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9331013547",
+         "Score":"0.1473153785",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.7452103496",
+         "Score":"0.2538454794",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.448256793",
+         "Score":"0.3791580703",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6908701138",
+         "Score":"-0.5354064595",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (West Central)--North Hempstead Town (South) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0845677273",
+         "Score":"0.5359330421",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0.577310283",
+         "Score":"0.4321039392",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"0.9199111412",
+         "Score":"0.1097428443",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.0900039825",
+         "Score":"0.1997497429",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.3786218166",
+         "Score":"0.3970148813",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8714544135",
+         "Score":"-0.242673779",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (West Central)--Hempstead Town (Northwest) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0618618309",
+         "Score":"0.401232236",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"4.8701803673",
+         "Score":"-0.6498659348",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.892395038",
+         "Score":"0.0313627841",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.933510491",
+         "Score":"0.2547222763",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.2507410747",
+         "Score":"0.3721615146",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Central)--Hempstead Town (North Central)--Meadowbrook Corridor PUMA":{
+      "Full Time":{
+         "Ratio":"1.0763105826",
+         "Score":"0.4869482311",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"2.0628789424",
+         "Score":"0.0576829798",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"3.5073241795",
+         "Score":"0.0727486804",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.7887891668",
+         "Score":"-0.2637601983",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.3790546957",
+         "Score":"0.3112927692",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8751185307",
+         "Score":"-0.236734133",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Central)--Hempstead Town (Northeast) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0042092511",
+         "Score":"0.059213192",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.121390556",
+         "Score":"0.6836601815",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"1.1945511793",
+         "Score":"0.1877824355",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.9319287986",
+         "Score":"-0.1446429488",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Southeast)--Oyster Bay Town (South) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0075091854",
+         "Score":"0.0787897722",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.704008476",
+         "Score":"-0.1039065458",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0701143496",
+         "Score":"0.537599087",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"7.6015954743",
+         "Score":"-1.4552048249",
+         "Grade":"D-"
+      },
+      "Income":{
+         "Ratio":"0.7532020999",
+         "Score":"-0.4343644009",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Central)--Hempstead Town (East Central) PUMA":{
+      "Full Time":{
+         "Ratio":"1.141844722",
+         "Score":"0.8757239598",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"2.0989557961",
+         "Score":"0.0485902125",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"1.0644568757",
+         "Score":"0.521483682",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.1123395875",
+         "Score":"0.1478084653",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (South Central)--Hempstead Town (Southeast) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9540850484",
+         "Score":"-0.2381443935",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9201609695",
+         "Score":"0.1104544842",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"9.2622580049",
+         "Score":"-1.8810560062",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"0.7582025108",
+         "Score":"-0.4262585818",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (West Central)--Hempstead Town (West Central) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0972441078",
+         "Score":"0.6111345952",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.104940804",
+         "Score":"0.6368027998",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.5718987649",
+         "Score":"-0.7282626596",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Nassau County (Southwest)--Hempstead Town (Southwest) & Long Beach City PUMA":{
+      "Full Time":{
+         "Ratio":"1.121004258",
+         "Score":"0.7520896729",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.6321928897",
+         "Score":"-0.7098271994",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8207923412",
+         "Score":"-0.3247985499",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Northwest)--Huntington Town (North) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9358051409",
+         "Score":"-0.3465883957",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"13.3086922668",
+         "Score":"-2.7766984448",
+         "Grade":"E"
+      },
+      "Working Poor":{
+         "Ratio":"104.9151138716",
+         "Score":"-9.3736620563",
+         "Grade":"E"
+      },
+      "Homeownership":{
+         "Ratio":"0.9417889604",
+         "Score":"0.1720621624",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"24.1916853933",
+         "Score":"-3.4247443035",
+         "Grade":"E"
+      },
+      "Unemployment":{
+         "Ratio":"1.3256845297",
+         "Score":"0.1541553192",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.5069723949",
+         "Score":"-0.8335102938",
+         "Grade":"D"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Northwest)--Huntington Town (South) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0944369346",
+         "Score":"0.5944812783",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0.7662349051",
+         "Score":"0.384487602",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"5.8672786384",
+         "Score":"-0.1470874802",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.040553131",
+         "Score":"0.4533934827",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8368208115",
+         "Score":"-0.2988159085",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Northwest)--Smithtown Town PUMA":{
+      "Full Time":{
+         "Ratio":"0.9480247177",
+         "Score":"-0.2740967918",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8236424911",
+         "Score":"-0.1644799462",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.682640445",
+         "Score":"0.3190540135",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.0094334757",
+         "Score":"-0.0190054935",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (North Central)--Brookhaven Town (North) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9013522602",
+         "Score":"-0.5509771906",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"1.3237333528",
+         "Score":"0.2439763558",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"1.0407007718",
+         "Score":"0.4538140399",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.726938317",
+         "Score":"0.2567122349",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"3.0311993606",
+         "Score":"-0.2831975398",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"1.1447865716",
+         "Score":"0.2004060201",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (East) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1348719161",
+         "Score":"0.8343583796",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"4.5036759856",
+         "Score":"-0.557492606",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"0.9818353329",
+         "Score":"0.2861348952",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.2703687573",
+         "Score":"0.4039785892",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (South Central)--Brookhaven Town (South) PUMA":{
+      "Full Time":{
+         "Ratio":"0.892537548",
+         "Score":"-0.6032697237",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"3.9566699029",
+         "Score":"-0.4196258431",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"6.9706617109",
+         "Score":"-0.249870607",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.821458521",
+         "Score":"-0.1707010199",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.6406337917",
+         "Score":"0.2702528181",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.9924981233",
+         "Score":"-0.0168386976",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.3821857513",
+         "Score":"-1.0357932646",
+         "Grade":"D"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Central)--Brookhaven Town (Central) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0632291964",
+         "Score":"0.4093440157",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0.8686062852",
+         "Score":"0.358686041",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"0.7838837196",
+         "Score":"-0.277733443",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0.6190206516",
+         "Score":"0.335368324",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9286840371",
+         "Score":"-0.1499028065",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Central)--Brookhaven Town (West Central) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1117567284",
+         "Score":"0.6972294875",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.2708673859",
+         "Score":"0.2573006313",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"0.6165166694",
+         "Score":"-0.754481164",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.4104614431",
+         "Score":"0.6310731232",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Central)--Islip Town (East) PUMA":{
+      "Full Time":{
+         "Ratio":"0.7965742151",
+         "Score":"-1.1725640643",
+         "Grade":"D"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8516310795",
+         "Score":"-0.0847540042",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.355015674",
+         "Score":"0.1581712413",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9846878745",
+         "Score":"-0.059118871",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Central)--Islip Town (Northwest) PUMA":{
+      "Full Time":{
+         "Ratio":"0.9317818427",
+         "Score":"-0.3704562712",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0.3783728527",
+         "Score":"0.4822438927",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.9705090376",
+         "Score":"0.3090598934",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0708379911",
+         "Score":"0.5396603915",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0.5480148892",
+         "Score":"0.3535766519",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7861375844",
+         "Score":"-0.380974972",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Southwest)--Islip Town (South) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0876368525",
+         "Score":"0.5541403676",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0.6577655694",
+         "Score":"0.4118260844",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.978466641",
+         "Score":"0.2765391226",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8818901754",
+         "Score":"-0.2257570894",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (Southwest)--Babylon Town (Southeast) PUMA":{
+      "Full Time":{
+         "Ratio":"1.1266261925",
+         "Score":"0.7854413233",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"5.0512077805",
+         "Score":"-0.6954918689",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"1.0902261535",
+         "Score":"0.5948878824",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.001721228",
+         "Score":"0.2372306895",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.6865765164",
+         "Score":"-0.5423665123",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "Suffolk County (West Central)--Babylon Town (Northwest) PUMA":{
+      "Full Time":{
+         "Ratio":"1.0530959346",
+         "Score":"0.349229299",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0",
+         "Score":"0.5776085368",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8340156979",
+         "Score":"-0.1349317006",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.0127096867",
+         "Score":"0.2344128695",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8917423316",
+         "Score":"-0.2097864426",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 8--Riverdale, Fieldston & Kingsbridge PUMA":{
+      "Full Time":{
+         "Ratio":"1.0598965942",
+         "Score":"0.3895736356",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.0267051202",
+         "Score":"0.3188389985",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8951715202",
+         "Score":"0.039271638",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6201812137",
+         "Score":"-0.6499953313",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 12--Wakefield, Williamsbridge & Woodlawn PUMA":{
+      "Full Time":{
+         "Ratio":"0.9892018978",
+         "Score":"-0.0298166602",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"4.8350998725",
+         "Score":"-0.6410242886",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"5.5541414619",
+         "Score":"-0.1179179027",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.9354758952",
+         "Score":"0.1540792951",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"6.1879862122",
+         "Score":"-0.6000884123",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"1.18138631",
+         "Score":"0.1911583623",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8980789779",
+         "Score":"-0.1995145448",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 10--Co-op City, Pelham Bay & Schuylerville PUMA":{
+      "Full Time":{
+         "Ratio":"0.9173402968",
+         "Score":"-0.4561295184",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0.1282090664",
+         "Score":"0.545294876",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.2237627597",
+         "Score":"0.3786213352",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.06877945",
+         "Score":"0.5337966042",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.3413214924",
+         "Score":"0.4065799717",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8633853531",
+         "Score":"-0.2557539732",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 11--Pelham Parkway, Morris Park & Laconia PUMA":{
+      "Full Time":{
+         "Ratio":"1.1267964931",
+         "Score":"0.7864516169",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0.6554734077",
+         "Score":"0.4124037981",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0261736363",
+         "Score":"0.4124332619",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.659793343",
+         "Score":"0.267246817",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"10.5631264558",
+         "Score":"-2.2146435692",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"1.0010080054",
+         "Score":"-0.0326634389",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 3 & 6--Belmont, Crotona Park East & East Tremont PUMA":{
+      "Full Time":{
+         "Ratio":"1.0755104343",
+         "Score":"0.482201419",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.0566796736",
+         "Score":"0.3112842477",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"2.0183383556",
+         "Score":"0.2114517496",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.6824049945",
+         "Score":"-0.5667972154",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.1915425779",
+         "Score":"0.1838190395",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.2314634513",
+         "Score":"0.4347513646",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.730599061",
+         "Score":"-0.4710046192",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 7--Bedford Park, Fordham North & Norwood PUMA":{
+      "Full Time":{
+         "Ratio":"0.929086155",
+         "Score":"-0.3864482101",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0.8545286157",
+         "Score":"0.3622341601",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.6442511179",
+         "Score":"0.3394517038",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9058650675",
+         "Score":"0.0697323785",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.7825674517",
+         "Score":"0.2479844084",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.5288087243",
+         "Score":"-0.1543672434",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8906451353",
+         "Score":"-0.2115650313",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 5--Morris Heights, Fordham South & Mount Hope PUMA":{
+      "Full Time":{
+         "Ratio":"1.0589266368",
+         "Score":"0.3838194457",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.377536913",
+         "Score":"0.2304157704",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"6.7065262439",
+         "Score":"-0.2252656716",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0",
+         "Score":"-2.5106387625",
+         "Grade":"E"
+      },
+      "Rent Burden":{
+         "Ratio":"0.5606858938",
+         "Score":"0.2827960903",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6810468571",
+         "Score":"-0.5513302593",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 4--Concourse, Highbridge & Mount Eden PUMA":{
+      "Full Time":{
+         "Ratio":"1.367629785",
+         "Score":"2.2151747133",
+         "Grade":"A"
+      },
+      "Poverty":{
+         "Ratio":"2.0660878471",
+         "Score":"0.0568742113",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"12.6196752915",
+         "Score":"-0.7760915482",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"0.0567923098",
+         "Score":"-2.3488649591",
+         "Grade":"E"
+      },
+      "Rent Burden":{
+         "Ratio":"3.3268330733",
+         "Score":"-0.151193272",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.8624582244",
+         "Score":"0.2729425295",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8674659174",
+         "Score":"-0.2491392534",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 9--Castle Hill, Clason Point & Parkchester PUMA":{
+      "Full Time":{
+         "Ratio":"0.9063697254",
+         "Score":"-0.5212115038",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"3.0413143298",
+         "Score":"-0.1889207123",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"14.7849463722",
+         "Score":"-0.9777924239",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"1.2813916057",
+         "Score":"1.1394257321",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"4.3874015497",
+         "Score":"-0.3175891312",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.6829757744",
+         "Score":"-0.5482034254",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Bronx Community District 1 & 2--Hunts Point, Longwood & Melrose PUMA":{
+      "Full Time":{
+         "Ratio":"1.0351125384",
+         "Score":"0.2425443247",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.5219309047",
+         "Score":"0.4460616919",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.2229883536",
+         "Score":"-1.8754528689",
+         "Grade":"E"
+      },
+      "Rent Burden":{
+         "Ratio":"0.2831490238",
+         "Score":"0.3263397058",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.3664171627",
+         "Score":"0.1437100664",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8506046163",
+         "Score":"-0.2764719389",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 12--Washington Heights, Inwood & Marble Hill PUMA":{
+      "Full Time":{
+         "Ratio":"0.9749809927",
+         "Score":"-0.1141809744",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.1907103836",
+         "Score":"0.2775033068",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.5943536071",
+         "Score":"0.2509470792",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.4147245313",
+         "Score":"-1.3292892985",
+         "Grade":"D-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.8664987397",
+         "Score":"0.0779230856",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.3133932451",
+         "Score":"-0.0991272807",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.5614325896",
+         "Score":"-0.7452286502",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 9--Hamilton Heights, Manhattanville & West Harlem PUMA":{
+      "Full Time":{
+         "Ratio":"1.1781249291",
+         "Score":"1.0909532143",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"1.7033461395",
+         "Score":"0.1482992002",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.3995790022",
+         "Score":"0.2690908621",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.6142150277",
+         "Score":"-0.761037427",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"2.5191942807",
+         "Score":"-0.0244803309",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.7295194682",
+         "Score":"-0.2058364046",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.6752997937",
+         "Score":"-0.5606464251",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 10--Central Harlem PUMA":{
+      "Full Time":{
+         "Ratio":"0.8816933084",
+         "Score":"-0.6676022562",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"1.4045160636",
+         "Score":"0.2236159773",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.5663773056",
+         "Score":"0.2535531476",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.377768451",
+         "Score":"1.4139567182",
+         "Grade":"A-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.521277931",
+         "Score":"0.132085843",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.6910300805",
+         "Score":"0.3169026215",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7083911798",
+         "Score":"-0.5070042748",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 11--East Harlem PUMA":{
+      "Full Time":{
+         "Ratio":"0.9159962483",
+         "Score":"-0.4641029722",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0.9766835405",
+         "Score":"0.331446378",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.659123565",
+         "Score":"0.338066295",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9267487534",
+         "Score":"0.1292198921",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.4524712654",
+         "Score":"0.1428811329",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.1996649857",
+         "Score":"0.4429055885",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.2827789946",
+         "Score":"0.424095964",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 8--Upper East Side PUMA":{
+      "Full Time":{
+         "Ratio":"0.9601468758",
+         "Score":"-0.2021831161",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.79260671",
+         "Score":"0.1258020721",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"3.6668574587",
+         "Score":"0.0578877226",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.6807270606",
+         "Score":"-0.5715768369",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.70788352",
+         "Score":"0.1028087166",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8787070379",
+         "Score":"-0.2309170529",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 7--Upper West Side & West Side PUMA":{
+      "Full Time":{
+         "Ratio":"1.0239556369",
+         "Score":"0.1763569521",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.7297609708",
+         "Score":"0.393680449",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"6.5492611726",
+         "Score":"-0.2106160035",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.460069065",
+         "Score":"-1.2001246686",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"0.9936015865",
+         "Score":"0.2148746121",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.310854056",
+         "Score":"0.4143928738",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.0126648932",
+         "Score":"-0.0137672669",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 4 & 5--Chelsea, Clinton & Midtown Business District PUMA":{
+      "Full Time":{
+         "Ratio":"0.9733219066",
+         "Score":"-0.1240233619",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"4.1593817378",
+         "Score":"-0.470717093",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"3.8698542964",
+         "Score":"0.0389780164",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.9372192119",
+         "Score":"0.1590451605",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.3889051629",
+         "Score":"-0.0040388694",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"3.2901623709",
+         "Score":"-0.3496045923",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"0.8017678126",
+         "Score":"-0.3556378934",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 6--Murray Hill, Gramercy & Stuyvesant Town PUMA":{
+      "Full Time":{
+         "Ratio":"0.999727373",
+         "Score":"0.0326248298",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.1792731174",
+         "Score":"0.0283471303",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9979148384",
+         "Score":"0.331937624",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.5777709863",
+         "Score":"0.2801155575",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.783321371",
+         "Score":"0.0368014403",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.0251961463",
+         "Score":"0.0065462782",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 3--Chinatown & Lower East Side PUMA":{
+      "Full Time":{
+         "Ratio":"0.9451579259",
+         "Score":"-0.2911037912",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"0.5327022132",
+         "Score":"0.4433469041",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"4.2096043491",
+         "Score":"0.0073293772",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.8381783774",
+         "Score":"2.7254417614",
+         "Grade":"A"
+      },
+      "Rent Burden":{
+         "Ratio":"0.7432936",
+         "Score":"0.2541462041",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.5134207739",
+         "Score":"0.7979733518",
+         "Grade":"B"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Manhattan Community District 1 & 2--Battery Park City, Greenwich Village & Soho PUMA":{
+      "Full Time":{
+         "Ratio":"1.0560067338",
+         "Score":"0.3664973688",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"2.8819939316",
+         "Score":"-0.1487657885",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.0083494423",
+         "Score":"0.0260768178",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.669319569",
+         "Score":"-0.6040712593",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"3.0102544589",
+         "Score":"-0.1015242768",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.7158286133",
+         "Score":"0.0541089125",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8473892269",
+         "Score":"-0.2816841836",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Staten Island Community District 3--Tottenville, Great Kills & Annadale PUMA":{
+      "Full Time":{
+         "Ratio":"1.0447708118",
+         "Score":"0.2998412134",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"3.405390755",
+         "Score":"-0.2806821018",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"12.889783117",
+         "Score":"-0.801252825",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"1.0022003312",
+         "Score":"0.3441449189",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0.8520938518",
+         "Score":"0.2756003123",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.910360022",
+         "Score":"-0.1796065962",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Staten Island Community District 2--New Springville & South Beach PUMA":{
+      "Full Time":{
+         "Ratio":"1.0201725153",
+         "Score":"0.1539139042",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.3767658255",
+         "Score":"-0.0214286971",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.9976338067",
+         "Score":"0.2133804345",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.8662465412",
+         "Score":"-0.0431216277",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.0661302257",
+         "Score":"0.046602286",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.7164905585",
+         "Score":"0.3103736763",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7865342508",
+         "Score":"-0.3803319636",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Staten Island Community District 1--Port Richmond, Stapleton & Mariner's Harbor PUMA":{
+      "Full Time":{
+         "Ratio":"0.979074384",
+         "Score":"-0.0898972772",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.1968894522",
+         "Score":"0.0239071302",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.1752936889",
+         "Score":"0.0105255083",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.0102734869",
+         "Score":"0.367141432",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.3340165543",
+         "Score":"0.4084532099",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8326414093",
+         "Score":"-0.3055908476",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 1--Greenpoint & Williamsburg PUMA":{
+      "Full Time":{
+         "Ratio":"0.7608750068",
+         "Score":"-1.3843465928",
+         "Grade":"D-"
+      },
+      "Poverty":{
+         "Ratio":"3.7075859837",
+         "Score":"-0.3568470281",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"0.6890580802",
+         "Score":"0.3352778137",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.8468357279",
+         "Score":"2.7501023627",
+         "Grade":"A"
+      },
+      "Rent Burden":{
+         "Ratio":"1.6245764403",
+         "Score":"0.1158790213",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"5.0017074729",
+         "Score":"-0.7885038208",
+         "Grade":"D"
+      },
+      "Income":{
+         "Ratio":"1.096561225",
+         "Score":"0.1222312564",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 4--Bushwick PUMA":{
+      "Full Time":{
+         "Ratio":"0.5797258236",
+         "Score":"-2.4589987716",
+         "Grade":"E"
+      },
+      "Poverty":{
+         "Ratio":"1.5199451643",
+         "Score":"0.194523364",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"1.7891162723",
+         "Score":"0.2328044085",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.5794954044",
+         "Score":"-0.8599368297",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"2.0200340782",
+         "Score":"0.0538344528",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.3870787327",
+         "Score":"0.3948462362",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7167339585",
+         "Score":"-0.493480375",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 3--Bedford-Stuyvesant PUMA":{
+      "Full Time":{
+         "Ratio":"0.9386813052",
+         "Score":"-0.3295257943",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"2.0575061284",
+         "Score":"0.0590371375",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.1958078676",
+         "Score":"0.0086145569",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.6250368171",
+         "Score":"-0.7302113866",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"4.0878800026",
+         "Score":"-0.2705962719",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"0.5265967762",
+         "Score":"0.3590689952",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.1024324179",
+         "Score":"0.1317486399",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 2--Brooklyn Heights & Fort Greene PUMA":{
+      "Full Time":{
+         "Ratio":"0.916774738",
+         "Score":"-0.4594846479",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"2.2864171067",
+         "Score":"0.0013426866",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0.5614799835",
+         "Score":"0.3471620595",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1718303414",
+         "Score":"0.8273387174",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"1.8065611377",
+         "Score":"0.0873268808",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.9123069644",
+         "Score":"0.2601595923",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.2499269873",
+         "Score":"0.3708418539",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 6--Park Slope, Carroll Gardens & Red Hook PUMA":{
+      "Full Time":{
+         "Ratio":"1.0717883699",
+         "Score":"0.4601205874",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.1593499309",
+         "Score":"0.2854073581",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8987093026",
+         "Score":"0.0493490676",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.6083355671",
+         "Score":"0.2753201861",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"1.5211497295",
+         "Score":"0.1040312965",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8936924167",
+         "Score":"-0.2066252948",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 8--Crown Heights North & Prospect Heights PUMA":{
+      "Full Time":{
+         "Ratio":"1.0416564492",
+         "Score":"0.2813655213",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"3.6541132091",
+         "Score":"-0.3433698135",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"8.9066945823",
+         "Score":"-0.4302173215",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8275151656",
+         "Score":"-0.1534485709",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.8703903257",
+         "Score":"0.2342056068",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.1146657798",
+         "Score":"-0.0481667007",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.2723205267",
+         "Score":"0.4071424672",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 16--Brownsville & Ocean Hill PUMA":{
+      "Full Time":{
+         "Ratio":"1.0120088972",
+         "Score":"0.1054839316",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.294455873",
+         "Score":"0.5033942285",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"2.3313706464",
+         "Score":"4.1303078319",
+         "Grade":"A"
+      },
+      "Rent Burden":{
+         "Ratio":"4.0802607089",
+         "Score":"-0.2694008574",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.1800799482",
+         "Score":"0.2576176645",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 5--East New York & Starrett City PUMA":{
+      "Full Time":{
+         "Ratio":"0.9778403335",
+         "Score":"-0.0972181772",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.6802642625",
+         "Score":"0.154116729",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0.5660269793",
+         "Score":"0.3467384945",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9856558344",
+         "Score":"0.2970176551",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.707700584",
+         "Score":"0.2597305022",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.2461591704",
+         "Score":"0.430982875",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.0897919111",
+         "Score":"0.1112579913",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 18--Canarsie & Flatlands PUMA":{
+      "Full Time":{
+         "Ratio":"1.0508065634",
+         "Score":"0.3356477984",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"2.2204464791",
+         "Score":"0.0179698452",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.9365053635",
+         "Score":"-0.0603834244",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.0179223514",
+         "Score":"0.3889293449",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0.4172707453",
+         "Score":"0.3052969353",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.4561708885",
+         "Score":"0.3771286231",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9781858503",
+         "Score":"-0.0696588514",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 17--East Flatbush, Farragut & Rugby PUMA":{
+      "Full Time":{
+         "Ratio":"0.9997953417",
+         "Score":"0.0330280483",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.5153310866",
+         "Score":"0.4477251022",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.0719711272",
+         "Score":"0.2996084245",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.7219487588",
+         "Score":"-0.4541561699",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.2964188828",
+         "Score":"0.1673646725",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.5180331951",
+         "Score":"0.3612649929",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8500875745",
+         "Score":"-0.2773100795",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 9--Crown Heights South, Prospect Lefferts & Wingate PUMA":{
+      "Full Time":{
+         "Ratio":"1.0961680646",
+         "Score":"0.6047510605",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.5368776045",
+         "Score":"0.1902557319",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0.5107722092",
+         "Score":"0.3518856263",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"2.3988786787",
+         "Score":"4.3226055423",
+         "Grade":"A"
+      },
+      "Rent Burden":{
+         "Ratio":"2.2998500656",
+         "Score":"0.0099332595",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"3.3363125638",
+         "Score":"-0.3614390944",
+         "Grade":"C-"
+      },
+      "Income":{
+         "Ratio":"1.1764831706",
+         "Score":"0.2517871779",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 7--Sunset Park & Windsor Terrace PUMA":{
+      "Full Time":{
+         "Ratio":"1.004921018",
+         "Score":"0.0634356886",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.887080126",
+         "Score":"0.3540299161",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.7744577937",
+         "Score":"0.3273225987",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.9438343313",
+         "Score":"0.1778884342",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.6904247136",
+         "Score":"0.2624409668",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"2.3354151374",
+         "Score":"-0.1047744539",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.0640492137",
+         "Score":"0.0695282903",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 10--Bay Ridge & Dyker Heights PUMA":{
+      "Full Time":{
+         "Ratio":"1.0501272865",
+         "Score":"0.3316180456",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"2.1621533013",
+         "Score":"0.0326619884",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.4354260636",
+         "Score":"0.172598898",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.9337294509",
+         "Score":"0.1491045207",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.2831967708",
+         "Score":"0.0125460463",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.4104819677",
+         "Score":"0.1324103297",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.7691610165",
+         "Score":"-0.4084945084",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 12--Borough Park, Kensington & Ocean Parkway PUMA":{
+      "Full Time":{
+         "Ratio":"1.132438841",
+         "Score":"0.8199243679",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"3.1933393987",
+         "Score":"-0.22723693",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"13.4096279215",
+         "Score":"-0.8496777789",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"0.9062552834",
+         "Score":"0.0708439148",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"1.6545414832",
+         "Score":"0.1111777133",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.2888532713",
+         "Score":"0.4200346342",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8156215597",
+         "Score":"-0.333180545",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 14--Flatbush & Midwood PUMA":{
+      "Full Time":{
+         "Ratio":"0.9370992375",
+         "Score":"-0.3389112768",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"1.8494333031",
+         "Score":"0.1114795651",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.0791396089",
+         "Score":"0.2057879479",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.5949881449",
+         "Score":"-0.8158055102",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"1.7856056585",
+         "Score":"0.0906146506",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.2557229017",
+         "Score":"0.1720958949",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.803237914",
+         "Score":"-0.353254814",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 15--Sheepshead Bay, Gerritsen Beach & Homecrest PUMA":{
+      "Full Time":{
+         "Ratio":"1.0991061217",
+         "Score":"0.6221808352",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.1665321101",
+         "Score":"0.2835971702",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"3.1455510029",
+         "Score":"0.1064488333",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.8407695761",
+         "Score":"-0.1156931706",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.7383090241",
+         "Score":"0.2549282496",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"2.8977666973",
+         "Score":"-0.2489808002",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.9390555624",
+         "Score":"-0.1330902464",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 11--Bensonhurst & Bath Beach PUMA":{
+      "Full Time":{
+         "Ratio":"1.0957377336",
+         "Score":"0.6021981582",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.1101481531",
+         "Score":"0.2978081157",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"1.2371723364",
+         "Score":"0.2842194837",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"0.8317003626",
+         "Score":"-0.1415269701",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"0.9418237258",
+         "Score":"0.2229982004",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.2885598336",
+         "Score":"0.4201098818",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"1.0029651071",
+         "Score":"-0.0294909171",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Brooklyn Community District 13--Brighton Beach & Coney Island PUMA":{
+      "Full Time":{
+         "Ratio":"1.1235741928",
+         "Score":"0.7673355937",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0.4767783374",
+         "Score":"0.4574418913",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"2.1867464962",
+         "Score":"0.1957640744",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.0867351115",
+         "Score":"0.5849435931",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.8288016677",
+         "Score":"0.0838374955",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Income":{
+         "Ratio":"1.4052172109",
+         "Score":"0.6225720623",
+         "Grade":"B-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 1--Astoria & Long Island City PUMA":{
+      "Full Time":{
+         "Ratio":"1.0424927889",
+         "Score":"0.2863270356",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"2.3248775316",
+         "Score":"-0.0083508332",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"4.6019759935",
+         "Score":"-0.029221106",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.2461557826",
+         "Score":"1.039055926",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"2.3986675933",
+         "Score":"-0.0055705272",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.4458958663",
+         "Score":"-0.1331055254",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.913549526",
+         "Score":"-0.1744363126",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 3--Jackson Heights & North Corona PUMA":{
+      "Full Time":{
+         "Ratio":"1.130216937",
+         "Score":"0.8067431106",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"2.0288990818",
+         "Score":"0.0662472235",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"6.2085101073",
+         "Score":"-0.1788741173",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.0392767135",
+         "Score":"0.4497575871",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.90327409",
+         "Score":"0.0721532874",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.3142680977",
+         "Score":"-0.0993516231",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.9761827126",
+         "Score":"-0.072905999",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 7--Flushing, Murray Hill & Whitestone PUMA":{
+      "Full Time":{
+         "Ratio":"1.0376704642",
+         "Score":"0.2577190031",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"1.6056625267",
+         "Score":"0.1729192619",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"3.210758941",
+         "Score":"0.1003745369",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.9537729527",
+         "Score":"0.2061987562",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"2.7497785951",
+         "Score":"-0.0606574151",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"0.6470877263",
+         "Score":"0.3281709575",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.9188782955",
+         "Score":"-0.165798214",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 11--Bayside, Douglaston & Little Neck PUMA":{
+      "Full Time":{
+         "Ratio":"1.0395057286",
+         "Score":"0.2686065537",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"2.3753294152",
+         "Score":"-0.021066666",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"2.1232781045",
+         "Score":"0.2016763273",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"0.9537773724",
+         "Score":"0.2062113458",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Unemployment":{
+         "Ratio":"0",
+         "Score":"0.4941065811",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.806290476",
+         "Score":"-0.3483065175",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 13--Queens Village, Cambria Heights & Rosedale PUMA":{
+      "Full Time":{
+         "Ratio":"1.0586876117",
+         "Score":"0.3824014495",
+         "Grade":"B-"
+      },
+      "Poverty":{
+         "Ratio":"0.6301092064",
+         "Score":"0.4187965613",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.3543635536",
+         "Score":"0.3664555169",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.1191907772",
+         "Score":"0.6773940764",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"0",
+         "Score":"0.3707638295",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"0.3364880513",
+         "Score":"0.4078194328",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.8309742445",
+         "Score":"-0.3082933728",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 8--Briarwood, Fresh Meadows & Hillcrest PUMA":{
+      "Full Time":{
+         "Ratio":"1.0186063731",
+         "Score":"0.1446228978",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"7.3202649058",
+         "Score":"-1.26738233",
+         "Grade":"D-"
+      },
+      "Working Poor":{
+         "Ratio":"12.5368057681",
+         "Score":"-0.7683720273",
+         "Grade":"D"
+      },
+      "Homeownership":{
+         "Ratio":"1.0219611096",
+         "Score":"0.4004338122",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"4.8253807554",
+         "Score":"-0.3863050396",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"1.7630125586",
+         "Score":"0.0420093206",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8825267005",
+         "Score":"-0.2247252628",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 4--Elmhurst & South Corona PUMA":{
+      "Full Time":{
+         "Ratio":"0.9065378855",
+         "Score":"-0.5202139078",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"4.1737128397",
+         "Score":"-0.4743290869",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"0.6163885222",
+         "Score":"-0.7548461932",
+         "Grade":"D"
+      },
+      "Rent Burden":{
+         "Ratio":"12.5183699071",
+         "Score":"-1.5932818342",
+         "Grade":"D-"
+      },
+      "Unemployment":{
+         "Ratio":"2.7628945877",
+         "Score":"-0.214394937",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.8525384548",
+         "Score":"-0.2733371275",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 6--Forest Hills & Rego Park PUMA":{
+      "Full Time":{
+         "Ratio":"1.0111082593",
+         "Score":"0.1001409732",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.3017045455",
+         "Score":"0.2495284702",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"0.4911311058",
+         "Score":"0.3537152483",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0202897455",
+         "Score":"0.3956729049",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.3071950991",
+         "Score":"0.1656739587",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.0207069767",
+         "Score":"-0.0240724211",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.0215471107",
+         "Score":"0.0006310797",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 2--Sunnyside & Woodside PUMA":{
+      "Full Time":{
+         "Ratio":"0.9556129031",
+         "Score":"-0.2290805249",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"1.2151417852",
+         "Score":"0.2713456454",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.764569727",
+         "Score":"0.3282436989",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.0572158225",
+         "Score":"0.5008574262",
+         "Grade":"B-"
+      },
+      "Rent Burden":{
+         "Ratio":"2.5212257343",
+         "Score":"-0.0247990519",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"1.462076004",
+         "Score":"0.1191798384",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.869220349",
+         "Score":"-0.246295266",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 5--Ridgewood, Glendale & Middle Village PUMA":{
+      "Full Time":{
+         "Ratio":"0.9900483318",
+         "Score":"-0.0247952623",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"0.9265288802",
+         "Score":"0.344087299",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0.5299181521",
+         "Score":"0.3501021297",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.2035108921",
+         "Score":"0.917581273",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"0.762955963",
+         "Score":"0.2510613153",
+         "Grade":"B-"
+      },
+      "Unemployment":{
+         "Ratio":"2.6197783461",
+         "Score":"-0.1776949938",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.7851830833",
+         "Score":"-0.3825222474",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 9--Richmond Hill & Woodhaven PUMA":{
+      "Full Time":{
+         "Ratio":"0.9118514211",
+         "Score":"-0.4886918084",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"3.1728440728",
+         "Score":"-0.2220713124",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"#DIV/0!",
+         "Score":"#DIV/0!",
+         "Grade":"#DIV/0!"
+      },
+      "Homeownership":{
+         "Ratio":"0.9061128296",
+         "Score":"0.0704381328",
+         "Grade":"C"
+      },
+      "Rent Burden":{
+         "Ratio":"4.9636916973",
+         "Score":"-0.4080050699",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"13.461327489",
+         "Score":"-2.9578423293",
+         "Grade":"E"
+      },
+      "Income":{
+         "Ratio":"0.7513827155",
+         "Score":"-0.4373136788",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 12--Jamaica, Hollis & St. Albans PUMA":{
+      "Full Time":{
+         "Ratio":"0.942894288",
+         "Score":"-0.3045326308",
+         "Grade":"C-"
+      },
+      "Poverty":{
+         "Ratio":"4.8542665063",
+         "Score":"-0.6458550242",
+         "Grade":"C-"
+      },
+      "Working Poor":{
+         "Ratio":"10.8957358785",
+         "Score":"-0.6155019147",
+         "Grade":"C-"
+      },
+      "Homeownership":{
+         "Ratio":"0.6835966834",
+         "Score":"-0.5634026706",
+         "Grade":"C-"
+      },
+      "Rent Burden":{
+         "Ratio":"4.417533152",
+         "Score":"-0.3223165712",
+         "Grade":"C-"
+      },
+      "Unemployment":{
+         "Ratio":"0.2162910482",
+         "Score":"0.4386420923",
+         "Grade":"B-"
+      },
+      "Income":{
+         "Ratio":"0.7743194791",
+         "Score":"-0.4001324826",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 10--Howard Beach & Ozone Park PUMA":{
+      "Full Time":{
+         "Ratio":"0.9830487469",
+         "Score":"-0.0663197065",
+         "Grade":"C"
+      },
+      "Poverty":{
+         "Ratio":"2.7819394155",
+         "Score":"-0.1235481672",
+         "Grade":"C"
+      },
+      "Working Poor":{
+         "Ratio":"5.648267009",
+         "Score":"-0.1266859527",
+         "Grade":"C"
+      },
+      "Homeownership":{
+         "Ratio":"1.1842202412",
+         "Score":"0.8626315453",
+         "Grade":"B"
+      },
+      "Rent Burden":{
+         "Ratio":"8.7111466632",
+         "Score":"-0.9959548373",
+         "Grade":"D"
+      },
+      "Unemployment":{
+         "Ratio":"1.3407682866",
+         "Score":"0.1502873233",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"1.0392753925",
+         "Score":"0.0293691675",
+         "Grade":"C"
+      },
+      "Naturalization":{
+
+      }
+   },
+   "NYC-Queens Community District 14--Far Rockaway, Breezy Point & Broad Channel PUMA":{
+      "Full Time":{
+         "Ratio":"1.1437469035",
+         "Score":"0.8870084905",
+         "Grade":"B"
+      },
+      "Poverty":{
+         "Ratio":"0.4146419537",
+         "Score":"0.4731026716",
+         "Grade":"B-"
+      },
+      "Working Poor":{
+         "Ratio":"0",
+         "Score":"0.3994654433",
+         "Grade":"B-"
+      },
+      "Homeownership":{
+         "Ratio":"1.3204489849",
+         "Score":"1.2506813018",
+         "Grade":"A-"
+      },
+      "Rent Burden":{
+         "Ratio":"1.2553101105",
+         "Score":"0.1738143546",
+         "Grade":"C"
+      },
+      "Unemployment":{
+         "Ratio":"2.1440119445",
+         "Score":"-0.05569207",
+         "Grade":"C"
+      },
+      "Income":{
+         "Ratio":"0.5979149098",
+         "Score":"-0.6860896919",
+         "Grade":"C-"
+      },
+      "Naturalization":{
+
+      }
+   }
+}

@@ -1,10 +1,17 @@
 import React from 'react'
 import * as d3 from 'd3'
+import * as topojson from 'topojson'
+// Redux
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router'
+import { loadAnalyses } from 'store/modules/analysis'
+// Components
 import ResponsiveMap from 'components/ResponsiveMap'
 import Sidebar from 'components/Sidebar/Sidebar'
-import * as topojson from 'topojson'
-import './DataExplorer.scss'
+// CONST Data sources
 import regions from '../assets/regions'
+// Styling
+import './DataExplorer.scss'
 
 const cats = [
   'Full Time',
@@ -16,6 +23,8 @@ const cats = [
   'Income',
   'Naturalization'
 ]
+
+const calc = ['Ratio', 'Score', 'Grade']
 
 const analyses = {
   'nativity': {
@@ -42,127 +51,77 @@ class DataExplorer extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: [],
       puma_data: [],
       activeCategory: cats[0],
-      activeAnalysis: this.props.params.analysis || 'nativity',
+      activeAnalysis: this.props.params.type || 'nativity',
+      educationLevel: 'babs',
       activeRegions: null,
-      geoData: null
+      geoData: null,
+      childGeo: null,
+      regionGeo: null
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
     this.setActiveAnalysis = this.setActiveAnalysis.bind(this)
+    this.educationClick = this.educationClick.bind(this)
     this.mapClick = this.mapClick.bind(this)
   }
 
   componentDidMount () {
-    d3.csv('/final/nativity_region_babs.csv', (err, data) => {
+    d3.json('/geo/ny_puma_geo.json', (err, geodata) => {
       if (err) console.log('error', err)
-      this.setState({
-        data:data
-      })
-    })
+      var regionGeo = {
+        'type': 'FeatureCollection',
+        'features': []
+      }
 
-    d3.csv('/final/nativity_puma_babs.csv', (err, pumas) => {
-      if (err) console.log('error', err)
-      console.log('test', pumas)
-      this.setState({
-        puma_data: pumas.reduce((prev, current) => {
-          current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
-          prev[current.Regions] = current
-          return prev
-        }, {})
+      regionGeo.features = Object.keys(regions).map(region => {
+        return {
+          'type': 'Feature',
+          'properties': {
+            region: region,
+            geoType: 'region'
+          },
+          'geometry': topojson.merge(
+            geodata, geodata.objects.collection.geometries
+              .filter(function (d) {
+                return regions[region].includes(d.properties.NAMELSAD10)
+              })
+            )
+        }
       })
-    })
-    d3.json('geo/ny_puma_geo.json', (err, geodata) => {
-      if (err) console.log('error', err)
       this.setState({
-        geoData: geodata
+        geoData: geodata,
+        childGeo: topojson.feature(geodata, geodata.objects.collection),
+        regionGeo: regionGeo
       })
     })
   }
 
-  regionDataTable () {
-    var rows = Object.keys(this.state.puma_data).filter(puma => {
-      return regions[this.state.activeRegion].includes(puma)
-    })
-    .map(row => {
-      return (
-        <tr key={row}>
-          {
-            Object.keys(this.state.puma_data[row]).filter(col => { // Filter for Active category
-              return col.includes(this.state.activeCategory) || col === 'Regions'
-            })
-            .map(col => {
-              return (
-                <td>
-                  {
-                    isNaN(parseInt(this.state.puma_data[row][col]))
-                    ? this.state.puma_data[row][col]
-                    : (this.state.puma_data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
-                  }
-                </td>
-              )
-            })
-          }
-        </tr>
-      )
-    })
-
-    var header = this.state.data.columns.filter(col => {
-      return col.includes(this.state.activeCategory) || col === 'Regions'
-    })
-    .map(col => {
-      return (
-        <th>{col.split('_')[0]}</th>
-      )
-    })
-    return (
-      <table className='table table-hover'>
-        <thead>
-          <tr>
-            {header}
-          </tr>
-        </thead>
-        <tbody>
-          {rows}
-        </tbody>
-      </table>
-    )
+  componentWillReceiveProps (nextProps) {
+    if (nextProps.params.typ && nextProps.params.type !== this.state.activeAnalysis) {
+      this.setState({ activeAnalysis: nextProps.params.type })
+    }
   }
 
   dataTable () {
-    if (!this.state.data.columns) return
-
-    var header = this.state.data.columns.filter(col => {
-      return col.includes(this.state.activeCategory) || col === 'Regions'
-    })
-    .map(col => {
-      return (
-        <th>{col.split('_')[0]}</th>
-      )
-    })
-
-    var rows = Object.keys(this.state.data)
-      .filter(row => row !== 'columns')
-      .map(row => {
+    if (!this.props.analyses[this.state.activeAnalysis] ||
+        !this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]) {
+      this.props.loadAnalyses(this.state.activeAnalysis, this.state.educationLevel)
+      return <span />
+    }
+    var data = this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]
+    var regionFilter = this.state.activeRegion &&
+      regions[this.state.activeRegion]
+      ? regions[this.state.activeRegion] : Object.keys(regions)
+    var rows = Object.keys(data)
+      .filter(region => regionFilter.includes(region))
+      .map(region => {
         return (
-          <tr key={row}>
-            {
-              Object.keys(this.state.data[row]).filter(col => { // Filter for Active category
-                return col.includes(this.state.activeCategory) || col === 'Regions'
-              })
-              .map(col => {
-                return (
-                  <td>
-                    {
-                      isNaN(parseInt(this.state.data[row][col]))
-                      ? this.state.data[row][col]
-                      : (this.state.data[row][col] * 100).toLocaleString('en-IN', { maximumSignificantDigits: 4 })
-                    }
-                  </td>
-                )
-              })
-            }
+          <tr key={region}>
+            <td>{region}</td>
+            <td>{data[region][this.state.activeCategory].Ratio}</td>
+            <td>{data[region][this.state.activeCategory].Score}</td>
+            <td>{data[region][this.state.activeCategory].Grade}</td>
           </tr>
         )
       })
@@ -171,7 +130,8 @@ class DataExplorer extends React.Component {
       <table className='table table-hover'>
         <thead>
           <tr>
-            {header}
+            <th>Region</th>
+            {calc.map(header => <th key={header}>{header}</th>)}
           </tr>
         </thead>
         <tbody>
@@ -181,18 +141,41 @@ class DataExplorer extends React.Component {
     )
   }
 
+  educationClick (level) {
+    if (level !== this.state.educationLevel) {
+      this.setState({
+        educationLevel:level
+      })
+    }
+  }
+
   renderLegend (scale) {
     var colors = scale.domain().map(grade => {
-      return <div style={{ backgroundColor:scale(grade), width:(100 / scale.domain().length) + '%', height:20 }} />
+      return (
+        <div
+          key={grade}
+          style={{ backgroundColor:scale(grade), width:(100 / scale.domain().length) + '%', height:20 }}
+        />
+      )
     })
 
     var grades = scale.domain().map(grade => {
-      return <div style={{ textAlign:'center', width:(100 / scale.domain().length) + '%', height:20 }}>{grade}</div>
+      return (
+        <div
+          key={grade}
+          style={{ textAlign:'center', width:(100 / scale.domain().length) + '%', height:20 }}
+        >
+          {grade}
+        </div>
+      )
     })
+    var babsClass = 'btn btn-primary col-xs-6'
+    babsClass += this.state.educationLevel === 'babs' ? ' active' : ''
+    var hsClass = 'btn btn-primary col-xs-6'
+    hsClass += this.state.educationLevel === 'hs' ? ' active' : ''
     return (
       <div className='legendContainer'>
         <h5>{this.state.activeCategory}
-          <span style={{ fontSize:'.8em', float:'right' }}> {this.state.activeRegion}</span>
         </h5>
         <div className='legendRow'>
           {colors}
@@ -200,22 +183,54 @@ class DataExplorer extends React.Component {
         <div className='legendRow'>
           {grades}
         </div>
+        <div className='row'>
+          <div className='col-xs-12'>
+           Educational Attainment
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-xs-12'>
+            <div className='btn-group btn-block' data-toggle='buttons'>
+              <label className={babsClass} onClick={this.educationClick.bind(null, 'babs')}>
+                <input type='radio' name='options' autoComplete='off' /> BACHELORS
+              </label>
+              <label className={hsClass} onClick={this.educationClick.bind(null, 'hs')}>
+                <input type='radio' name='options' autoComplete='off' /> HIGH SCHOOL
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }
 
   mapClick (d) {
-    var nextRegion = d.properties.region
+    var nextRegion = null
+    d3.selectAll('.mapActive').classed('mapActive', false)
     if (this.state.activeRegion === d.properties.region) {
       nextRegion = null
+      d3.selectAll('.mapActive').classed('mapActive', false)
+    } else if (d.properties.geoType === 'region') {
+      nextRegion = d.properties.region
+      d3.selectAll('.region').sort(d => {
+        return d.properties.region === nextRegion ? 1 : 0
+      })
+      d3.select('.' + d.properties.region.split(' ').join('_')).classed('mapActive', true)
     }
+
     this.setState({
       activeRegion:nextRegion
     })
   }
 
   renderMap () {
-    if (this.state.data.length === 0 || !this.state.geoData) return
+    if (!this.props.analyses[this.state.activeAnalysis] ||
+        !this.props.analyses[this.state.activeAnalysis][this.state.educationLevel] ||
+        !this.state.childGeo || !this.state.regionGeo) {
+      return <div style={{ minHeight:'100vh' }}> Loading ... </div>
+    }
+
+    var data = this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]
     var regionGeo = {
       'type': 'FeatureCollection',
       'features': []
@@ -225,36 +240,50 @@ class DataExplorer extends React.Component {
       .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E', 'E-'])
       .range(Blues)
 
-    regionGeo.features = Object.keys(regions).map(region => {
-      var regionGrade = this.state.data
-        .filter(reg => reg.Regions === region)
-      regionGrade = regionGrade[0] || {}
-      regionGrade = regionGrade['Grades_' + this.state.activeCategory] || 'E-'
+    regionGeo.features = this.state.regionGeo.features.map(d => {
+      var regionGrade = data[d.properties.region] &&
+        data[d.properties.region][this.state.activeCategory] &&
+        data[d.properties.region][this.state.activeCategory].Grade
+        ? data[d.properties.region][this.state.activeCategory].Grade : 'E-'
+
       regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
-      return {
-        'type': 'Feature',
-        'properties': { region: region, fillColor:gradeScale(regionGrade), grade:regionGrade },
-        'geometry': topojson.merge(
-          this.state.geoData, this.state.geoData.objects.collection.geometries
-            .filter(function (d) {
-              return regions[region].includes(d.properties.NAMELSAD10)
-            })
-          )
-      }
+      d.properties.fillColor = gradeScale(regionGrade)
+      d.properties.grade = regionGrade
+      return d
     })
-    var childGeo = null
+
+    var childGeo =  {
+      'type': 'FeatureCollection',
+      'features': []
+    }
     if (this.state.activeRegion) {
-      childGeo = topojson.feature(this.state.geoData, this.state.geoData.objects.collection)
-      childGeo.features = childGeo.features.filter(puma => regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
+      childGeo.features = this.state.childGeo.features
+        .filter(puma => regions[this.state.activeRegion] &&
+          regions[this.state.activeRegion].includes(puma.properties.NAMELSAD10))
+        .map(d => {
+          var region = d.properties.NAMELSAD10
+          var regionGrade = data[region] &&
+            data[region][this.state.activeCategory] &&
+            data[region][this.state.activeCategory].Grade
+            ? data[region][this.state.activeCategory].Grade : 'E-'
+          d.properties.fillColor = gradeScale(regionGrade)
+          d.properties.grade = regionGrade
+          d.properties.geoType = 'puma'
+          d.properties.region = region
+          return d
+        })
     }
     return (
       <div>
         {this.renderLegend(gradeScale)}
+        <div style={{ fontSize:'2.1em', position:'absolute', top: 15, right:15 }}> {this.state.activeRegion}</div>
         <ResponsiveMap
           geo={regionGeo}
           click={this.mapClick}
           activeRegion={this.state.activeRegion}
           activeCategory={this.state.activeCategory}
+          activeAnalysis={this.state.activeAnalysis}
+          educationLevel={this.state.educationLevel}
           childGeo={childGeo}
         />
       </div>
@@ -266,29 +295,17 @@ class DataExplorer extends React.Component {
   }
 
   setActiveAnalysis (cat) {
+    this.props.router.push('/data/' + cat)
     this.setState({ activeAnalysis:cat })
   }
 
-  joinData(regions, pumas) {
-    if(!regions || ! pumas) return
-    
-    regions = regions.reduce((prev, current) => {
-          current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
-          prev[current.Regions] = current
-          return prev
-        }, {})
-    console.log('regions', regions)
-    console.log('pumas', pumas)
-
-  }
   render () {
-    this.joinData(this.state.data, this.state.puma_data)
     return (
       <div className='container-fluid text-center'>
         <div className='row'>
           <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
             {this.renderMap()}
-            {this.state.activeRegion ? this.regionDataTable() : this.dataTable()}
+            {this.dataTable()}
 
           </div>
           <div className='col-md-3'>
@@ -307,4 +324,51 @@ class DataExplorer extends React.Component {
   }
 }
 
-export default DataExplorer
+DataExplorer.propTypes = {
+  params : React.PropTypes.object.isRequired,
+  loadAnalyses : React.PropTypes.func.isRequired,
+  analyses : React.PropTypes.object.isRequired
+}
+
+const mapStateToProps = (state) => ({
+  analyses : state.analysis
+})
+
+export default connect(mapStateToProps, { loadAnalyses })( withRouter(DataExplorer) )
+
+// joinData (regions, pumas) {
+//   if (!regions || !pumas) return
+//   regions = regions.reduce((prev, current) => {
+//     current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
+//     prev[current.Regions] = current
+//     return prev
+//   }, {})
+//   var output = {}
+//   Object.keys(regions).forEach(reg => {
+//     var row = {}
+//     cats.forEach(currentCat => {
+//       row[currentCat] = {}
+//       Object.keys(regions[reg]).filter(col => { // Filter for Active category
+//         return col.includes(currentCat)
+//       })
+//       .map((col, i) => {
+//         row[currentCat][calc[i]] = regions[reg][col]
+//       })
+//     })
+//     output[reg] = row
+//   })
+//   Object.keys(pumas).forEach(reg => {
+//     var row = {}
+//     cats.forEach(currentCat => {
+//       row[currentCat] = {}
+//       Object.keys(pumas[reg]).filter(col => { // Filter for Active category
+//         return col.includes(currentCat)
+//       })
+//       .map((col, i) => {
+//         row[currentCat][calc[i]] = pumas[reg][col]
+//       })
+//     })
+//     output[reg] = row
+//   })
+//   console.log('output', JSON.stringify(output))
+// }

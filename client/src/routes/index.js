@@ -1,7 +1,7 @@
 // We only need to import the modules necessary for initial render
 import CoreLayout from '../layouts/CoreLayout/CoreLayout'
 import Home from './Home'
-import DataExplorer from './DataExplorer'
+import { Explorer, ExplorerType } from './DataExplorer'
 import Login from './Login/index'
 import About from './About'
 import Methods from './Methods'
@@ -15,7 +15,8 @@ export const createRoutes = (store) => ({
   component   : CoreLayout,
   indexRoute  : Home,
   childRoutes : [
-    DataExplorer(store),
+    Explorer(store),
+    ExplorerType(store),
     Login(store),
     About(store),
     Methods(store),

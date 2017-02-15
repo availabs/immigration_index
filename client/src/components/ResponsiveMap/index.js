@@ -42,27 +42,32 @@ export class ResponsiveMap extends React.Component {
     if (!nextProps.activeRegion) {
       this.reset()
     }
-
     if (this.props.activeCategory !== nextProps.activeCategory) {
+      this.updateColor(nextProps)
+    }
+    if (this.props.activeAnalysis !== nextProps.activeAnalysis) {
+      this.updateColor(nextProps)
+    }
+    if (this.props.educationLevel !== nextProps.educationLevel) {
       this.updateColor(nextProps)
     }
   }
 
   updateColor (props) {
-    console.log('updateColor')
     let g = d3.select('#mapContainer')
     g.selectAll('.state')
-      .data(props.geo.features)
-      .enter().append('path')
-      .attr('class', d => { return 'region' })
-      .attr('d', path)
       .attr('fill', d => {
         return d.properties.fillColor || '#efefef'
       })
       .on('mouseover', this.mouseover || null)
-      .on('mouseout', this.mouseout || null)
-      .on('mousemove', this.mousemove)
-      .on('click', props.click || null)
+      
+    if (props.childGeo) {
+      g.selectAll('.puma')
+        .attr('fill', d => {
+          return d.properties.fillColor || '#7EC0EE'
+        })
+        .on('mouseover', this.mouseover || null)
+    }
   }
 
   reset () {
@@ -75,18 +80,15 @@ export class ResponsiveMap extends React.Component {
   }
 
   zoomto (props) {
-    // var region = d3.select('.' + props.activeRegion)
     if (!props.activeRegion) return
     var region = props.geo.features.filter(d => d.properties.region === props.activeRegion)[0]
-    console.log(path.bounds(region), region)
-    var bounds = path.bounds(region),
-      dx = bounds[1][0] - bounds[0][0],
-      dy = bounds[1][1] - bounds[0][1],
-      x = (bounds[0][0] + bounds[1][0]) / 2,
-      y = (bounds[0][1] + bounds[1][1]) / 2,
-      scale = 0.9 / Math.max(dx / this.state.width, dy / this.state.height),
-      translate = [this.state.width / 2 - scale * x, this.state.height / 2 - scale * y]
-    let divName = this.props.mapDiv || 'mapDiv'
+    var bounds = path.bounds(region)
+    var dx = bounds[1][0] - bounds[0][0]
+    var dy = bounds[1][1] - bounds[0][1]
+    var x = (bounds[0][0] + bounds[1][0]) / 2
+    var y = (bounds[0][1] + bounds[1][1]) / 2
+    var scale = 0.9 / Math.max(dx / this.state.width, dy / this.state.height)
+    var translate = [this.state.width / 2 - scale * x, this.state.height / 2 - scale * y]
     let g = d3.select('#mapContainer')
     g.selectAll('.puma').remove()
     g.transition()
@@ -96,14 +98,18 @@ export class ResponsiveMap extends React.Component {
     if (props.childGeo) {
       g.selectAll('.puma')
           .data(props.childGeo.features)
-          .enter().append('path')
+          .enter()
+          .append('path')
           .attr('class', d => { return 'puma' })
           // .attr('id',function(d){return 'msa'+d.properties.id})
-          .attr('fill', props.childColor || '#7EC0EE')
+          .attr('fill', d => {
+            return d.properties.fillColor || '#7EC0EE'
+          })
           .attr('d', path)
           .on('click', props.click || null)
-          .on('mouseover', props.mouseover || null)
-          .on('mouseout', props.mouseout || null)
+          .on('mouseover', this.mouseover || null)
+          .on('mouseout', this.mouseout || null)
+          .on('mousemove', this.mousemove)
     }
   }
 
@@ -113,9 +119,7 @@ export class ResponsiveMap extends React.Component {
       props.geo.type === 'FeatureCollection'
       ? props.geo : topojson.feature(props.geo, props.geo['objects']['collection'])
     let childrenGeo = null
-    // console.log('_drawGraph', props.children)grap
     if (props.children) {
-      // let newChild = Object.assign({}, props.children)
       childrenGeo = props.geo.type &&
         props.children.type === 'FeatureCollection'
         ? props.children : topojson.feature(props.children, props.children['objects']['collection'])
@@ -156,7 +160,7 @@ export class ResponsiveMap extends React.Component {
     g.selectAll('.state')
       .data(geo.features)
       .enter().append('path')
-      .attr('class', d => { return 'region' })
+      .attr('class', d => { return 'state region ' + d.properties.region.split(' ').join('_') })
       .attr('d', path)
       .attr('fill', d => {
         return d.properties.fillColor || '#efefef'

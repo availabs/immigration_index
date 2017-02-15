@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router'
+import { Link } from 'react-router'
 import './HomeView.scss'
 
 
@@ -44,22 +44,22 @@ class HomeView extends React.Component {
         </div>
         <div className='studiesContainer'>
           <div className='studiesDiv'>
-            <div className='studiesbutton'><Link to='data'>The Effects of Nativity Status</Link>
+            <div className='studiesbutton'><Link to='/data/nativity'>The Effects of Nativity Status</Link>
             </div>
           </div>
           <div className='studiesDiv'>
             <div className='studiesbutton'>
-              <p className='studiesContent'><Link to='data'>The Effects of Race</Link></p>
+              <p className='studiesContent'><Link to='/data/race'>The Effects of Race</Link></p>
             </div>
           </div>
           <div className='studiesDiv'>
             <div className='studiesbutton'>
-              <p className='studiesContent'><Link to='data'>The Effects of Gender</Link></p>
+              <p className='studiesContent'><Link to='/data/gender'>The Effects of Gender</Link></p>
             </div>
           </div>
           <div className='studiesDiv'>
             <div className='studiesbutton'>
-              <p className='studiesContent'><Link to='data'>Economic Outcomes of Foreign-born Women</Link></p>
+              <p className='studiesContent'><Link to='/data/women'>Economic Outcomes of Foreign-born Women</Link></p>
             </div>
           </div>
         </div>

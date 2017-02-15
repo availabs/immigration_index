@@ -14,7 +14,7 @@ export class ToolTip extends React.Component {
 
 ToolTip.propTypes = {
   geo: React.PropTypes.object,
-  children: React.PropTypes.object,
+  children: React.PropTypes.array,
   mapDiv: React.PropTypes.string
 }
 

@@ -33,7 +33,15 @@
 }
 
 .puma{
-    fill: none;
     stroke: white;
     stroke-width: 0.5px;
+}
+
+.mapActive{
+    stroke: #000;
+    stroke-width: 4px;
+}
+.mapActive:hover{
+    stroke: #000;
+    stroke-width: 4px;
 }
