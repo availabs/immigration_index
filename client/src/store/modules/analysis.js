@@ -18,9 +18,9 @@ export const dataSources = {
     babs: 'group9.json',
     hs: 'group10.json'
   },
-  women: {
-    babs: 'group5.json',
-    hs: 'group6.json'
+  vulnerable: {
+    babs: 'group11.json',
+    hs: 'group11.json'
   }
 }
 
@@ -38,10 +38,9 @@ export function receiveAnalysis (type, education, value) {
 
 export const loadAnalyses = (type, education) => {
   return (dispatch) => {
-    return fetch(`/json_data/${dataSources[type][education]}`)
+    return fetch(`/json/${dataSources[type][education]}`)
       .then(response => response.json())
       .then(json => {
-        console.log('got data', json)
         return dispatch(receiveAnalysis(type, education, json))
       })
   }

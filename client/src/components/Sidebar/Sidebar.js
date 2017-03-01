@@ -17,7 +17,6 @@ export class Sidebar extends React.Component {
         >{cat}</a>
       )
     })
-   
 
     var cats = Object.keys(this.props.analyses).map(key => {
       return (

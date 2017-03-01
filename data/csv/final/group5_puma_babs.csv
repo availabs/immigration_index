@@ -1,0 +1,151 @@
+,FT Work Access,Unemployment,Poverty,Working Poor,Income,Rent Burden,Homeownership,FT Work Access,Unemployment,Poverty,Working Poor,Income,Rent Burden,Homeownership,FT Work Access,Unemployment,Poverty,Working Poor,Income,Rent Burden,Homeownership
+,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS,BABS
+,Ratio,Ratio,Ratio,Ratio,Ratio,Ratio,Ratio,SCORES,SCORES,SCORES,SCORES,SCORES,SCORES,SCORES,GRADES,GRADES,GRADES,GRADES,GRADES,GRADES,GRADES
+,,,,,,,,,,,,,,,GRADES,GRADES,GRADES,GRADES,GRADES,GRADES,GRADES
+,FT Work Access_BABS_Ratio,FT Work Access_BABS_Ratio,,Poverty_BABS_Ratio,,Income_BABS_Ratio,,Homeownership_BABS_Ratio,,Unemployment_BABS_SCORES,,Working Poor_BABS_SCORES,,Rent Burden_BABS_SCORES,,FT Work Access_BABS_GRADES,,Poverty_BABS_GRADES,,Income_BABS_GRADES,
+Total GEOG-101,1.02,1.55,1.84,2.20,0.94,1.60,0.76,,,,,,,,,,,,,,
+"St. Lawrence County PUMA, New York",1.41,0.00,0.00,0.00,1.87,0.00,0.47,1.73,0.30,0.75,0.50,1.15,0.47,-1.10,A-,B-,B,B-,B,B-,D
+"Clinton, Franklin, Essex & Hamilton Counties PUMA; New York",0.47,0.00,0.13,0.00,0.75,#DIV/0!,1.18,-2.18,0.30,0.71,0.50,-0.35,#DIV/0!,0.71,E,B-,B-,B-,C-,#DIV/0!,B-
+"Warren & Washington Counties PUMA, New York",1.22,#DIV/0!,0.00,0.00,0.26,#DIV/0!,0.00,0.94,#DIV/0!,0.75,0.50,-1.01,#DIV/0!,-2.28,B,#DIV/0!,B,B-,D,#DIV/0!,E
+"Herkimer (North & Central) & Oneida (Outer) Counties PUMA, New York",#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!
+"Oneida County (Central)--Greater Utica & Rome Cities PUMA, New York",0.68,0.00,0.72,3.64,0.61,#DIV/0!,0.78,-1.31,0.30,0.52,-0.24,-0.54,#DIV/0!,-0.30,D-,B-,B-,C,C-,#DIV/0!,C-
+"Otsego, Schoharie, Oneida (South) & Herkimer (South) Counties PUMA; New York",0.85,0.00,0.79,0.00,8.09,0.00,0.98,-0.60,0.30,0.50,0.50,9.46,0.47,0.20,C-,B-,B-,B-,A,B-,C
+"Jefferson & Lewis Counties PUMA, New York",0.00,0.00,5.10,#DIV/0!,#VALUE!,#DIV/0!,1.44,-4.12,0.30,-0.87,#DIV/0!,#VALUE!,#DIV/0!,1.38,E,B-,D,#DIV/0!,#VALUE!,#DIV/0!,A-
+"Oswego County PUMA, New York",0.89,0.00,0.00,#DIV/0!,0.94,0.00,0.86,-0.43,0.30,0.75,#DIV/0!,-0.09,0.47,-0.11,C-,B-,B,#DIV/0!,C,B-,C
+"Onondaga County (Central)--Syracuse City PUMA, New York",0.72,0.00,1.50,0.00,1.04,4.36,0.21,-1.16,0.30,0.27,0.50,0.04,-0.65,-1.75,D,B-,B-,B-,C,C-,D-
+"Onondaga County (North) PUMA, New York",1.25,0.00,0.00,0.00,1.08,#DIV/0!,1.20,1.06,0.30,0.75,0.50,0.08,#DIV/0!,0.75,B,B-,B,B-,C,#DIV/0!,B
+"Onondaga County (Central)--Syracuse City (Outer) PUMA, New York",1.10,#DIV/0!,4.39,0.00,0.85,5.63,0.57,0.43,#DIV/0!,-0.65,0.50,-0.22,-0.97,-0.84,B-,#DIV/0!,C-,B-,C,D,D
+"Cayuga & Onondaga (South) Counties PUMA, New York",#DIV/0!,#DIV/0!,0.00,#DIV/0!,#VALUE!,#DIV/0!,1.18,#DIV/0!,#DIV/0!,0.75,#DIV/0!,#VALUE!,#DIV/0!,0.71,#DIV/0!,#DIV/0!,B,#DIV/0!,#VALUE!,#DIV/0!,B-
+"Wayne & Seneca Counties PUMA, New York",1.20,0.00,0.00,0.00,3.92,#DIV/0!,1.14,0.85,0.30,0.75,0.50,3.89,#DIV/0!,0.60,B,B-,B,B-,A,#DIV/0!,B-
+"Monroe County (East) PUMA, New York",1.21,49.57,4.38,0.00,1.20,0.00,0.61,0.88,-4.65,-0.64,0.50,0.25,0.47,-0.72,B,E,C-,B-,C,B-,C-
+"Monroe County (Central)--Rochester City (East) PUMA, New York",0.87,#DIV/0!,3.37,4.62,0.68,5.12,1.56,-0.50,#DIV/0!,-0.32,-0.44,-0.44,-0.84,1.68,C-,#DIV/0!,C-,C-,C-,D,A-
+"Monroe County (Central)--Rochester City (West) PUMA, New York",0.61,0.00,5.07,0.00,0.93,35.32,0.77,-1.60,0.30,-0.86,0.50,-0.10,-8.55,-0.33,D-,B-,D,B-,C,E,C-
+"Monroe County (Central)--Greece & Gates Towns PUMA, New York",0.58,#DIV/0!,16.51,#DIV/0!,1.09,#DIV/0!,0.81,-1.71,#DIV/0!,-4.51,#DIV/0!,0.10,#DIV/0!,-0.22,D-,#DIV/0!,E,#DIV/0!,C,#DIV/0!,C
+"Monroe County (North & West) PUMA, New York",1.17,0.00,0.00,0.00,1.46,0.00,0.81,0.71,0.30,0.75,0.50,0.59,0.47,-0.22,B-,B-,B,B-,B-,B-,C
+"Monroe County (South) PUMA, New York",1.12,0.00,0.00,0.00,0.79,0.00,0.97,0.49,0.30,0.75,0.50,-0.30,0.47,0.18,B-,B-,B,B-,C-,B-,C
+"Genesee & Orleans Counties PUMA, New York",1.40,0.00,0.00,#DIV/0!,0.70,#DIV/0!,1.07,1.65,0.30,0.75,#DIV/0!,-0.42,#DIV/0!,0.43,A-,B-,B,#DIV/0!,C-,#DIV/0!,B-
+"Niagara County (Southwest)--Greater Niagara Falls & North Tonawanda Area PUMA, New York",1.33,0.00,0.00,0.00,0.31,#DIV/0!,1.41,1.39,0.30,0.75,0.50,-0.94,#DIV/0!,1.30,A-,B-,B,B-,D,#DIV/0!,A-
+"Niagara County (North & East) PUMA, New York",#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!
+"Erie County (Northwest) PUMA, New York",0.51,0.00,6.61,0.00,1.85,#DIV/0!,0.00,-2.02,0.30,-1.35,0.50,1.12,#DIV/0!,-2.28,E,B-,D-,B-,B,#DIV/0!,E
+"Erie County (North Central) PUMA, New York",1.28,0.00,6.03,#DIV/0!,1.33,2.10,0.31,1.17,0.30,-1.17,#DIV/0!,0.42,-0.07,-1.48,B,B-,D,#DIV/0!,B-,C,D-
+"Erie County (Northeast) PUMA, New York",0.87,0.00,6.09,0.00,1.57,#DIV/0!,1.09,-0.50,0.30,-1.19,0.50,0.75,#DIV/0!,0.49,C-,B-,D,B-,B,#DIV/0!,B-
+"Erie County (Central) PUMA, New York",0.99,#DIV/0!,0.00,0.00,1.00,0.00,1.15,-0.01,#DIV/0!,0.75,0.50,-0.01,0.47,0.63,C,#DIV/0!,B,B-,C,B-,B-
+"Erie County (West Central)--Buffalo City (East) PUMA, New York",0.35,0.00,11.08,0.00,0.65,#DIV/0!,0.76,-2.69,0.30,-2.78,0.50,-0.48,#DIV/0!,-0.36,E,B-,E,B-,C-,#DIV/0!,C-
+"Erie County (West Central)--Buffalo City (West) PUMA, New York",0.84,0.00,3.16,#DIV/0!,0.56,0.00,0.23,-0.63,0.30,-0.25,#DIV/0!,-0.60,0.47,-1.70,C-,B-,C-,#DIV/0!,C-,B-,D-
+"Erie County (South) PUMA, New York",1.28,#DIV/0!,0.00,0.00,0.42,#DIV/0!,0.31,1.18,#DIV/0!,0.75,0.50,-0.79,#DIV/0!,-1.50,B,#DIV/0!,B,B-,D,#DIV/0!,D-
+"Livingston & Wyoming Counties PUMA, New York",#DIV/0!,#DIV/0!,0.00,#DIV/0!,#VALUE!,#DIV/0!,1.15,#DIV/0!,#DIV/0!,0.75,#DIV/0!,#VALUE!,#DIV/0!,0.63,#DIV/0!,#DIV/0!,B,#DIV/0!,#VALUE!,#DIV/0!,B-
+"Ontario & Yates Counties PUMA, New York",1.30,0.00,0.00,0.00,1.12,0.00,0.67,1.26,0.30,0.75,0.50,0.14,0.47,-0.58,A-,B-,B,B-,C,B-,C-
+"Madison & Cortland Counties PUMA, New York",1.20,0.00,0.00,0.00,0.56,0.00,0.00,0.82,0.30,0.75,0.50,-0.60,0.47,-2.28,B,B-,B,B-,C-,B-,E
+"Fulton & Montgomery Counties PUMA, New York",0.79,0.00,0.00,0.00,0.09,0.00,0.75,-0.85,0.30,0.75,0.50,-1.23,0.47,-0.37,D,B-,B,B-,D,B-,C-
+"Schenectady County--Schenectady City PUMA, New York",0.93,0.00,10.38,13.26,1.21,7.72,0.90,-0.28,0.30,-2.56,-2.19,0.27,-1.50,0.01,C-,B-,E,E,B-,D-,C
+"Saratoga County (South & Central) PUMA, New York",1.24,5.22,0.59,1.62,1.09,0.00,0.79,1.01,-0.22,0.57,0.17,0.10,0.47,-0.28,B,C,B-,C,C,B-,C-
+"Saratoga County (Outer) PUMA, New York",1.28,33.36,5.75,11.35,0.71,0.00,0.54,1.17,-3.03,-1.08,-1.80,-0.41,0.47,-0.91,B,E,D,E,C-,B-,D
+"Rensselaer County--Troy City PUMA, New York",0.59,7.38,7.00,29.84,0.65,1.65,0.34,-1.67,-0.44,-1.48,-5.55,-0.49,0.05,-1.41,D-,C-,D-,E,C-,C,D-
+"Albany County (East Central)--Albany City PUMA, New York",0.50,0.00,6.58,0.00,1.11,0.00,1.25,-2.03,0.30,-1.34,0.50,0.13,0.47,0.89,E,B-,D-,B-,C,B-,B
+"Albany County (Outside Albany City) PUMA, New York",0.75,8.89,1.37,0.00,0.80,0.00,0.87,-1.02,-0.59,0.32,0.50,-0.29,0.47,-0.06,D,C-,B-,B-,C-,B-,C
+"Columbia & Greene Counties PUMA, New York",#DIV/0!,#DIV/0!,0.00,#DIV/0!,#VALUE!,#DIV/0!,1.23,#DIV/0!,#DIV/0!,0.75,#DIV/0!,#VALUE!,#DIV/0!,0.84,#DIV/0!,#DIV/0!,B,#DIV/0!,#VALUE!,#DIV/0!,B
+"Broome County (West Central)--Greater Binghamton City & Greater Johnson City Village PUMA, New York",0.88,10.28,2.76,0.00,0.72,3.57,0.49,-0.48,-0.73,-0.13,0.50,-0.39,-0.44,-1.03,C-,C-,C,B-,C-,C-,D
+"Broome (Outer West) & Tioga Counties PUMA, New York",#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!
+"Chenango, Delaware & Broome (East) Counties PUMA; New York",1.21,0.00,0.37,0.00,2.08,0.00,0.21,0.87,0.30,0.64,0.50,1.43,0.47,-1.75,B,B-,B-,B-,A-,B-,D-
+"Tompkins County PUMA, New York",1.34,0.00,2.51,5.80,0.44,5.26,0.53,1.42,0.30,-0.05,-0.68,-0.76,-0.88,-0.94,A-,B-,C,C-,D,D,D
+"Chemung (South) & Steuben (East) Counties--Greater Elmira & Greater Corning Cities PUMA, New York",0.93,0.00,0.46,1.44,0.76,0.00,0.94,-0.26,0.30,0.61,0.21,-0.34,0.47,0.10,C-,B-,B-,C,C-,B-,C
+"Steuben (North & West), Schuyler & Chemung (North) Counties PUMA; New York",#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#VALUE!,#DIV/0!,#DIV/0!
+"Cattaraugus & Allegany Counties PUMA, New York",1.29,0.00,0.00,0.00,0.92,#DIV/0!,1.19,1.21,0.30,0.75,0.50,-0.12,#DIV/0!,0.74,B,B-,B,B-,C,#DIV/0!,B-
+"Chautauqua County PUMA, New York",1.16,0.00,0.00,0.00,0.40,#DIV/0!,1.16,0.67,0.30,0.75,0.50,-0.82,#DIV/0!,0.65,B-,B-,B,B-,D,#DIV/0!,B-
+"Sullivan & Ulster (West) Counties PUMA, New York",1.13,0.00,0.99,1.90,0.77,0.00,1.20,0.56,0.30,0.44,0.11,-0.33,0.47,0.75,B-,B-,B-,C,C-,B-,B
+"Ulster County (East) PUMA, New York",0.21,3.02,1.87,0.00,1.31,4.10,0.82,-3.24,0.00,0.16,0.50,0.40,-0.58,-0.21,E,C,C,B-,B-,C-,C
+"Dutchess County (North & East) PUMA, New York",0.79,0.00,5.61,#DIV/0!,0.78,#DIV/0!,1.05,-0.85,0.30,-1.04,#DIV/0!,-0.32,#DIV/0!,0.37,D,B-,D,#DIV/0!,C-,#DIV/0!,B-
+"Dutchess County (Southwest) PUMA, New York",1.21,#DIV/0!,2.07,0.00,1.35,0.00,1.11,0.90,#DIV/0!,0.09,0.50,0.45,0.47,0.54,B,#DIV/0!,C,B-,B-,B-,B-
+"Orange County (Northeast)--Greater Newburgh City PUMA, New York",1.14,0.00,0.00,0.00,0.58,0.00,0.99,0.59,0.30,0.75,0.50,-0.58,0.47,0.23,B-,B-,B,B-,C-,B-,C
+"Orange County (Northwest) PUMA, New York",1.19,0.00,0.00,0.00,0.69,0.00,0.96,0.78,0.30,0.75,0.50,-0.44,0.47,0.15,B,B-,B,B-,C-,B-,C
+"Orange County (Southeast) PUMA, New York",1.08,1.89,0.00,#DIV/0!,2.75,1.20,0.94,0.34,0.11,0.75,#DIV/0!,2.32,0.16,0.10,B-,C,B,#DIV/0!,A,C,C
+"Rockland County (North)--New City & Congers PUMA, New York",0.67,0.00,12.37,0.00,1.23,#DIV/0!,0.71,-1.35,0.30,-3.19,0.50,0.29,#DIV/0!,-0.47,D-,B-,E,B-,B-,#DIV/0!,C-
+"Rockland County (South)--Orangetown, Clarkstown (South) & Ramapo (Southeast) Towns PUMA; New York",1.22,0.00,0.00,#DIV/0!,0.85,0.00,1.25,0.92,0.30,0.75,#DIV/0!,-0.22,0.47,0.87,B,B-,B,#DIV/0!,C,B-,B
+"Rockland County (West)--Spring Valley, Suffern Villages & Monsey PUMA; New York",1.04,0.00,9.91,26.34,1.02,1.78,0.82,0.19,0.30,-2.41,-4.84,0.01,0.01,-0.19,C,B-,E,E,C,C,C
+"Putnam County PUMA, New York",0.92,1.49,#DIV/0!,#DIV/0!,0.56,9.97,0.85,-0.32,0.15,#DIV/0!,#DIV/0!,-0.60,-2.08,-0.12,C-,C,#DIV/0!,#DIV/0!,C-,E,C
+"Westchester County (Northwest) PUMA, New York",0.96,2.00,4.05,1.50,0.88,0.00,0.91,-0.14,0.10,-0.54,0.19,-0.18,0.47,0.03,C,C,C-,C,C,B-,C
+"Westchester County (Northeast) PUMA, New York",1.30,1.58,3.87,#DIV/0!,0.57,0.00,0.75,1.26,0.14,-0.48,#DIV/0!,-0.59,0.47,-0.37,A-,C,C-,#DIV/0!,C-,B-,C-
+"Westchester County (Southeast) PUMA, New York",1.27,3.85,0.00,#DIV/0!,0.75,0.00,0.66,1.14,-0.08,0.75,#DIV/0!,-0.35,0.47,-0.60,B,C,B,#DIV/0!,C-,B-,C-
+"Westchester County (Central)--White Plains City PUMA, New York",1.29,4.69,0.78,1.12,1.06,1.55,0.92,1.23,-0.17,0.51,0.27,0.06,0.07,0.06,B,C,B-,B-,C,C,C
+"Westchester County (Southwest)--Yonkers City PUMA, New York",0.83,1.10,1.24,0.00,0.95,1.49,0.69,-0.68,0.19,0.36,0.50,-0.08,0.09,-0.52,C-,C,B-,B-,C,C,C-
+"Westchester County (South Central)--New Rochelle & Mount Vernon Cities PUMA, New York",0.91,4.60,3.04,0.00,0.93,2.97,0.72,-0.35,-0.16,-0.22,0.50,-0.10,-0.29,-0.46,C-,C,C,B-,C,C-,C-
+"Nassau County (Northwest)--North Hempstead Town (North) PUMA, New York",1.48,0.00,0.51,#DIV/0!,0.73,#DIV/0!,0.86,2.01,0.30,0.59,#DIV/0!,-0.37,#DIV/0!,-0.10,A,B-,B-,#DIV/0!,C-,#DIV/0!,C
+"Nassau County (Northeast)--Oyster Bay Town (North) & Glen Cove City PUMA, New York",1.16,1.17,1.37,2.43,0.59,0.34,0.78,0.67,0.18,0.32,0.01,-0.57,0.38,-0.30,B-,C,B-,C,C-,B-,C-
+"Nassau County (East Central)--Oyster Bay Town (Central) PUMA, New York",1.13,1.21,0.63,0.00,0.88,1.56,0.92,0.55,0.18,0.55,0.50,-0.18,0.07,0.04,B-,C,B-,B-,C,C,C
+"Nassau County (West Central)--North Hempstead Town (South) PUMA, New York",1.21,0.63,0.24,#DIV/0!,1.25,0.00,0.89,0.88,0.24,0.68,#DIV/0!,0.32,0.47,-0.03,B,C,B-,#DIV/0!,B-,B-,C
+"Nassau County (West Central)--Hempstead Town (Northwest) PUMA, New York",0.99,1.17,5.64,0.00,0.89,0.00,0.76,-0.01,0.18,-1.04,0.50,-0.17,0.47,-0.34,C,C,D,B-,C,B-,C-
+"Nassau County (Central)--Hempstead Town (North Central)--Meadowbrook Corridor PUMA, New York",1.02,0.00,1.98,5.38,1.04,0.39,0.64,0.09,0.30,0.12,-0.59,0.04,0.37,-0.67,C,B-,C,C-,C,B-,C-
+"Nassau County (Central)--Hempstead Town (Northeast) PUMA, New York",1.04,1.58,0.00,#DIV/0!,1.20,#DIV/0!,1.16,0.17,0.14,0.75,#DIV/0!,0.25,#DIV/0!,0.65,C,C,B,#DIV/0!,C,#DIV/0!,B-
+"Nassau County (Southeast)--Oyster Bay Town (South) PUMA, New York",0.96,8.73,4.63,#DIV/0!,0.78,#DIV/0!,1.08,-0.15,-0.57,-0.72,#DIV/0!,-0.32,#DIV/0!,0.46,C,C-,C-,#DIV/0!,C-,#DIV/0!,B-
+"Nassau County (Central)--Hempstead Town (East Central) PUMA, New York",1.07,0.00,2.81,#DIV/0!,1.36,#DIV/0!,1.06,0.29,0.30,-0.14,#DIV/0!,0.47,#DIV/0!,0.42,B-,B-,C,#DIV/0!,B-,#DIV/0!,B-
+"Nassau County (South Central)--Hempstead Town (Southeast) PUMA, New York",1.00,#DIV/0!,0.00,0.00,0.72,0.00,0.94,-0.01,#DIV/0!,0.75,0.50,-0.39,0.47,0.11,C,#DIV/0!,B,B-,C-,B-,C
+"Nassau County (West Central)--Hempstead Town (West Central) PUMA, New York",1.15,0.00,0.00,0.00,0.75,0.00,1.03,0.64,0.30,0.75,0.50,-0.35,0.47,0.32,B-,B-,B,B-,C-,B-,B-
+"Nassau County (Southwest)--Hempstead Town (Southwest) & Long Beach City PUMA, New York",1.25,0.00,0.00,#DIV/0!,0.85,0.00,0.41,1.05,0.30,0.75,#DIV/0!,-0.22,0.47,-1.25,B,B-,B,#DIV/0!,C,B-,D
+"Suffolk County (Northwest)--Huntington Town (North) PUMA, New York",0.66,0.00,15.34,#DIV/0!,1.58,#DIV/0!,1.17,-1.38,0.30,-4.14,#DIV/0!,0.76,#DIV/0!,0.69,D-,B-,E,#DIV/0!,B,#DIV/0!,B-
+"Suffolk County (Northwest)--Huntington Town (South) PUMA, New York",1.52,0.00,0.00,#DIV/0!,0.87,#DIV/0!,1.05,2.17,0.30,0.75,#DIV/0!,-0.19,#DIV/0!,0.38,A,B-,B,#DIV/0!,C,#DIV/0!,B-
+"Suffolk County (Northwest)--Smithtown Town PUMA, New York",1.09,0.00,0.00,0.00,0.75,#DIV/0!,0.75,0.40,0.30,0.75,0.50,-0.35,#DIV/0!,-0.38,B-,B-,B,B-,C-,#DIV/0!,C-
+"Suffolk County (North Central)--Brookhaven Town (North) PUMA, New York",0.95,#DIV/0!,0.00,#DIV/0!,1.48,#DIV/0!,1.09,-0.21,#DIV/0!,0.75,#DIV/0!,0.63,#DIV/0!,0.47,C,#DIV/0!,B,#DIV/0!,B-,#DIV/0!,B-
+"Suffolk County (East) PUMA, New York",1.15,0.00,0.00,#DIV/0!,0.85,0.00,0.92,0.64,0.30,0.75,#DIV/0!,-0.21,0.47,0.06,B-,B-,B,#DIV/0!,C,B-,C
+"Suffolk County (South Central)--Brookhaven Town (South) PUMA, New York",0.91,14.08,2.90,3.68,0.36,2.88,0.98,-0.38,-1.11,-0.17,-0.25,-0.87,-0.27,0.21,C-,D,C,C,D,C-,C
+"Suffolk County (Central)--Brookhaven Town (Central) PUMA, New York",1.03,0.74,0.76,#DIV/0!,1.11,#DIV/0!,0.86,0.15,0.23,0.51,#DIV/0!,0.13,#DIV/0!,-0.11,C,C,B-,#DIV/0!,C,#DIV/0!,C
+"Suffolk County (Central)--Brookhaven Town (West Central) PUMA, New York",1.08,0.00,1.74,#DIV/0!,1.09,0.00,0.48,0.33,0.30,0.20,#DIV/0!,0.10,0.47,-1.06,B-,B-,C,#DIV/0!,C,B-,D
+"Suffolk County (Central)--Islip Town (East) PUMA, New York",0.76,0.00,0.00,0.00,1.28,0.00,1.05,-0.97,0.30,0.75,0.50,0.36,0.47,0.37,D,B-,B,B-,B-,B-,B-
+"Suffolk County (Central)--Islip Town (Northwest) PUMA, New York",0.87,#DIV/0!,0.37,1.42,0.76,#DIV/0!,1.23,-0.51,#DIV/0!,0.64,0.21,-0.34,#DIV/0!,0.84,C-,#DIV/0!,B-,C,C-,#DIV/0!,B
+"Suffolk County (Southwest)--Islip Town (South) PUMA, New York",0.85,#DIV/0!,1.33,#DIV/0!,0.66,#DIV/0!,0.75,-0.59,#DIV/0!,0.33,#DIV/0!,-0.47,#DIV/0!,-0.39,C-,#DIV/0!,B-,#DIV/0!,C-,#DIV/0!,C-
+"Suffolk County (Southwest)--Babylon Town (Southeast) PUMA, New York",1.23,1.24,9.84,#DIV/0!,0.63,0.00,1.08,0.97,0.18,-2.38,#DIV/0!,-0.52,0.47,0.45,B,C,E,#DIV/0!,C-,B-,B-
+"Suffolk County (West Central)--Babylon Town (Northwest) PUMA, New York",1.19,0.00,0.00,#DIV/0!,0.87,0.00,0.73,0.80,0.30,0.75,#DIV/0!,-0.19,0.47,-0.44,B,B-,B,#DIV/0!,C,B-,C-
+"NYC-Bronx Community District 8--Riverdale, Fieldston & Kingsbridge PUMA; New York",1.11,0.00,0.00,#DIV/0!,0.85,0.00,0.64,0.48,0.30,0.75,#DIV/0!,-0.22,0.47,-0.66,B-,B-,B,#DIV/0!,C,B-,C-
+"NYC-Bronx Community District 12--Wakefield, Williamsbridge & Woodlawn PUMA; New York",0.81,2.51,6.17,10.14,0.61,3.73,0.96,-0.79,0.05,-1.22,-1.56,-0.54,-0.48,0.14,D,C,D,D-,C-,C-,C
+"NYC-Bronx Community District 10--Co-op City, Pelham Bay & Schuylerville PUMA; New York",0.81,0.62,0.22,0.46,0.72,0.00,1.09,-0.75,0.24,0.68,0.41,-0.39,0.47,0.48,D,C,B-,B-,C-,B-,B-
+"NYC-Bronx Community District 11--Pelham Parkway, Morris Park & Laconia PUMA; New York",1.04,44.34,1.41,0.00,1.09,0.93,0.94,0.19,-4.13,0.31,0.50,0.10,0.23,0.09,C,E,B-,B-,C,C,C
+"NYC-Bronx Community District 3 & 6--Belmont, Crotona Park East & East Tremont PUMA; New York",1.07,0.00,1.09,2.55,0.81,1.17,1.17,0.31,0.30,0.41,-0.02,-0.27,0.17,0.69,B-,B-,B-,C,C-,C,B-
+"NYC-Bronx Community District 7--Bedford Park, Fordham North & Norwood PUMA; New York",0.95,2.94,1.11,0.00,0.88,0.00,0.63,-0.20,0.01,0.40,0.50,-0.17,0.47,-0.68,C,C,B-,B-,C,B-,C-
+"NYC-Bronx Community District 5--Morris Heights, Fordham South & Mount Hope PUMA; New York",0.82,0.00,2.47,14.68,0.58,0.99,0.00,-0.73,0.30,-0.03,-2.48,-0.58,0.22,-2.28,C-,B-,C,E,C-,C,E
+"NYC-Bronx Community District 4--Concourse, Highbridge & Mount Eden PUMA; New York",1.22,#DIV/0!,2.60,7.40,0.79,1.78,0.09,0.92,#DIV/0!,-0.08,-1.00,-0.30,0.01,-2.05,B,#DIV/0!,C,D,C-,C,E
+"NYC-Bronx Community District 9--Castle Hill, Clason Point & Parkchester PUMA; New York",0.87,0.00,0.74,2.57,0.86,5.54,1.35,-0.51,0.30,0.52,-0.02,-0.20,-0.95,1.13,C-,B-,B-,C,C,D,B
+"NYC-Bronx Community District 1 & 2--Hunts Point, Longwood & Melrose PUMA; New York",1.00,0.00,0.31,0.00,0.95,0.42,0.39,-0.01,0.30,0.65,0.50,-0.09,0.36,-1.30,C,B-,B-,B-,C,B-,D-
+"NYC-Manhattan Community District 12--Washington Heights, Inwood & Marble Hill PUMA; New York",0.84,2.60,0.78,0.80,0.63,1.40,0.08,-0.63,0.04,0.51,0.34,-0.51,0.11,-2.09,C-,C,B-,B-,C-,C,E
+"NYC-Manhattan Community District 9--Hamilton Heights, Manhattanville & West Harlem PUMA; New York",1.27,1.35,0.82,#DIV/0!,0.89,2.02,1.26,1.14,0.16,0.49,#DIV/0!,-0.17,-0.05,0.92,B,C,B-,#DIV/0!,C,C,B
+"NYC-Manhattan Community District 10--Central Harlem PUMA, New York",0.86,0.43,0.95,0.00,0.94,1.15,1.77,-0.56,0.26,0.45,0.50,-0.09,0.17,2.21,C-,B-,B-,B-,C,C,A
+"NYC-Manhattan Community District 11--East Harlem PUMA, New York",0.86,0.00,1.10,0.00,1.48,1.62,0.42,-0.58,0.30,0.40,0.50,0.62,0.05,-1.22,C-,B-,B-,B-,B-,C,D
+"NYC-Manhattan Community District 8--Upper East Side PUMA, New York",0.88,0.00,2.43,7.07,0.83,2.39,0.77,-0.46,0.30,-0.02,-0.94,-0.25,-0.14,-0.33,C-,B-,C,D,C,C,C-
+"NYC-Manhattan Community District 7--Upper West Side & West Side PUMA, New York",1.05,0.61,0.44,#DIV/0!,0.84,0.22,0.36,0.21,0.24,0.62,#DIV/0!,-0.23,0.41,-1.36,C,C,B-,#DIV/0!,C,B-,D-
+"NYC-Manhattan Community District 4 & 5--Chelsea, Clinton & Midtown Business District PUMA; New York",0.88,2.99,7.55,2.20,0.96,2.76,1.24,-0.50,0.00,-1.65,0.05,-0.08,-0.24,0.86,C-,C,D-,C,C,C,B
+"NYC-Manhattan Community District 6--Murray Hill, Gramercy & Stuyvesant Town PUMA; New York",0.94,0.00,0.99,0.00,0.97,0.88,1.12,-0.25,0.30,0.44,0.50,-0.06,0.24,0.55,C,B-,B-,B-,C,C,B-
+"NYC-Manhattan Community District 3--Chinatown & Lower East Side PUMA, New York",0.92,0.00,0.90,5.16,1.91,0.70,1.63,-0.32,0.30,0.47,-0.55,1.20,0.29,1.84,C-,B-,B-,C-,B,B-,A
+"NYC-Manhattan Community District 1 & 2--Battery Park City, Greenwich Village & Soho PUMA; New York",1.07,0.00,2.64,#DIV/0!,0.88,3.24,0.53,0.32,0.30,-0.09,#DIV/0!,-0.18,-0.36,-0.94,B-,B-,C,#DIV/0!,C,C-,D
+"NYC-Staten Island Community District 3--Tottenville, Great Kills & Annadale PUMA; New York",1.02,0.00,2.99,8.77,1.02,#DIV/0!,1.06,0.11,0.30,-0.20,-1.28,0.01,#DIV/0!,0.42,C,B-,C,D-,C,#DIV/0!,B-
+"NYC-Staten Island Community District 2--New Springville & South Beach PUMA, New York",0.91,0.00,4.57,3.10,0.83,7.01,0.96,-0.37,0.30,-0.70,-0.13,-0.24,-1.32,0.16,C-,B-,C-,C,C,D-,C
+"NYC-Staten Island Community District 1--Port Richmond, Stapleton & Mariner's Harbor PUMA; New York",0.98,0.00,2.33,6.21,1.05,0.00,0.94,-0.09,0.30,0.01,-0.76,0.05,0.47,0.10,C,B-,C,D,C,B-,C
+"NYC-Brooklyn Community District 1--Greenpoint & Williamsburg PUMA, New York",0.82,17.47,2.12,0.00,1.09,0.85,1.91,-0.72,-1.45,0.08,0.50,0.10,0.25,2.56,C-,D-,C,B-,C,B-,A
+"NYC-Brooklyn Community District 4--Bushwick PUMA, New York",0.69,0.00,2.14,0.00,0.62,3.06,0.76,-1.26,0.30,0.07,0.50,-0.53,-0.31,-0.35,D-,B-,C,B-,C-,C-,C-
+"NYC-Brooklyn Community District 3--Bedford-Stuyvesant PUMA, New York",0.45,0.00,4.91,10.90,0.75,4.91,0.92,-2.25,0.30,-0.81,-1.71,-0.35,-0.78,0.04,E,B-,D,D-,C-,D,C
+"NYC-Brooklyn Community District 2--Brooklyn Heights & Fort Greene PUMA, New York",0.94,1.43,2.00,0.61,1.16,1.76,1.30,-0.24,0.16,0.12,0.38,0.19,0.02,1.01,C,C,C,B-,C,C,B
+"NYC-Brooklyn Community District 6--Park Slope, Carroll Gardens & Red Hook PUMA; New York",1.02,2.99,1.62,0.00,0.90,1.23,0.99,0.11,0.00,0.24,0.50,-0.15,0.15,0.22,C,C,C,B-,C,C,C
+"NYC-Brooklyn Community District 8--Crown Heights North & Prospect Heights PUMA, New York",1.05,2.85,3.31,4.79,0.95,1.02,0.37,0.22,0.01,-0.30,-0.47,-0.08,0.21,-1.33,C,C,C-,C-,C,C,D-
+"NYC-Brooklyn Community District 16--Brownsville & Ocean Hill PUMA, New York",0.98,0.00,0.52,0.00,1.23,3.35,2.48,-0.07,0.30,0.59,0.50,0.29,-0.39,3.99,C,B-,B-,B-,B-,C-,A
+"NYC-Brooklyn Community District 5--East New York & Starrett City PUMA, New York",0.90,0.70,0.65,0.00,0.94,0.73,0.88,-0.38,0.23,0.55,0.50,-0.10,0.28,-0.06,C-,C,B-,B-,C,B-,C
+"NYC-Brooklyn Community District 18--Canarsie & Flatlands PUMA, New York",1.13,0.48,1.94,7.14,1.01,0.50,0.98,0.54,0.25,0.14,-0.95,0.00,0.34,0.19,B-,B-,C,D,C,B-,C
+"NYC-Brooklyn Community District 17--East Flatbush, Farragut & Rugby PUMA; New York",1.01,0.53,0.52,0.90,0.94,0.39,0.54,0.04,0.25,0.59,0.32,-0.09,0.37,-0.92,C,C,B-,B-,C,B-,D
+"NYC-Brooklyn Community District 9--Crown Heights South, Prospect Lefferts & Wingate PUMA; New York",1.06,0.00,1.40,0.00,1.57,1.09,2.29,0.25,0.30,0.31,0.50,0.75,0.19,3.52,C,B-,B-,B-,B-,C,A
+"NYC-Brooklyn Community District 7--Sunset Park & Windsor Terrace PUMA, New York",0.97,3.73,1.27,0.00,1.36,0.80,1.37,-0.11,-0.07,0.35,0.50,0.47,0.26,1.19,C,C,B-,B-,B-,B-,B
+"NYC-Brooklyn Community District 10--Bay Ridge & Dyker Heights PUMA, New York",1.05,0.70,2.28,3.28,0.76,2.15,1.00,0.21,0.23,0.03,-0.17,-0.34,-0.08,0.27,C,C,C,C,C-,C,B-
+"NYC-Brooklyn Community District 12--Borough Park, Kensington & Ocean Parkway PUMA; New York",1.48,0.00,3.76,10.03,0.67,1.89,0.83,2.00,0.30,-0.45,-1.54,-0.46,-0.01,-0.18,A,B-,C-,D-,C-,C,C
+"NYC-Brooklyn Community District 14--Flatbush & Midwood PUMA, New York",1.00,1.61,1.33,0.79,1.05,1.18,0.56,0.02,0.14,0.33,0.34,0.05,0.17,-0.86,C,C,B-,B-,C,C,D
+"NYC-Brooklyn Community District 15--Sheepshead Bay, Gerritsen Beach & Homecrest PUMA; New York",1.10,#DIV/0!,1.33,#DIV/0!,0.90,1.13,0.77,0.44,#DIV/0!,0.33,#DIV/0!,-0.14,0.18,-0.32,B-,#DIV/0!,B-,#DIV/0!,C,C,C-
+"NYC-Brooklyn Community District 11--Bensonhurst & Bath Beach PUMA, New York",1.19,0.05,0.83,0.78,1.16,0.53,0.89,0.82,0.30,0.49,0.34,0.20,0.33,-0.03,B,B-,B-,B-,C,B-,C
+"NYC-Brooklyn Community District 13--Brighton Beach & Coney Island PUMA, New York",1.20,#DIV/0!,0.12,0.00,1.53,0.22,1.27,0.82,#DIV/0!,0.72,0.50,0.69,0.41,0.95,B,#DIV/0!,B-,B-,B-,B-,B
+"NYC-Queens Community District 1--Astoria & Long Island City PUMA, New York",1.05,3.68,1.87,2.40,1.04,2.56,1.16,0.22,-0.07,0.16,0.01,0.03,-0.19,0.67,C,C,C,C,C,C,B-
+"NYC-Queens Community District 3--Jackson Heights & North Corona PUMA, New York",1.06,2.26,1.33,7.36,0.99,1.74,0.97,0.27,0.07,0.33,-0.99,-0.02,0.02,0.17,B-,C,B-,D,C,C,C
+"NYC-Queens Community District 7--Flushing, Murray Hill & Whitestone PUMA; New York",0.99,1.39,2.59,#DIV/0!,0.69,3.37,0.88,-0.04,0.16,-0.07,#DIV/0!,-0.43,-0.39,-0.05,C,C,C,#DIV/0!,C-,C-,C
+"NYC-Queens Community District 11--Bayside, Douglaston & Little Neck PUMA; New York",0.98,0.00,9.29,3.34,0.76,#DIV/0!,0.95,-0.08,0.30,-2.21,-0.18,-0.33,#DIV/0!,0.12,C,B-,E,C,C-,#DIV/0!,C
+"NYC-Queens Community District 13--Queens Village, Cambria Heights & Rosedale PUMA; New York",1.06,0.21,1.01,0.57,1.03,0.00,1.07,0.26,0.28,0.43,0.38,0.02,0.47,0.44,B-,B-,B-,B-,C,B-,B-
+"NYC-Queens Community District 8--Briarwood, Fresh Meadows & Hillcrest PUMA; New York",1.02,4.69,9.94,8.70,0.86,7.65,1.10,0.10,-0.17,-2.42,-1.27,-0.20,-1.49,0.51,C,C,E,D-,C,D-,B-
+"NYC-Queens Community District 4--Elmhurst & South Corona PUMA, New York",0.86,#DIV/0!,3.18,#DIV/0!,1.01,7.11,0.95,-0.57,#DIV/0!,-0.26,#DIV/0!,-0.01,-1.35,0.12,C-,#DIV/0!,C-,#DIV/0!,C,D-,C
+"NYC-Queens Community District 6--Forest Hills & Rego Park PUMA, New York",0.95,3.23,1.08,0.00,0.92,1.04,1.30,-0.21,-0.02,0.41,0.50,-0.13,0.20,1.01,C,C,B-,B-,C,C,B
+"NYC-Queens Community District 2--Sunnyside & Woodside PUMA, New York",0.91,81.75,1.17,0.00,0.98,2.38,1.30,-0.37,-7.86,0.38,0.50,-0.04,-0.14,1.00,C-,E,B-,B-,C,C,B
+"NYC-Queens Community District 5--Ridgewood, Glendale & Middle Village PUMA; New York",1.07,1.82,0.83,0.91,0.88,3.52,1.14,0.30,0.12,0.49,0.31,-0.17,-0.43,0.61,B-,C,B-,B-,C,C-,B-
+"NYC-Queens Community District 9--Richmond Hill & Woodhaven PUMA, New York",0.78,7.55,4.67,#DIV/0!,0.78,4.36,1.08,-0.91,-0.45,-0.74,#DIV/0!,-0.31,-0.65,0.46,D,C-,C-,#DIV/0!,C-,C-,B-
+"NYC-Queens Community District 12--Jamaica, Hollis & St. Albans PUMA; New York",0.99,0.46,1.19,0.00,0.91,1.73,0.72,-0.03,0.25,0.37,0.50,-0.14,0.03,-0.46,C,B-,B-,B-,C,C,C-
+"NYC-Queens Community District 10--Howard Beach & Ozone Park PUMA, New York",0.99,1.55,3.07,3.54,0.94,#DIV/0!,0.93,-0.03,0.15,-0.22,-0.22,-0.09,#DIV/0!,0.09,C,C,C,C,C,#DIV/0!,C
+"NYC-Queens Community District 14--Far Rockaway, Breezy Point & Broad Channel PUMA; New York",1.07,0.00,0.00,0.00,0.84,1.59,1.20,0.32,0.30,0.75,0.50,-0.23,0.06,0.76,B-,B-,B,B-,C,C,B

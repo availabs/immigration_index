@@ -35,7 +35,7 @@ export class ResponsiveMap extends React.Component {
     // if (firstGeo !== nextFirstGeo || firstChild !== nextChild) {
     //   this._drawGraph(nextProps)
     // }
-    console.log((this.props.activeRegion !== nextProps.activeRegion), this.props.activeRegion, nextProps.activeRegion)
+    // console.log((this.props.activeRegion !== nextProps.activeRegion), this.props.activeRegion, nextProps.activeRegion)
     if (this.props.activeRegion !== nextProps.activeRegion) {
       this.zoomto(nextProps)
     }
@@ -100,10 +100,12 @@ export class ResponsiveMap extends React.Component {
           .data(props.childGeo.features)
           .enter()
           .append('path')
-          .attr('class', d => { return 'puma' })
+          .attr('class', d => {
+            return 'puma '
+          })
           // .attr('id',function(d){return 'msa'+d.properties.id})
           .attr('fill', d => {
-            return d.properties.fillColor || '#7EC0EE'
+            return d.properties.fillColor || '#chartreuse'
           })
           .attr('d', path)
           .on('click', props.click || null)
@@ -211,7 +213,14 @@ export class ResponsiveMap extends React.Component {
     return (
       <div id={divName} className={classes['svg-container']}>
         {this.renderToolTip()}
-        <svg className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet' />
+        <svg className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet' >
+          <defs>
+            <pattern id="crosshatch" patternUnits="userSpaceOnUse" width="8" height="8">
+              <image href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path fill='#fff' d='M0 0h8v8h-8z'/><path d='M0 0l8 8zm8 0l-8 8z' stroke-width='.5' stroke='#aaa'/></svg>" x="0" y="0" width="8" height="8">
+              </image>
+            </pattern>
+          </defs>
+        </svg>
       </div>
     )
   }

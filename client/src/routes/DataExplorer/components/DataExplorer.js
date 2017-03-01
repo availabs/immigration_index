@@ -10,6 +10,7 @@ import ResponsiveMap from 'components/ResponsiveMap'
 import Sidebar from 'components/Sidebar/Sidebar'
 // CONST Data sources
 import regions from '../assets/regions'
+import colorBrewer from '../assets/colorBrewer'
 // Styling
 import './DataExplorer.scss'
 
@@ -20,8 +21,8 @@ const cats = [
   'Homeownership',
   'Rent Burden',
   'Unemployment',
-  'Income',
-  'Naturalization'
+  'Income'
+   // ,'Naturalization'
 ]
 
 const calc = ['Ratio', 'Score', 'Grade']
@@ -39,13 +40,17 @@ const analyses = {
     name: 'The Effects of Gender',
     info: 'Gender Info'
   },
-  'women': {
-    name: 'Economic Outcomes of Foreign Born Women',
-    info: 'Foreign Women Info'
+  'vulnerable': {
+    name: 'The Effects of Low English Proficiency and Educational Attainment',
+    info: 'Vulnerable Foreign-Born Data'
   }
 }
+console.log(colorBrewer.RdYlBu[10].reverse())
+var Blues = ['rgb(5,48,97)', 'rgb(33,102,172)', 'rgb(67,147,195)', 'rgb(146,197,222)', 'rgb(209,229,240)', 'rgb(253,219,199)', 'rgb(244,165,130)', 'rgb(214,96,77)', 'rgb(178,24,43)', 'rgb(103,0,31)']
 
-var Blues = ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
+//["rgb(49,54,149)", "rgb(69,117,180)", "rgb(116,173,209)", "rgb(171,217,233)", "rgb(224,243,248)", "rgb(254,224,144)", "rgb(253,174,97)", "rgb(244,109,67)", "rgb(215,48,39)", "rgb(165,0,38)"]
+// ['rgb(0,104,55)', 'rgb(26,152,80)', 'rgb(102,189,99)', 'rgb(166,217,106)', 'rgb(217,239,139)', 'rgb(254,224,139)', 'rgb(253,174,97)', 'rgb(244,109,67)', 'rgb(215,48,39)', 'rgb(165,0,38)']
+//['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
 
 class DataExplorer extends React.Component {
   constructor (props) {
@@ -83,7 +88,7 @@ class DataExplorer extends React.Component {
           },
           'geometry': topojson.merge(
             geodata, geodata.objects.collection.geometries
-              .filter(function (d) {
+              .filter((d) => {
                 return regions[region].includes(d.properties.NAMELSAD10)
               })
             )
@@ -103,6 +108,16 @@ class DataExplorer extends React.Component {
     }
   }
 
+  numberFormat (val) {
+    if (val.includes('#')) return 'No Data'
+    if (val.includes('%')) return val
+    return (+val).toFixed(2)
+  }
+  gradeFormat (val) {
+    if (val === '#DIV/0!') return 'No Data'
+    return val
+  }
+
   dataTable () {
     if (!this.props.analyses[this.state.activeAnalysis] ||
         !this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]) {
@@ -110,6 +125,7 @@ class DataExplorer extends React.Component {
       return <span />
     }
     var data = this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]
+    console.log('test 123', data)
     var regionFilter = this.state.activeRegion &&
       regions[this.state.activeRegion]
       ? regions[this.state.activeRegion] : Object.keys(regions)
@@ -119,9 +135,9 @@ class DataExplorer extends React.Component {
         return (
           <tr key={region}>
             <td>{region}</td>
-            <td>{data[region][this.state.activeCategory].Ratio}</td>
-            <td>{data[region][this.state.activeCategory].Score}</td>
-            <td>{data[region][this.state.activeCategory].Grade}</td>
+            <td>{this.numberFormat(data[region][this.state.activeCategory].Ratio)}</td>
+            <td>{this.numberFormat(data[region][this.state.activeCategory].Score)}</td>
+            <td>{this.gradeFormat(data[region][this.state.activeCategory].Grade)}</td>
           </tr>
         )
       })
@@ -173,6 +189,10 @@ class DataExplorer extends React.Component {
     babsClass += this.state.educationLevel === 'babs' ? ' active' : ''
     var hsClass = 'btn btn-primary col-xs-6'
     hsClass += this.state.educationLevel === 'hs' ? ' active' : ''
+    var labelStrings = [
+      ['Bachelor’s Degree or More', 'High School Diploma and/or Some College'],
+      ['BACHELORS', 'HIGH SCHOOL']
+    ]
     return (
       <div className='legendContainer'>
         <h5>{this.state.activeCategory}
@@ -192,10 +212,10 @@ class DataExplorer extends React.Component {
           <div className='col-xs-12'>
             <div className='btn-group btn-block' data-toggle='buttons'>
               <label className={babsClass} onClick={this.educationClick.bind(null, 'babs')}>
-                <input type='radio' name='options' autoComplete='off' /> BACHELORS
+                <input type='radio' name='options' autoComplete='off' /> {labelStrings[0][0].toUpperCase()}
               </label>
               <label className={hsClass} onClick={this.educationClick.bind(null, 'hs')}>
-                <input type='radio' name='options' autoComplete='off' /> HIGH SCHOOL
+                <input type='radio' name='options' autoComplete='off' /> {labelStrings[0][1].toUpperCase()}
               </label>
             </div>
           </div>
@@ -246,9 +266,9 @@ class DataExplorer extends React.Component {
         data[d.properties.region][this.state.activeCategory].Grade
         ? data[d.properties.region][this.state.activeCategory].Grade : 'E-'
 
-      regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
-      d.properties.fillColor = gradeScale(regionGrade)
-      d.properties.grade = regionGrade
+      //regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
+      d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
+      d.properties.grade = this.gradeFormat(regionGrade)
       return d
     })
 
@@ -266,8 +286,9 @@ class DataExplorer extends React.Component {
             data[region][this.state.activeCategory] &&
             data[region][this.state.activeCategory].Grade
             ? data[region][this.state.activeCategory].Grade : 'E-'
-          d.properties.fillColor = gradeScale(regionGrade)
-          d.properties.grade = regionGrade
+
+          d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
+          d.properties.grade = this.gradeFormat(regionGrade)
           d.properties.geoType = 'puma'
           d.properties.region = region
           return d
@@ -335,40 +356,3 @@ const mapStateToProps = (state) => ({
 })
 
 export default connect(mapStateToProps, { loadAnalyses })( withRouter(DataExplorer) )
-
-// joinData (regions, pumas) {
-//   if (!regions || !pumas) return
-//   regions = regions.reduce((prev, current) => {
-//     current.Regions = current.Regions.replace(', New York', '').replace('; New York', '')
-//     prev[current.Regions] = current
-//     return prev
-//   }, {})
-//   var output = {}
-//   Object.keys(regions).forEach(reg => {
-//     var row = {}
-//     cats.forEach(currentCat => {
-//       row[currentCat] = {}
-//       Object.keys(regions[reg]).filter(col => { // Filter for Active category
-//         return col.includes(currentCat)
-//       })
-//       .map((col, i) => {
-//         row[currentCat][calc[i]] = regions[reg][col]
-//       })
-//     })
-//     output[reg] = row
-//   })
-//   Object.keys(pumas).forEach(reg => {
-//     var row = {}
-//     cats.forEach(currentCat => {
-//       row[currentCat] = {}
-//       Object.keys(pumas[reg]).filter(col => { // Filter for Active category
-//         return col.includes(currentCat)
-//       })
-//       .map((col, i) => {
-//         row[currentCat][calc[i]] = pumas[reg][col]
-//       })
-//     })
-//     output[reg] = row
-//   })
-//   console.log('output', JSON.stringify(output))
-// }

@@ -2,6 +2,7 @@
 import CoreLayout from '../layouts/CoreLayout/CoreLayout'
 import Home from './Home'
 import { Explorer, ExplorerType } from './DataExplorer'
+import Processing from './DataProcessing'
 import Login from './Login/index'
 import About from './About'
 import Methods from './Methods'
@@ -21,7 +22,8 @@ export const createRoutes = (store) => ({
     About(store),
     Methods(store),
     Pubs(store),
-    Research(store)
+    Research(store),
+    Processing(store)
   ]
 })
 

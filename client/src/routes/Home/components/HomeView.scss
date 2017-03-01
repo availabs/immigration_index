@@ -1,34 +1,11 @@
-.sidebar{
-	border-right: 5px solid #ccc;
-	border-top: 1px solid #ccc;
-	background-color: #efefef; 
-	height: 100%;
+
+.main-content {
+	font-family: 'Fira Sans', serif;
+	font-weight:100;
+	font-size: 1em;
+	color: #fff;
 }
 
-.list-group{
-	margin-right: -15px;
-	margin-left: -15px;
-	border-top: 1px solid #efefef;
-}
-.list-group-item{
-	color: rgb(66, 146, 198);
-}
-
-.list-group-item.active{
-	background-color: rgb(66, 146, 198)!important;
-	color: #efefef;
-	border: none;
-}
-.list-group-item.active:hover{
-	background-color: rgb(66, 146, 198)!important;
-	color: #efefef;
-}
-
-.list-group-item:hover{
-	background-color: rgb(66, 146, 198)!important;
-	color: #efefef;
-    transition: length 0.1s;
-}
 .legendRow{
 	display:flex;
 	justify-content: center;
@@ -46,17 +23,40 @@
 }
 
 .paddedDiv{
-	padding: 40px;
+	padding: 20px;
+}
+.view {
+  background: url('../assets/image_1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.view {
+  min-height: 100vh;
+}
+.view {
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+}
+
+.brand-header{
+	color: #fff;
+	font-size: 4em;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 600;
 }
 
 .studiesContainer{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .studiesDiv{
-		flex-basis: 25%;
+		flex-basis: 50%;
 		padding: 5px;
 }
 
@@ -71,13 +71,17 @@
 	border-radius: 4px;
 	color: #efefef;
 	background-color: #efefef;
-	-webkit-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
-	-moz-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
-	box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+	// -webkit-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+	// -moz-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+	// box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
 }
 
 .studiesContent{
 	display: flex;
 	flex-direction:column;
 	justify-content: space-around;
+	color: #000;
+	font-size: 2em;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 600;
 }

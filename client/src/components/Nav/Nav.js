@@ -4,7 +4,7 @@ import { IndexLink, Link } from 'react-router'
 import './Nav.scss'
 
 export const Nav = () => (
-  <nav className='navbar navbar-dark theme-color'>
+  <nav className='navbar  theme-color nav-custom'>
     <button className='navbar-toggler hidden-sm-up' type='button' data-toggle='collapse' data-target='#collapseEx2'>
       <i className='fa fa-bars' />
     </button>
@@ -24,10 +24,7 @@ export const Nav = () => (
               <Link to='/about' className='nav-link active'>ABOUT</Link>
             </li>
             <li className='nav-item'>
-              <Link to='/research' className='nav-link active'>RESEARCH</Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/methods' className='nav-link active'>METHODOLOGY</Link>
+              <Link to='/research' className='nav-link active'>RESEARCH METHODOLOGY</Link>
             </li>
             <li className='nav-item'>
               <Link to='/publications' className='nav-link active'>PUBLICATIONS</Link>
