@@ -48,9 +48,9 @@ const analyses = {
 console.log(colorBrewer.RdYlBu[10].reverse())
 var Blues = ['rgb(5,48,97)', 'rgb(33,102,172)', 'rgb(67,147,195)', 'rgb(146,197,222)', 'rgb(209,229,240)', 'rgb(253,219,199)', 'rgb(244,165,130)', 'rgb(214,96,77)', 'rgb(178,24,43)', 'rgb(103,0,31)']
 
-//["rgb(49,54,149)", "rgb(69,117,180)", "rgb(116,173,209)", "rgb(171,217,233)", "rgb(224,243,248)", "rgb(254,224,144)", "rgb(253,174,97)", "rgb(244,109,67)", "rgb(215,48,39)", "rgb(165,0,38)"]
+// ["rgb(49,54,149)", "rgb(69,117,180)", "rgb(116,173,209)", "rgb(171,217,233)", "rgb(224,243,248)", "rgb(254,224,144)", "rgb(253,174,97)", "rgb(244,109,67)", "rgb(215,48,39)", "rgb(165,0,38)"]
 // ['rgb(0,104,55)', 'rgb(26,152,80)', 'rgb(102,189,99)', 'rgb(166,217,106)', 'rgb(217,239,139)', 'rgb(254,224,139)', 'rgb(253,174,97)', 'rgb(244,109,67)', 'rgb(215,48,39)', 'rgb(165,0,38)']
-//['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
+// ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
 
 class DataExplorer extends React.Component {
   constructor (props) {
@@ -266,13 +266,13 @@ class DataExplorer extends React.Component {
         data[d.properties.region][this.state.activeCategory].Grade
         ? data[d.properties.region][this.state.activeCategory].Grade : 'E-'
 
-      //regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
+      // regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
       d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
       d.properties.grade = this.gradeFormat(regionGrade)
       return d
     })
 
-    var childGeo =  {
+    var childGeo = {
       'type': 'FeatureCollection',
       'features': []
     }
@@ -355,4 +355,4 @@ const mapStateToProps = (state) => ({
   analyses : state.analysis
 })
 
-export default connect(mapStateToProps, { loadAnalyses })( withRouter(DataExplorer) )
+export default connect(mapStateToProps, { loadAnalyses })(withRouter(DataExplorer))

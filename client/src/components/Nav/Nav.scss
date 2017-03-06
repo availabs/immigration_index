@@ -11,3 +11,12 @@
 .nav-brand {
 	font-family: 'Fira Sans', sans-serif;
 }
+
+.nav-custom{
+  display: inherit;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+}

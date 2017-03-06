@@ -34,7 +34,9 @@
 }
 .view {
   min-height: 100vh;
+  margin-top: -55px
 }
+
 .view {
   overflow: hidden;
   position: relative;
@@ -56,7 +58,7 @@
 }
 
 .studiesDiv{
-		flex-basis: 50%;
+		flex-basis: 25%;
 		padding: 5px;
 }
 
@@ -66,22 +68,26 @@
 	justify-content: space-around;
 	text-align: center;
 	padding: 5px;
-	min-height: 250px;
-	border: 2px solid #efefef;
-	border-radius: 4px;
+	min-height: 110px;
+	border: 2px solid #0275d8;
+	border-radius: 2px;
 	color: #efefef;
-	background-color: #efefef;
+	background-color: #0275d8; //#efefef;
 	// -webkit-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
 	// -moz-box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
 	// box-shadow: 7px 7px 25px -11px rgba(0,0,0,0.75);
+}
+
+.studiesbutton:hover{
+	background-color: #014c8c;
 }
 
 .studiesContent{
 	display: flex;
 	flex-direction:column;
 	justify-content: space-around;
-	color: #000;
-	font-size: 2em;
+	color: #efefef;
+	font-size: 1em;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
 }

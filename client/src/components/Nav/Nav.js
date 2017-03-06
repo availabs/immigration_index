@@ -4,7 +4,7 @@ import { IndexLink, Link } from 'react-router'
 import './Nav.scss'
 
 export const Nav = () => (
-  <nav className='navbar  theme-color nav-custom'>
+  <nav className='navbar theme-color nav-custom'>
     <button className='navbar-toggler hidden-sm-up' type='button' data-toggle='collapse' data-target='#collapseEx2'>
       <i className='fa fa-bars' />
     </button>

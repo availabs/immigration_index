@@ -56,7 +56,7 @@ class DataProcessing extends React.Component {
   joinData (data) {
     if (!data) return
     var regions = data.reduce((prev, current) => {
-      current.Regions = current.Regions.replace(', New York', ' PUMA').replace('; New York', '').trim() //+ ' PUMA'
+      current.Regions = current.Regions.replace(', New York', ' PUMA').replace('; New York', '').trim() // + ' PUMA'
       prev[current.Regions] = current
       return prev
     }, {})

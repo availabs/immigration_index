@@ -68,7 +68,7 @@ var SideBar = React.createClass({
               </ul></div>
             </li>
             <li id='menu-item-8472' className='menu-item menu-item-type-custom menu-item-object-custom menu-item-8472'><a className='collapsible-header waves-effect' href='http://mdbootstrap.com/mdb3/'><i className='fa fa-file-text' />MDB3 Docs</a></li>
-          </ul>                </li>
+          </ul>                          </li>
         {/* /. Side navigation links */}
         <div className='ps-scrollbar-x-rail' style={{ left: 0, bottom: 0 }}><div className='ps-scrollbar-x' tabIndex={0} style={{ left: 0, width: 0 }} /></div><div className='ps-scrollbar-y-rail' style={{ top: 0, right: 0 }}><div className='ps-scrollbar-y' tabIndex={0} style={{ top: 0, height: 0 }} /></div></ul>
     )

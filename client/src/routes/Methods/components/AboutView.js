@@ -2,7 +2,6 @@ import React from 'react'
 import * as d3 from 'd3'
 import './AboutView.scss'
 
-
 const cats = [
   'Full Time',
   'Poverty',
@@ -22,12 +21,10 @@ class HomeView extends React.Component {
     this.state = {}
   }
 
-  
-
   render () {
     return (
-      <div className='container-fluid text-center' style={{minHeight:'100vh', backgroundColor:'#6baed6'}}>
-        <div className='container' style={{color:'#efefef'}}>
+      <div className='container-fluid text-center' style={{ minHeight:'100vh', backgroundColor:'#6baed6' }}>
+        <div className='container' style={{ color:'#efefef' }}>
           <div className='row'>
             <div className='col-md-12' style={{ overflow:'hidden' }}>
               <h1>Methods</h1>

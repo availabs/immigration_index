@@ -9,7 +9,6 @@ export default (store) => ({
       /*  Webpack - use require callback to define
           dependencies for bundling   */
       const AboutView = require('./components/AboutView').default
-      
 
       /*  Return getComponent   */
       cb(null, AboutView)

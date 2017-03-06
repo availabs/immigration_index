@@ -20,15 +20,15 @@ export class Sidebar extends React.Component {
 
     var cats = Object.keys(this.props.analyses).map(key => {
       return (
-        <li key={key} className='accordionItem' onClick={this.props.analysisClick.bind(null,key)}>
-          <input className={this.props.activeAnalysis === key ? '' : 'checkeredBox'}type="checkbox"/>
-          <i></i>
+        <li key={key} className='accordionItem' onClick={this.props.analysisClick.bind(null, key)}>
+          <input className={this.props.activeAnalysis === key ? '' : 'checkeredBox'}type='checkbox' />
+          <i />
           <h2 className='accordianHeader'>{this.props.analyses[key].name}</h2>
           <div className='divP'>
-              <small>{this.props.analyses[key].info}</small>
-              <div className='list-group'>
-                {catButtons}
-              </div>
+            <small>{this.props.analyses[key].info}</small>
+            <div className='list-group'>
+              {catButtons}
+            </div>
           </div>
         </li>
       )
@@ -43,7 +43,7 @@ export class Sidebar extends React.Component {
 
 Sidebar.propTypes = {
   analyses: React.PropTypes.object,
-  categories: React.PropTypes.array,
+  categories: React.PropTypes.array
 }
 
 export default Sidebar

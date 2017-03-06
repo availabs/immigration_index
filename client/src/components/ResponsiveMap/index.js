@@ -60,7 +60,7 @@ export class ResponsiveMap extends React.Component {
         return d.properties.fillColor || '#efefef'
       })
       .on('mouseover', this.mouseover || null)
-      
+
     if (props.childGeo) {
       g.selectAll('.puma')
         .attr('fill', d => {
@@ -215,9 +215,8 @@ export class ResponsiveMap extends React.Component {
         {this.renderToolTip()}
         <svg className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet' >
           <defs>
-            <pattern id="crosshatch" patternUnits="userSpaceOnUse" width="8" height="8">
-              <image href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path fill='#fff' d='M0 0h8v8h-8z'/><path d='M0 0l8 8zm8 0l-8 8z' stroke-width='.5' stroke='#aaa'/></svg>" x="0" y="0" width="8" height="8">
-              </image>
+            <pattern id='crosshatch' patternUnits='userSpaceOnUse' width='8' height='8'>
+              <image href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path fill='#fff' d='M0 0h8v8h-8z'/><path d='M0 0l8 8zm8 0l-8 8z' stroke-width='.5' stroke='#aaa'/></svg>" x='0' y='0' width='8' height='8' />
             </pattern>
           </defs>
         </svg>

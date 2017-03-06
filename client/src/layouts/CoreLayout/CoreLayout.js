@@ -9,7 +9,7 @@ export const CoreLayout = ({ children }) => (
     <div className='row'>
       <Header />
     </div>
-    <div className='row core-layout__viewport'>
+    <div className='row core-layout__viewport' style={{ marginTop: '55px' }}>
       {children}
     </div>
   </div>
