@@ -4,7 +4,7 @@ export default (store) => ({
   /*  Async getComponent is only invoked when route matches   */
   getComponent (nextState, cb) {
     require.ensure([], (require) => {
-      const AboutView = require('./components/AboutView').default
+      const AboutView = require('./components/Publications').default
       cb(null, AboutView)
     }, 'publications')
   }

@@ -8,7 +8,7 @@ export default (store) => ({
     require.ensure([], (require) => {
       /*  Webpack - use require callback to define
           dependencies for bundling   */
-      const AboutView = require('./components/AboutView').default
+      const AboutView = require('./components/Research').default
 
       /*  Return getComponent   */
       cb(null, AboutView)

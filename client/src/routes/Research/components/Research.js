@@ -1,6 +1,6 @@
 import React from 'react'
 import * as d3 from 'd3'
-import './AboutView.scss'
+import './Research.scss'
 
 const cats = [
   'Full Time',
@@ -23,11 +23,12 @@ class HomeView extends React.Component {
 
   render () {
     return (
-      <div className='container-fluid text-center' style={{ minHeight:'100vh', backgroundColor:'#6baed6' }}>
-        <div className='container' style={{ color:'#efefef' }}>
+      <div className='container-fluid text-center .research-content' style={{ minHeight:'100vh' }}>
+        <div className='container' >
           <div className='row'>
-            <div className='col-md-12 paddedDiv' style={{ overflow:'hidden', textAlign:'justify' }}>
-              <h1 style={{ textAlign: 'center' }}>Study Methodology</h1>
+            <div className='col-md-2' />
+            <div className='col-md-8' style={{ overflow:'hidden', textAlign:'justify' }}>
+              <h1>Study Methodology</h1>
               <p style={{ textAlign: 'justify' }}><span>To
                   account for the effects of nativity status, race/ethnicity and gender in
                   determining economic outcomes for foreign-born New Yorkers, we (a) compare
@@ -38,7 +39,7 @@ class HomeView extends React.Component {
                   speak English well and do not hold a high school diploma with the state
                   average. Group 11).</span></p>
               <div>
-                <table border={1} cellSpacing={0} cellPadding={0} width={1438} style={{ width: '431.5pt', borderCollapse: 'collapse', border: 'none' }}>
+                <table className='table'>
                   <tbody><tr>
                     <td width={719} valign='top' style={{ width: '215.75pt', border: 'solid windowtext 1.0pt', padding: '0in 5.4pt 0in 5.4pt', borderColor:'#efefef' }}>
                       <p className='MsoListParagraphCxSpFirst' align='center' style={{ marginTop: '0in', marginRight: '0in', marginBottom: '10.0pt', marginLeft: '0in', lineHeight: '115%' }}><b><span>Purpose of Analysis</span></b></p>
@@ -159,7 +160,9 @@ class HomeView extends React.Component {
                   </tbody></table>
               </div>
               <p style={{ marginTop: '5.0pt', marginRight: '0in', marginBottom: '10.0pt', marginLeft: '0in' }}><i><span>&nbsp;</span></i></p>
-              <h2 style={{ textAlign: 'justify' }}><span style={{ fontFamily: '"Times New Roman",serif', color: '#833C0B' }}>Regional Score Card and Ranks</span></h2>
+              <h2 style={{ textAlign: 'justify' }}>
+                Regional Score Card and Ranks
+              </h2>
               <p style={{ marginBottom: '10.0pt', textAlign: 'justify', lineHeight: '115%' }}><span>To understand the
                   impact of nativity, race and gender on economic security of foreign-born
                   residents of the state, we compare economic outcomes (using seven indicators:
@@ -201,7 +204,8 @@ class HomeView extends React.Component {
               </span></span><span>Convert each
                   score to a 9-point grade system (A-E) based on the following chart.</span></p>
               <div align='center'>
-                <table border={1} cellSpacing={0} cellPadding={0} style={{ borderCollapse: 'collapse' }}>
+                <br />
+                <table classaName='table'>
                   <tbody><tr>
                     <td width={348} valign='top' style={{ width: '1.45in', border: 'solid windowtext 1.0pt', padding: '0in 5.4pt 0in 5.4pt', borderColor:'#efefef' }}>
                       <p align='center' style={{ marginTop: '5.0pt', marginRight: '0in', marginBottom: '.0001pt', marginLeft: '0in', textAlign: 'center', lineHeight: 'normal' }}><b><span>Score
