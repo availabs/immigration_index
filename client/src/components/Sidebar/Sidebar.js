@@ -20,10 +20,10 @@ export class Sidebar extends React.Component {
 
     var cats = Object.keys(this.props.analyses).map(key => {
       return (
-        <li key={key} className='accordionItem' onClick={this.props.analysisClick.bind(null, key)}>
+        <li key={key} className='accordionItem'>
           <input className={this.props.activeAnalysis === key ? '' : 'checkeredBox'}type='checkbox' />
           <i />
-          <h2 className='accordianHeader'>{this.props.analyses[key].name}</h2>
+          <h2 className='accordianHeader' onClick={this.props.analysisClick.bind(null, key)}>{this.props.analyses[key].name}</h2>
           <div className='divP'>
             <small>{this.props.analyses[key].info}</small>
             <div className='list-group'>

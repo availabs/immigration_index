@@ -26,6 +26,8 @@ class HomeView extends React.Component {
               <div className='col-md-8' style={{ height:'100vh', paddingTop:55, paddingRight: 0 }}>
                 <div style={{ height: '100%', overflowY:'scroll', padding: 30, textAlign:'justify' }} >
                     <AboutSection />
+                    <Meaning />
+                    <WhyMeasure />
                 </div>
                 </div>
             </div>
@@ -40,7 +42,7 @@ export default HomeView
 
 
 class WhyMeasure extends React.Component {
-  rende () {
+  render () {
     return (
       <div>
        <br />
@@ -68,7 +70,7 @@ class Meaning extends React.Component {
   render () {
     return (
       <div>
-        <h4 style={{ textAlign:'center' }}>The Meaning and Complexity of Integration</h4>
+        <h1 style={{ textAlign:'center' }}>The Meaning and Complexity of Integration</h1>
         <p>There is no doubt that fourth wave immigrants to the US have different characteristics, backgrounds, and settlement patterns from their predecessors.  For the most
         part, today’s immigrants are people of color from Latin America, Asia and the Caribbean. They are diverse in their socio economic background and they settle in
         traditional as well as new immigrant gateways. Additionally, one third of immigrants are undocumented. This raises the concern that they may have a harder time

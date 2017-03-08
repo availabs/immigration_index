@@ -7,48 +7,89 @@ import { withRouter } from 'react-router'
 import { loadAnalyses } from 'store/modules/analysis'
 // Components
 import ResponsiveMap from 'components/ResponsiveMap'
-import Sidebar from 'components/Sidebar/Sidebar'
+import Sidebar from 'components/Sidebar/SidebarTwo'
 // CONST Data sources
 import regions from '../assets/regions'
-import colorBrewer from '../assets/colorBrewer'
+// import colorBrewer from '../assets/colorBrewer'
 // Styling
 import './DataExplorer.scss'
 
-const cats = [
-  'Full Time',
-  'Poverty',
-  'Working Poor',
-  'Homeownership',
-  'Rent Burden',
-  'Unemployment',
-  'Income'
-   // ,'Naturalization'
-]
+// const cats = [
+//   'Full Time',
+//   'Poverty',
+//   'Working Poor',
+//   'Homeownership',
+//   'Rent Burden',
+//   'Unemployment',
+//   'Income'
+//    // ,'Naturalization'
+// ]
 
-const calc = ['Ratio', 'Score', 'Grade']
+const cats = {
+  'Full Time': {
+    name: 'Full-Time Work',
+    desc: 'Percentage of full time workers who were employed full time during the last 12 months (25-64 years old)'
+  },
+  'Poverty': {
+    name: 'Poverty',
+    desc: 'Percentage of residents whose household income fell below 150% of federal poverty line'
+  },
+  'Working Poor': {
+    name: 'Working Poor',
+    desc: 'Percentage of full time workers with income to poverty ratio lower than or equal to 150% of federal poverty line'
+  },
+  'Homeownership': {
+    name: 'Homeownership',
+    desc: 'Percentage of residents who own their own homes'
+  },
+  'Rent Burden': {
+    name: 'Rent Burden',
+    desc: 'Percentage of residents who spent 50% or more of their income on rent.'
+  },
+  'Unemployment': {
+    name: 'Income Level for FT  Workers',
+    desc: 'Income level of full time workers (15 years & older) during the last 12 months'
+  },
+  'Income': {
+    name: 'Income Level for FT  Workers',
+    desc: 'Income level of full time workers (15 years & older) during the last 12 months'
+  }
+   // ,'Naturalization'
+}
+
+const calc = ['Ratio', 'Rank', 'Grade']
 
 const analyses = {
   'nativity': {
     name: 'The Effects of Nativity Status',
-    info:'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.'
+    info:'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.',
+    subcats: {
+      'nativity': 'Foreign Born and Native Born',
+      'nativity_women': 'Foreign Born Women and Native Born Women'
+    }
   },
   'race': {
     name: 'The Effects of Race',
-    info:'Effects of nativity status and race on economic outcomes of foreign-born New Yorkers.'
+    info:'Effects of nativity status and race on economic outcomes of foreign-born New Yorkers.',
+    subcats: {
+      'race': 'Foreign Born and Native Born',
+      'race_women': 'Foreign Born Women and Native Born Women'
+    }
   },
   'gender': {
     name: 'The Effects of Gender',
-    info: 'Gender Info'
+    info: 'Effects of nativity status on economic outcomes of foreign-born women.',
+    subcats: {}
   },
   'vulnerable': {
     name: 'The Effects of Low English Proficiency and Educational Attainment',
-    info: 'Vulnerable Foreign-Born Data'
+    info: 'Measures economic outcomes for the most vulnerable foreign-born New Yorkers.',
+    subcats: {}
   }
 }
-console.log(colorBrewer.RdYlBu[10].reverse())
 var Blues = ['rgb(5,48,97)', 'rgb(33,102,172)', 'rgb(67,147,195)', 'rgb(146,197,222)', 'rgb(209,229,240)', 'rgb(253,219,199)', 'rgb(244,165,130)', 'rgb(214,96,77)', 'rgb(178,24,43)', 'rgb(103,0,31)']
 
-// ["rgb(49,54,149)", "rgb(69,117,180)", "rgb(116,173,209)", "rgb(171,217,233)", "rgb(224,243,248)", "rgb(254,224,144)", "rgb(253,174,97)", "rgb(244,109,67)", "rgb(215,48,39)", "rgb(165,0,38)"]
+// ['rgb(49,54,149)', 'rgb(69,117,180)', 'rgb(116,173,209)', 'rgb(171,217,233)', 'rgb(224,243,248)', 'rgb(254,224,144)', 'rgb(253,174,97)', 'rgb(244,109,67)', 'rgb(215,48,39)', 'rgb(165,0,38)']
 // ['rgb(0,104,55)', 'rgb(26,152,80)', 'rgb(102,189,99)', 'rgb(166,217,106)', 'rgb(217,239,139)', 'rgb(254,224,139)', 'rgb(253,174,97)', 'rgb(244,109,67)', 'rgb(215,48,39)', 'rgb(165,0,38)']
 // ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
 
@@ -57,7 +98,7 @@ class DataExplorer extends React.Component {
     super(props)
     this.state = {
       puma_data: [],
-      activeCategory: cats[0],
+      activeCategory: Object.keys(cats)[0],
       activeAnalysis: this.props.params.type || 'nativity',
       educationLevel: 'babs',
       activeRegions: null,
@@ -69,6 +110,7 @@ class DataExplorer extends React.Component {
     this.setActiveAnalysis = this.setActiveAnalysis.bind(this)
     this.educationClick = this.educationClick.bind(this)
     this.mapClick = this.mapClick.bind(this)
+    this.renderLegend = this.renderLegend.bind(this)
   }
 
   componentDidMount () {
@@ -109,12 +151,13 @@ class DataExplorer extends React.Component {
   }
 
   numberFormat (val) {
+    console.log()
     if (val.includes('#')) return 'No Data'
     if (val.includes('%')) return val
     return (+val).toFixed(2)
   }
   gradeFormat (val) {
-    if (val === '#DIV/0!') return 'No Data'
+    if (val.includes('#')) return 'No Data'
     return val
   }
 
@@ -125,25 +168,26 @@ class DataExplorer extends React.Component {
       return <span />
     }
     var data = this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]
-    console.log('test 123', data)
+    console.log('data', data)
     var regionFilter = this.state.activeRegion &&
       regions[this.state.activeRegion]
       ? regions[this.state.activeRegion] : Object.keys(regions)
     var rows = Object.keys(data)
       .filter(region => regionFilter.includes(region))
+      .sort((a, b) => data[a][this.state.activeCategory].Rank - data[b][this.state.activeCategory].Rank)
       .map(region => {
         return (
           <tr key={region}>
             <td>{region}</td>
             <td>{this.numberFormat(data[region][this.state.activeCategory].Ratio)}</td>
-            <td>{this.numberFormat(data[region][this.state.activeCategory].Score)}</td>
+            <td>{data[region][this.state.activeCategory].Rank}</td>
             <td>{this.gradeFormat(data[region][this.state.activeCategory].Grade)}</td>
           </tr>
         )
       })
 
     return (
-      <table className='table table-hover'>
+      <table className='table table-hover' style={{backgroundColor: '#fff'}}>
         <thead>
           <tr>
             <th>Region</th>
@@ -185,42 +229,90 @@ class DataExplorer extends React.Component {
         </div>
       )
     })
-    var babsClass = 'btn btn-primary col-xs-6'
+    var babsClass = 'catbutton'
     babsClass += this.state.educationLevel === 'babs' ? ' active' : ''
-    var hsClass = 'btn btn-primary col-xs-6'
+    var hsClass = 'catbutton'
     hsClass += this.state.educationLevel === 'hs' ? ' active' : ''
     var labelStrings = [
-      ['Bachelor’s Degree or More', 'High School Diploma and/or Some College'],
+      ['Bachelor’s Degree or More', 'High School Diploma / Some College'],
       ['BACHELORS', 'HIGH SCHOOL']
     ]
-    return (
-      <div className='legendContainer'>
-        <h5>{this.state.activeCategory}
-        </h5>
-        <div className='legendRow'>
-          {colors}
-        </div>
-        <div className='legendRow'>
-          {grades}
-        </div>
-        <div className='row'>
-          <div className='col-xs-12'>
-           Educational Attainment
+
+    var catButtons = Object.keys(cats).map(cat => {
+      var active = cat === this.state.activeCategory ? 'catbutton active' : 'catbutton'
+      return (
+        <div className='catDiv' key={cat}>
+          <div onClick={this.setActiveCategory.bind(null, cat)}>
+            <div className={active}>
+              <p className='catContent'>
+                {cat}
+              </p>
+            </div>
           </div>
         </div>
+      )
+    })
+
+    return (
+      <div className='legendContainer'>
         <div className='row'>
-          <div className='col-xs-12'>
-            <div className='btn-group btn-block' data-toggle='buttons'>
-              <label className={babsClass} onClick={this.educationClick.bind(null, 'babs')}>
-                <input type='radio' name='options' autoComplete='off' /> {labelStrings[0][0].toUpperCase()}
-              </label>
-              <label className={hsClass} onClick={this.educationClick.bind(null, 'hs')}>
-                <input type='radio' name='options' autoComplete='off' /> {labelStrings[0][1].toUpperCase()}
-              </label>
+          <div className='col-md-5' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
+            <h5>
+              {cats[this.state.activeCategory].name}
+            </h5>
+            <div className='legendRow'>
+              {colors}
+            </div>
+            <div className='legendRow'>
+              {grades}
+            </div>
+             {cats[this.state.activeCategory].desc}
+          </div>
+          <div className='col-md-1' />
+          <div className='col-md-6' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
+            <h4>Measures</h4>
+            <div className='catButtons'>
+              {catButtons}
+            </div>
+            <div className='row'>
+              <div className='col-xs-12'>
+               Educational Attainment
+              </div>
+            </div>
+            <div className='row'>
+              <div className='col-xs-12'>
+                <div className='catButtons'>
+                  <div className='catDiv'>
+                    <div onClick={this.educationClick.bind(null, 'babs')}>
+                      <div className={babsClass}>
+                        <p className='catContent' style={{fontSize:'0.7em'}}>
+                          {labelStrings[0][0].toUpperCase()}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='catDiv'>
+                    <div onClick={this.educationClick.bind(null, 'hs')}>
+                      <div className={hsClass}>
+                        <p className='catContent' style={{fontSize:'0.7em'}}>
+                          {labelStrings[0][1].toUpperCase()}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    )
+  }
+  renderCategories () {
+
+    return (
+      <div />
+     
     )
   }
 
@@ -269,6 +361,7 @@ class DataExplorer extends React.Component {
       // regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
       d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
       d.properties.grade = this.gradeFormat(regionGrade)
+      d.properties.rank = data[d.properties.region][this.state.activeCategory].Rank || 'No Data'
       return d
     })
 
@@ -289,6 +382,7 @@ class DataExplorer extends React.Component {
 
           d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
           d.properties.grade = this.gradeFormat(regionGrade)
+          d.properties.rank = data[region][this.state.activeCategory].Rank
           d.properties.geoType = 'puma'
           d.properties.region = region
           return d
@@ -297,7 +391,8 @@ class DataExplorer extends React.Component {
     return (
       <div>
         {this.renderLegend(gradeScale)}
-        <div style={{ fontSize:'2.1em', position:'absolute', top: 15, right:15 }}> {this.state.activeRegion}</div>
+        {this.renderCategories()}
+        <div style={{ fontSize:'2.1em', position:'absolute', top: 8, right:25 }}> {this.state.activeRegion}</div>
         <ResponsiveMap
           geo={regionGeo}
           click={this.mapClick}
@@ -331,7 +426,7 @@ class DataExplorer extends React.Component {
           </div>
           <div className='col-md-3'>
             <Sidebar
-              categories={cats}
+              categories={Object.keys(cats)}
               activeCategory={this.state.activeCategory}
               categoryClick={this.setActiveCategory}
               analyses={analyses}

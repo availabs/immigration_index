@@ -10,9 +10,17 @@ export const dataSources = {
     babs: 'group1.json',
     hs: 'group2.json'
   },
+  nativity_women: {
+    babs: 'group5.json',
+    hs: 'group6.json'
+  },
   race: {
     babs: 'group3.json',
     hs: 'group4.json'
+  },
+  race_women: {
+    babs: 'group7.json',
+    hs: 'group8.json'
   },
   gender: {
     babs: 'group9.json',
@@ -23,6 +31,16 @@ export const dataSources = {
     hs: 'group11.json'
   }
 }
+
+const cats = [
+  'Full Time',
+  'Poverty',
+  'Working Poor',
+  'Homeownership',
+  'Rent Burden',
+  'Unemployment',
+  'Income'
+]
 
 // --------------------------------------------
 //          Actions
@@ -50,6 +68,38 @@ export const actions = {
   loadAnalyses
 }
 
+import regInfo from './regions.json'
+
+function calculateRanks (data) {
+  var regions = Object.keys(data)
+    .filter(d => Object.keys(regInfo).includes(d))
+  var pumas = Object.keys(data)
+    .filter(d => !Object.keys(regInfo).includes(d))
+  var getData = function (reg, cat) {
+    return isNaN(+data[reg][cat].Score) ? -4 : +data[reg][cat].Score
+  }
+
+  cats.forEach(cat => {
+    var catSort = regions.sort((a, b) => {
+      return getData(b, cat) - getData(a, cat)
+    })
+
+    catSort.forEach((reg, i) => {
+      data[reg][cat].Rank = i + 1
+    })
+
+    catSort = pumas.sort((a, b) => {
+      return getData(b, cat) - getData(a, cat)
+    })
+
+    catSort.forEach((reg, i) => {
+      var rank = data[reg][cat].Score.includes('#') ? 'No Data' : i + 1
+      data[reg][cat].Rank = rank
+    })
+  })
+  return data
+}
+
 // ------------------------------------
 // Action Handlers
 // ------------------------------------
@@ -58,7 +108,10 @@ const ACTION_HANDLERS = {
     var newState = Object.assign({}, state)
     if (!newState[action.analysis_type]) newState[action.analysis_type] = {}
     if (!newState[action.analysis_type][action.education]) newState[action.analysis_type][action.education] = {}
-    newState[action.analysis_type][action.education] = action.payload
+    var results = calculateRanks(action.payload)
+    console.log('results', results)
+    newState[action.analysis_type][action.education] = action.payload // results
+
     return newState
   }
 }

@@ -179,8 +179,8 @@ export class ResponsiveMap extends React.Component {
       return parseInt(d)
     })
     this.setState({
-      left: mouse[0] + 40,
-      top:mouse[1] - 20
+      left: mouse[0] + 30,
+      top:mouse[1] + 40
     })
   }
 
@@ -192,7 +192,9 @@ export class ResponsiveMap extends React.Component {
   }
   mouseout () {
     this.setState({
-      show: 0.0
+      show: 0.0,
+      left: 0,
+      top: 0
     })
   }
 
@@ -202,8 +204,17 @@ export class ResponsiveMap extends React.Component {
       <ToolTip top={this.state.top} left={this.state.left} show={this.state.show}>
         <div style={{ textAlign:'center', fontSize:'1.1em', fontWeight:'600' }}>{this.state.info.region}</div>
         <div style={{ textAlign:'center' }}>
-          <span style={{ fontSize:'.75em', fontWeight:'400' }}>Grade</span> <br />
-          <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.grade}</span></div>
+          <div className='row'>
+            <div className={this.state.info.rank === 'No Data' ?  'col-xs-12' : 'col-xs-6'}>
+                <span style={{ fontSize:'.75em', fontWeight:'400' }}>Grade</span> <br />
+                <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.grade}</span>
+              </div>
+              <div className='col-xs-6'>
+                <span style={{ fontSize:'.75em', fontWeight:'400' }}>{this.state.info.rank === 'No Data' ?  '' : 'Rank'}</span> <br />
+                <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.rank === 'No Data' ?  '' : this.state.info.rank}</span>
+              </div>
+            </div>
+        </div>
       </ToolTip>
     )
   }
