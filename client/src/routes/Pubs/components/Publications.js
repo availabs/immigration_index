@@ -30,7 +30,7 @@ class HomeView extends React.Component {
               <h1>Publications</h1>
               <div className='row' style={{border: '1px solid white', paddingTop: 10}}> 
                 <div className='col-md-3' style={{textAlign:'center'}}>
-                  <a href='/publications/PolicyBrief-VulnerableGroup.pdf' target='_blank'>
+                  <a href='/pubs/PolicyBrief-VulnerableGroup.pdf' target='_blank'>
                     <img className='img-fluid' src='/img/policy_brief.png'/>
                     <strong>DOWNLOAD</strong>
                   </a>
