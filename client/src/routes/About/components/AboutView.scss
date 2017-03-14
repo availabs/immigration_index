@@ -5,3 +5,8 @@
 	color: #111
 
 }
+.about_container {
+	height: calc(100vh - 55px);
+	height: -webkit-calc(100vh - 55px);
+    height:    -moz-calc(100vh - 55px);
+}

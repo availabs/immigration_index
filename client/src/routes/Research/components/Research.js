@@ -23,7 +23,7 @@ class HomeView extends React.Component {
 
   render () {
     return (
-      <div className='container-fluid text-center .research-content' style={{ minHeight:'100vh' }}>
+      <div className='container-fluid text-center .research-content' style={{ minHeight:'100vh', background: '#fff' }}>
         <div className='container' >
           <div className='row'>
             <div className='col-md-2' />
@@ -205,7 +205,7 @@ class HomeView extends React.Component {
                   score to a 9-point grade system (A-E) based on the following chart.</span></p>
               <div align='center'>
                 <br />
-                <table classaName='table'>
+                <table className='table'>
                   <tbody><tr>
                     <td width={348} valign='top' style={{ width: '1.45in', border: 'solid windowtext 1.0pt', padding: '0in 5.4pt 0in 5.4pt', borderColor:'#efefef' }}>
                       <p align='center' style={{ marginTop: '5.0pt', marginRight: '0in', marginBottom: '.0001pt', marginLeft: '0in', textAlign: 'center', lineHeight: 'normal' }}><b><span>Score

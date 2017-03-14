@@ -10,10 +10,10 @@ class HomeView extends React.Component {
   render () {
     return (
       <div>
-        <div className='container-fluid text-center' style={{ height:'100vh',  marginTop:'-55px', backgroundColor: '#fff', overflow:'hidden'}}>
+        <div className='container-fluid text-center about_container' style={{ backgroundColor: '#fff', overflow:'hidden'}}>
           <div className='container about-content'>
             <div className='row'>
-              <div className='col-md-4' style={{ paddingTop:55 }}>
+              <div className='col-md-4'>
                 <br />
                 <div className='list-group'>
                   <a href='#' className='list-group-item active'>
@@ -23,7 +23,7 @@ class HomeView extends React.Component {
                   <a href='#' className='list-group-item'>Why Measure Integration</a>
                 </div>
               </div>
-              <div className='col-md-8' style={{ height:'100vh', paddingTop:55, paddingRight: 0 }}>
+              <div className='col-md-8' style={{ height:'100vh', paddingRight: 0 }}>
                 <div style={{ height: '100%', overflowY:'scroll', padding: 30, textAlign:'justify' }} >
                     <AboutSection />
                     <Meaning />

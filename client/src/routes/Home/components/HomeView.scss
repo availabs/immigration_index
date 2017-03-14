@@ -18,6 +18,9 @@
   -o-background-size: cover;
   background-size: cover;
 }
+.hm-black-strong .full-bg-img, .hm-black-strong .mask {
+  background-color: rgba(0,0,0,.5);
+}
 .view {
   min-height: 100vh;
   margin-top: -55px

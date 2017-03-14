@@ -7,7 +7,7 @@ import { withRouter } from 'react-router'
 import { loadAnalyses } from 'store/modules/analysis'
 // Components
 import ResponsiveMap from 'components/ResponsiveMap'
-import Sidebar from 'components/Sidebar/SidebarTwo'
+import Sidebar from 'components/Sidebar/SidebarThree'
 // CONST Data sources
 import regions from '../assets/regions'
 // import colorBrewer from '../assets/colorBrewer'
@@ -28,63 +28,99 @@ import './DataExplorer.scss'
 const cats = {
   'Full Time': {
     name: 'Full-Time Work',
-    desc: 'Percentage of full time workers who were employed full time during the last 12 months (25-64 years old)'
+    desc: 'Percentage of full time workers who were employed full time during the last 12 months (25-64 years old)',
+    type: 'activeCategory'
   },
   'Poverty': {
     name: 'Poverty',
-    desc: 'Percentage of residents whose household income fell below 150% of federal poverty line'
+    desc: 'Percentage of residents whose household income fell below 150% of federal poverty line',
+    type: 'activeCategory'
   },
   'Working Poor': {
     name: 'Working Poor',
-    desc: 'Percentage of full time workers with income to poverty ratio lower than or equal to 150% of federal poverty line'
+    desc: 'Percentage of full time workers with income to poverty ratio lower than or equal to 150% of federal poverty line',
+    type: 'activeCategory'
   },
   'Homeownership': {
     name: 'Homeownership',
-    desc: 'Percentage of residents who own their own homes'
+    desc: 'Percentage of residents who own their own homes',
+    type: 'activeCategory'
   },
   'Rent Burden': {
     name: 'Rent Burden',
-    desc: 'Percentage of residents who spent 50% or more of their income on rent.'
+    desc: 'Percentage of residents who spent 50% or more of their income on rent.',
+    type: 'activeCategory'
   },
   'Unemployment': {
     name: 'Income Level for FT  Workers',
-    desc: 'Income level of full time workers (15 years & older) during the last 12 months'
+    desc: 'Income level of full time workers (15 years & older) during the last 12 months',
+    type: 'activeCategory'
   },
   'Income': {
     name: 'Income Level for FT  Workers',
-    desc: 'Income level of full time workers (15 years & older) during the last 12 months'
+    desc: 'Income level of full time workers (15 years & older) during the last 12 months',
+    type: 'activeCategory'
   }
-   // ,'Naturalization'
 }
 
 const calc = ['Ratio', 'Rank', 'Grade']
 
+const education = {
+  hs : {
+     name: 'High School Diploma / Some College',
+     type: 'educationLevel',
+     subcats: cats
+  },
+  babs: {
+     name: 'Bachelor’s Degree or More',
+     type: 'educationLevel',
+     subcats: cats
+  }
+}
+
 const analyses = {
-  'nativity': {
+  nativity: {
     name: 'The Effects of Nativity Status',
     info:'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.',
+    type: 'activeAnalysis',
     subcats: {
-      'nativity': 'Foreign Born and Native Born',
-      'nativity_women': 'Foreign Born Women and Native Born Women'
+      'nativity': {
+        name: 'Foreign Born and Native Born',
+        type: 'activeAnalysis',
+        subcats: education
+      },
+      'nativity_women': {
+        name: 'Foreign Born Women and Native Born Women',
+        type: 'activeAnalysis',
+        subcats: education
+      }
     }
   },
-  'race': {
+  race: {
     name: 'The Effects of Race',
     info:'Effects of nativity status and race on economic outcomes of foreign-born New Yorkers.',
     subcats: {
-      'race': 'Foreign Born and Native Born',
-      'race_women': 'Foreign Born Women and Native Born Women'
+      'race': {
+        name:'Foreign Born and Native Born',
+        type: 'activeAnalysis',
+        subcats: education
+      },
+      'race_women': {
+        name:'Foreign Born Women and Native Born Women',
+        type: 'activeAnalysis',
+        subcats: education
+      }
     }
   },
-  'gender': {
+  gender: {
     name: 'The Effects of Gender',
     info: 'Effects of nativity status on economic outcomes of foreign-born women.',
-    subcats: {}
+    subcats: education
   },
-  'vulnerable': {
+  vulnerable: {
     name: 'The Effects of Low English Proficiency and Educational Attainment',
     info: 'Measures economic outcomes for the most vulnerable foreign-born New Yorkers.',
-    subcats: {}
+    subcats: cats
   }
 }
 var Blues = ['rgb(5,48,97)', 'rgb(33,102,172)', 'rgb(67,147,195)', 'rgb(146,197,222)', 'rgb(209,229,240)', 'rgb(253,219,199)', 'rgb(244,165,130)', 'rgb(214,96,77)', 'rgb(178,24,43)', 'rgb(103,0,31)']
@@ -145,7 +181,8 @@ class DataExplorer extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    if (nextProps.params.typ && nextProps.params.type !== this.state.activeAnalysis) {
+    console.log( nextProps.params.type, this.state.activeAnalysis )
+    if (nextProps.params.type && nextProps.params.type !== this.state.activeAnalysis) {
       this.setState({ activeAnalysis: nextProps.params.type })
     }
   }
@@ -168,7 +205,6 @@ class DataExplorer extends React.Component {
       return <span />
     }
     var data = this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]
-    console.log('data', data)
     var regionFilter = this.state.activeRegion &&
       regions[this.state.activeRegion]
       ? regions[this.state.activeRegion] : Object.keys(regions)
@@ -410,9 +446,15 @@ class DataExplorer extends React.Component {
     this.setState({ activeCategory:cat })
   }
 
-  setActiveAnalysis (cat) {
-    this.props.router.push('/data/' + cat)
-    this.setState({ activeAnalysis:cat })
+  setActiveAnalysis (cat, stateKey) {
+    
+    let updateKey = stateKey || 'activeAnalysis'
+    if(updateKey === 'activeAnalysis') {
+      this.props.router.push('/data/' + cat)
+    }
+    var update = {}
+    update[updateKey] = cat
+    this.setState(update)
   }
 
   render () {
@@ -428,9 +470,11 @@ class DataExplorer extends React.Component {
             <Sidebar
               categories={Object.keys(cats)}
               activeCategory={this.state.activeCategory}
+              activeAnalysis={this.state.activeAnalysis}
+              educationLevel={this.state.educationLevel}
               categoryClick={this.setActiveCategory}
               analyses={analyses}
-              activeAnalysis={this.state.activeAnalysis}
+              
               analysisClick={this.setActiveAnalysis}
             />
           </div>

@@ -26,7 +26,9 @@
   display: block;
   margin: 0;
   cursor: pointer;
+  padding: 10px;
   padding-top: 18px;
+
 }
 
 .divP {
@@ -59,12 +61,9 @@
 
 .accordionItem {
   position: relative;
-  padding: 0;
   margin: 0;
   padding-bottom: 4px;
   padding-top: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
   border: 1px solid #dce7eb;
   background-color: #0275d8;
   color: #efefef;
@@ -133,6 +132,40 @@
 }
 .checkeredBox ~ i:after {
   transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.list-group-item {
+  
+}
+
+.list-group{
+  
+  border-top: 1px solid #efefef;
+}
+.list-group-item{
+  background-color: #0275d8;
+  color: #efefef!important;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-top: 2px solid #0275d8;
+  border-bottom: 2px solid #0275d8;
+}
+
+.list-group-item.active{
+  background-color: #fff!important;
+  color: #0275d8!important;
+  
+}
+
+.list-group-item.active:hover{
+  background-color: #efefef!important;
+  color:#014c8c!important;;
+}
+
+.list-group-item:hover{
+  background-color: #014c8c!important;
+  color: #efefef!important;
+    transition: length 0.1s;
 }
 
 @keyframes flipdown {

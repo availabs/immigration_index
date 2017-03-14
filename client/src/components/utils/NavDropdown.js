@@ -11,8 +11,8 @@ class NavDropdown extends React.Component {
   }
   render () {
     return (
-      <div>
-        <a className='nav-link dropdown-toggle' aria-expanded={this.state.open} onClick={this.toggle}>
+      <div onClick={this.toggle}>
+        <a className='nav-link dropdown-toggle' aria-expanded={this.state.open}>
           {this.props.title}
         </a>
         <div className='dropdown-menu' style={{ display: this.state.open ? 'block' : 'none' }}>
@@ -25,7 +25,7 @@ class NavDropdown extends React.Component {
 }
 
 NavDropdown.propTypes = {
-  children : React.PropTypes.element.isRequired,
+  children : React.PropTypes.oneOfType([React.PropTypes.element, React.PropTypes.array]).isRequired,
   title : React.PropTypes.element.isRequired
 }
 

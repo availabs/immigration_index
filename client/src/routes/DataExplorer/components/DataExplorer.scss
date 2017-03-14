@@ -5,30 +5,7 @@
 	height: 100%;
 }
 
-.list-group{
-	margin-right: -15px;
-	margin-left: -15px;
-	border-top: 1px solid #efefef;
-}
-.list-group-item{
-	color: rgb(66, 146, 198);
-}
 
-.list-group-item.active{
-	background-color: rgb(66, 146, 198)!important;
-	color: #efefef!important;
-	border: none;
-}
-.list-group-item.active:hover{
-	background-color: rgb(66, 146, 198)!important;
-	color: #efefef!important;;
-}
-
-.list-group-item:hover{
-	background-color: rgb(66, 146, 198)!important;
-	color: #efefef!important;
-    transition: length 0.1s;
-}
 .legendRow{
 	display:flex;
 	justify-content: center;
