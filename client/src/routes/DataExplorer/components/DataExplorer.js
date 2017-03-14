@@ -33,32 +33,32 @@ const cats = {
   },
   'Poverty': {
     name: 'Poverty',
-    desc: 'Percentage of residents whose household income fell below 150% of federal poverty line',
+    desc: 'Percentage of residents whose household income fell below 150% of federal poverty line (25-64 years old)',
     type: 'activeCategory'
   },
   'Working Poor': {
     name: 'Working Poor',
-    desc: 'Percentage of full time workers with income to poverty ratio lower than or equal to 150% of federal poverty line',
+    desc: 'Percentage of full time workers with income to poverty ratio lower than or equal to 150% of federal poverty line (25-64 years old)',
     type: 'activeCategory'
   },
   'Homeownership': {
     name: 'Homeownership',
-    desc: 'Percentage of residents who own their own homes',
+    desc: 'Percentage of residents who own their own homes (25-64 years old)',
     type: 'activeCategory'
   },
   'Rent Burden': {
     name: 'Rent Burden',
-    desc: 'Percentage of residents who spent 50% or more of their income on rent.',
+    desc: 'Percentage of residents who spent 50% or more of their income on rent. (25-64 years old)',
     type: 'activeCategory'
   },
   'Unemployment': {
     name: 'Unemployment',
-    desc: 'Income level of full time workers (15 years & older) during the last 12 months',
+    desc: 'Percentage of workers who are unemployed (25-64 years old)',
     type: 'activeCategory'
   },
   'Income': {
     name: 'Income Level for FT  Workers',
-    desc: 'Income level of full time workers (15 years & older) during the last 12 months',
+    desc: 'Income level of full time workers (15 years & older) during the last 12 months (25-64 years old)',
     type: 'activeCategory'
   }
 }
@@ -68,11 +68,13 @@ const calc = ['Ratio', 'Rank', 'Grade']
 const education = {
   hs : {
      name: 'High School Diploma / Some College',
+     desc: 'Percentage of High School diploma holders (25-64 years old)',
      type: 'educationLevel',
      subcats: cats
   },
   babs: {
      name: 'Bachelor’s Degree or More',
+     desc: 'Percentage of holders of Bachelor degree or better (25-64 years old).',
      type: 'educationLevel',
      subcats: cats
   }
@@ -302,39 +304,50 @@ class DataExplorer extends React.Component {
             <div className='legendRow'>
               {grades}
             </div>
-             {cats[this.state.activeCategory].desc}
+             
           </div>
           <div className='col-md-1' />
           <div className='col-md-6' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
-            <h4>Measures</h4>
+             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
+             <h4>{this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].name}</h4>
+             {this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].desc}
+            <h4>{cats[this.state.activeCategory].name}</h4>
+            {cats[this.state.activeCategory].desc}
+          </div>
+        </div>
+      </div>
+    )
+  }
+  renderRightBox () {
+    return (
+      <div>
+        <h4>Measures</h4>
+        <div className='catButtons'>
+          {catButtons}
+        </div>
+        <div className='row'>
+          <div className='col-xs-12'>
+           Educational Attainment
+          </div>
+        </div>
+        <div className='row'>
+          <div className='col-xs-12'>
             <div className='catButtons'>
-              {catButtons}
-            </div>
-            <div className='row'>
-              <div className='col-xs-12'>
-               Educational Attainment
-              </div>
-            </div>
-            <div className='row'>
-              <div className='col-xs-12'>
-                <div className='catButtons'>
-                  <div className='catDiv'>
-                    <div onClick={this.educationClick.bind(null, 'babs')}>
-                      <div className={babsClass}>
-                        <p className='catContent' style={{fontSize:'0.7em'}}>
-                          {labelStrings[0][0].toUpperCase()}
-                        </p>
-                      </div>
-                    </div>
+              <div className='catDiv'>
+                <div onClick={this.educationClick.bind(null, 'babs')}>
+                  <div className={babsClass}>
+                    <p className='catContent' style={{fontSize:'0.7em'}}>
+                      {labelStrings[0][0].toUpperCase()}
+                    </p>
                   </div>
-                  <div className='catDiv'>
-                    <div onClick={this.educationClick.bind(null, 'hs')}>
-                      <div className={hsClass}>
-                        <p className='catContent' style={{fontSize:'0.7em'}}>
-                          {labelStrings[0][1].toUpperCase()}
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div className='catDiv'>
+                <div onClick={this.educationClick.bind(null, 'hs')}>
+                  <div className={hsClass}>
+                    <p className='catContent' style={{fontSize:'0.7em'}}>
+                      {labelStrings[0][1].toUpperCase()}
+                    </p>
                   </div>
                 </div>
               </div>
