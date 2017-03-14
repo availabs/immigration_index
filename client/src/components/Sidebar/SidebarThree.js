@@ -6,32 +6,37 @@ export class Sidebar extends React.Component {
   render () {
     let divName = this.props.mapDiv || 'mapDiv'
 
-    let renderListGroup = (key, parent) => {
+    let renderListGroup = (key, parent, level) => {
       var cat = parent[key]
       var active = key === this.props[cat.type] ? ' active' : ''
       return (
-        <a
-          key={key}
-          onClick={this.props.analysisClick.bind(null, key, cat.type)}
-          className={'list-group-item' + active}
-        >{cat.name}
-          {active === ' active' && cat.subcats ? 
-           <div className='list-group'>
+        <div>
+          <a
+            key={key}
+            onClick={this.props.analysisClick.bind(null, key, cat.type)}
+            className={'flipIn list-group-item' + active}
+            style={{paddingLeft:25}}
+          >
+            {cat.subcats ? <i className={'indicator'+ active} /> : ''}
+          {cat.name}
+          </a>
+        {active === ' active' && cat.subcats ? 
+           <div className='list-group flipIn' style={{paddingLeft:30, borderWidth: 2 * level}}>
             {
               Object.keys(cat.subcats)
-              .map(subKey => renderListGroup(subKey, cat.subcats))
+              .map(subKey => renderListGroup(subKey, cat.subcats, level+1))
             }
            </div> 
            : null
           }
-        </a>
+        </div>
       )
     }
 
     var cats = Object.keys(this.props.analyses).map(key => {
       var analysis = this.props.analyses[key]
       var catButtons = Object.keys(analysis.subcats).map(cat => {
-        return renderListGroup(cat, analysis.subcats)
+        return renderListGroup(cat, analysis.subcats, 1)
       })
 
       var itemClass = this.props.activeAnalysis === key ||
@@ -43,7 +48,7 @@ export class Sidebar extends React.Component {
       return (
         <li key={key} className={itemClass} >
           <input 
-            onClick={this.props.analysisClick.bind(null, key)}
+            onClick={this.props.analysisClick.bind(null, key, 'activeAnalysis')}
             className={checkeredBox}
             type='checkbox' 
           />
@@ -52,8 +57,10 @@ export class Sidebar extends React.Component {
             {this.props.analyses[key].name}
           </h2>
           <div className='divP'>
-            <small style={{padding: 10}}>{this.props.analyses[key].info}</small>
-            <div className='list-group'>
+            <div style={{padding: 15}}>
+              <small>{this.props.analyses[key].info}</small>
+            </div>
+            <div className='list-group flipIn'>
               {catButtons}
             </div>
           </div>

@@ -52,7 +52,7 @@ const cats = {
     type: 'activeCategory'
   },
   'Unemployment': {
-    name: 'Income Level for FT  Workers',
+    name: 'Unemployment',
     desc: 'Income level of full time workers (15 years & older) during the last 12 months',
     type: 'activeCategory'
   },
@@ -449,6 +449,7 @@ class DataExplorer extends React.Component {
   setActiveAnalysis (cat, stateKey) {
     
     let updateKey = stateKey || 'activeAnalysis'
+    console.log('setActiveAnalysis', updateKey)
     if(updateKey === 'activeAnalysis') {
       this.props.router.push('/data/' + cat)
     }

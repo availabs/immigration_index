@@ -74,7 +74,7 @@
   border: 3px solid #0275d8;
   background-color: #fff;
   color: #0275d8;
-  }
+}
 
 .accordionItem:nth-of-type(1) {
   animation-delay: 0.5s;
@@ -104,8 +104,9 @@
   background-color: #4292c6;
   width: 3px;
   height: 9px;
-
 }
+
+
 
 .accordionItem i:before {
   transform: translate(-2px, 0) rotate(45deg);
@@ -140,26 +141,32 @@
 
 .list-group{
   
-  border-top: 1px solid #efefef;
+  //border-top: 1px solid #efefef;
+  box-shadow: none;
+  //border: none;
 }
 .list-group-item{
-  background-color: #0275d8;
-  color: #efefef!important;
-  padding-left: 0px;
+  background-color: #fff!important;
+  color: #0275d8!important;
+  padding-left: 10px;
   padding-right: 0px;
-  border-top: 2px solid #0275d8;
-  border-bottom: 2px solid #0275d8;
+  transition: height 0.5s;
+  border: none;
+  border-left:  2px solid #0275d8;
+  //border-top: 2px solid #0275d8;
+  //border-bottom: 2px solid #0275d8;
 }
 
 .list-group-item.active{
-  background-color: #fff!important;
-  color: #0275d8!important;
+  background-color: #0275d8!important;
+  color: #efefef!important;
+  
   
 }
 
 .list-group-item.active:hover{
-  background-color: #efefef!important;
-  color:#014c8c!important;;
+  // background-color: #efefef!important;
+  // color:#014c8c!important;;
 }
 
 .list-group-item:hover{
@@ -167,6 +174,39 @@
   color: #efefef!important;
     transition: length 0.1s;
 }
+
+.indicator {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 5px;
+  margin-right: 10px;
+  left: 15px;
+}
+.indicator:before, .indicator:after {
+  content: "";
+  position: absolute;
+  background-color: #4292c6;
+  width: 3px;
+  height: 9px;
+
+}
+.indicator:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.indicator:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+.indicator.active:before {
+  transform: translate(2px, 0) rotate(45deg);
+   background-color: #fff!important;
+}
+.indicator.active:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+   background-color: #fff!important;
+}
+
+
 
 @keyframes flipdown {
   0% {
