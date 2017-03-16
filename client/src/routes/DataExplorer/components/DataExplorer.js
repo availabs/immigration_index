@@ -294,6 +294,7 @@ class DataExplorer extends React.Component {
     return (
       <div className='legendContainer'>
         <div className='row'>
+          <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
           <div className='col-md-5' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
             <h5>
               {cats[this.state.activeCategory].name}
@@ -304,15 +305,12 @@ class DataExplorer extends React.Component {
             <div className='legendRow'>
               {grades}
             </div>
-             
+            {cats[this.state.activeCategory].desc} 
           </div>
           <div className='col-md-1' />
           <div className='col-md-6' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
-             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-             <h4>{this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].name}</h4>
-             {this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].desc}
-            <h4>{cats[this.state.activeCategory].name}</h4>
-            {cats[this.state.activeCategory].desc}
+            <h4>{this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].name}</h4>
+            {this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].desc}
           </div>
         </div>
       </div>
@@ -398,14 +396,14 @@ class DataExplorer extends React.Component {
     }
 
     var gradeScale = d3.scaleOrdinal()
-      .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E', 'E-'])
+      .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E'])
       .range(Blues)
 
     regionGeo.features = this.state.regionGeo.features.map(d => {
       var regionGrade = data[d.properties.region] &&
         data[d.properties.region][this.state.activeCategory] &&
         data[d.properties.region][this.state.activeCategory].Grade
-        ? data[d.properties.region][this.state.activeCategory].Grade : 'E-'
+        ? data[d.properties.region][this.state.activeCategory].Grade : 'E'
 
       // regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
       d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
@@ -488,7 +486,6 @@ class DataExplorer extends React.Component {
               educationLevel={this.state.educationLevel}
               categoryClick={this.setActiveCategory}
               analyses={analyses}
-              
               analysisClick={this.setActiveAnalysis}
             />
           </div>
