@@ -5,6 +5,7 @@ import regions from '../assets/regions'
 // Styling
 
 const cats = [
+  'Overall',
   'Full Time',
   'Poverty',
   'Working Poor',
@@ -17,24 +18,6 @@ const cats = [
 
 const calc = ['Ratio', 'Score', 'Grade']
 
-const analyses = {
-  'nativity': {
-    name: 'The Effects of Nativity Status',
-    info:'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.'
-  },
-  'race': {
-    name: 'The Effects of Race',
-    info:'Effects of nativity status and race on economic outcomes of foreign-born New Yorkers.'
-  },
-  'gender': {
-    name: 'The Effects of Gender',
-    info: 'Gender Info'
-  },
-  'women': {
-    name: 'Economic Outcomes of Foreign Born Women',
-    info: 'Foreign Women Info'
-  }
-}
 
 class DataProcessing extends React.Component {
   constructor (props) {
@@ -45,7 +28,7 @@ class DataProcessing extends React.Component {
   }
 
   componentDidMount () {
-    d3.csv('/csv/group11.csv', (err, groupData) => {
+    d3.csv('/csv_v2/group11.csv', (err, groupData) => {
       if (err) console.log('error', err)
       this.setState({
         puma_data: groupData
@@ -56,7 +39,7 @@ class DataProcessing extends React.Component {
   joinData (data) {
     if (!data) return
     var regions = data.reduce((prev, current) => {
-      current.Regions = current.Regions.replace(', New York', ' PUMA').replace('; New York', '').trim() // + ' PUMA'
+      current.Regions = current.Regions.replace('; New York', ' ').replace(', New York', ' ').trim() + ' PUMA'
       prev[current.Regions] = current
       return prev
     }, {})
@@ -69,7 +52,10 @@ class DataProcessing extends React.Component {
           return col.includes(currentCat)
         })
         .map((col, i) => {
-          row[currentCat][calc[i]] = regions[reg][col]
+
+          var index = currentCat === 'Overall' ?  i + 1 : i
+
+          row[currentCat][calc[index]] = regions[reg][col]
         })
       })
       output[reg] = row

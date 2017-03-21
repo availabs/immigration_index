@@ -26,6 +26,11 @@ import './DataExplorer.scss'
 // ]
 
 const cats = {
+  'Overall': {
+    name: 'Overall',
+    desc: 'Aggregated score for all categories.',
+    type: 'activeCategory'
+  },
   'Full Time': {
     name: 'Full-Time Work',
     desc: 'Percentage of full time workers who were employed full time during the last 12 months (25-64 years old)',
@@ -58,7 +63,7 @@ const cats = {
   },
   'Income': {
     name: 'Income Level for FT  Workers',
-    desc: 'Income level of full time workers (15 years & older) during the last 12 months (25-64 years old)',
+    desc: 'Income level of full time workers during the last 12 months (25-64 years old)',
     type: 'activeCategory'
   }
 }
@@ -66,17 +71,17 @@ const cats = {
 const calc = ['Ratio', 'Rank', 'Grade']
 
 const education = {
-  hs : {
-     name: 'High School Diploma / Some College',
-     desc: 'Percentage of High School diploma holders (25-64 years old)',
-     type: 'educationLevel',
-     subcats: cats
-  },
   babs: {
-     name: 'Bachelor’s Degree or More',
-     desc: 'Percentage of holders of Bachelor degree or better (25-64 years old).',
-     type: 'educationLevel',
-     subcats: cats
+    name: 'Bachelor’s Degree or More',
+    desc: 'Holds Bachelor’s degree or better; speaks English well.',
+    type: 'educationLevel',
+    subcats: cats
+  },
+  hs : {
+    name: 'High School Diploma / Some College',
+    desc: 'Has High School diploma or some college; speaks English well.',
+    type: 'educationLevel',
+    subcats: cats
   }
 }
 
@@ -121,7 +126,7 @@ const analyses = {
   },
   vulnerable: {
     name: 'The Effects of Low English Proficiency and Educational Attainment',
-    info: 'Measures economic outcomes for the most vulnerable foreign-born New Yorkers.',
+    info: 'Measures economic outcomes for the foreign-born with no high school diploma and low English proficiency.',
     subcats: cats
   }
 }
@@ -183,20 +188,18 @@ class DataExplorer extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    console.log( nextProps.params.type, this.state.activeAnalysis )
     if (nextProps.params.type && nextProps.params.type !== this.state.activeAnalysis) {
       this.setState({ activeAnalysis: nextProps.params.type })
     }
   }
 
   numberFormat (val) {
-    console.log()
-    if (val.includes('#')) return 'No Data'
+    if (!val || val.includes('#')) return 'No Data'
     if (val.includes('%')) return val
     return (+val).toFixed(2)
   }
   gradeFormat (val) {
-    if (val.includes('#')) return 'No Data'
+    if (!val || val.includes('#')) return 'No Data'
     return val
   }
 
@@ -217,7 +220,8 @@ class DataExplorer extends React.Component {
         return (
           <tr key={region}>
             <td>{region}</td>
-            <td>{this.numberFormat(data[region][this.state.activeCategory].Ratio)}</td>
+            {this.state.activeCategory === 'Overall' ? null
+              : <td>{this.numberFormat(data[region][this.state.activeCategory].Ratio)}</td>}
             <td>{data[region][this.state.activeCategory].Rank}</td>
             <td>{this.gradeFormat(data[region][this.state.activeCategory].Grade)}</td>
           </tr>
@@ -225,11 +229,17 @@ class DataExplorer extends React.Component {
       })
 
     return (
-      <table className='table table-hover' style={{backgroundColor: '#fff'}}>
+      <table className='table table-hover' style={{ backgroundColor: '#fff' }}>
         <thead>
           <tr>
             <th>Region</th>
-            {calc.map(header => <th key={header}>{header}</th>)}
+            {
+              calc
+                .filter(header => {
+                  return !(this.state.activeCategory === 'Overall' && header === 'Ratio')
+                })
+                .map(header => <th key={header}>{header}</th>)
+            }
           </tr>
         </thead>
         <tbody>
@@ -308,14 +318,23 @@ class DataExplorer extends React.Component {
             {cats[this.state.activeCategory].desc} 
           </div>
           <div className='col-md-1' />
-          <div className='col-md-6' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
-            <h4>{this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].name}</h4>
-            {this.state.activeAnalysis === 'vulnerable' ? '' : education[this.state.educationLevel].desc}
-          </div>
+          {this.state.activeAnalysis !== 'vulnerable' ?
+            (
+              <div className='col-md-6' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
+              {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born And Native Born<br /></strong> : ''}
+              {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women And Native Born Women<br /></strong> : ''}
+              
+              <strong>{education[this.state.educationLevel].name}<br /></strong>
+                {education[this.state.educationLevel].desc}
+              </div>
+            )
+            : ''
+          }
         </div>
       </div>
     )
   }
+
   renderRightBox () {
     return (
       <div>
@@ -439,7 +458,7 @@ class DataExplorer extends React.Component {
       <div>
         {this.renderLegend(gradeScale)}
         {this.renderCategories()}
-        <div style={{ fontSize:'2.1em', position:'absolute', top: 8, right:25 }}> {this.state.activeRegion}</div>
+        <div style={{ position:'absolute', top: 10, right:15 }}><h4>{this.state.activeRegion}</h4></div>
         <ResponsiveMap
           geo={regionGeo}
           click={this.mapClick}
@@ -460,7 +479,6 @@ class DataExplorer extends React.Component {
   setActiveAnalysis (cat, stateKey) {
     
     let updateKey = stateKey || 'activeAnalysis'
-    console.log('setActiveAnalysis', updateKey)
     if(updateKey === 'activeAnalysis') {
       this.props.router.push('/data/' + cat)
     }
@@ -476,7 +494,6 @@ class DataExplorer extends React.Component {
           <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
             {this.renderMap()}
             {this.dataTable()}
-
           </div>
           <div className='col-md-3'>
             <Sidebar

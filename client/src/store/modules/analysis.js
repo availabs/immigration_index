@@ -33,6 +33,7 @@ export const dataSources = {
 }
 
 const cats = [
+  'Overall',
   'Full Time',
   'Poverty',
   'Working Poor',
@@ -56,7 +57,7 @@ export function receiveAnalysis (type, education, value) {
 
 export const loadAnalyses = (type, education) => {
   return (dispatch) => {
-    return fetch(`/json/${dataSources[type][education]}`)
+    return fetch(`/json_v2/${dataSources[type][education]}`)
       .then(response => response.json())
       .then(json => {
         return dispatch(receiveAnalysis(type, education, json))

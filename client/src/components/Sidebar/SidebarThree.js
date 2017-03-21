@@ -57,7 +57,7 @@ export class Sidebar extends React.Component {
             {this.props.analyses[key].name}
           </h2>
           <div className='divP'>
-            <div style={{padding: 15, color: '#111'}}>
+            <div style={{padding: 15, color: '#111', fontSize: '17px'}}>
               <small>{this.props.analyses[key].info}</small>
             </div>
             <div className='list-group flipIn'>
