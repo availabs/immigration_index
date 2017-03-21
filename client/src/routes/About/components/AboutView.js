@@ -1,4 +1,5 @@
 import React from 'react'
+import { Scrollspy } from 'react-scrollspy'
 import './AboutView.scss'
 
 class HomeView extends React.Component {
@@ -15,19 +16,25 @@ class HomeView extends React.Component {
             <div className='row'>
               <div className='col-md-4'>
                 <br />
-                <div className='list-group'>
-                  <a href='#' className='list-group-item active'>
+                <Scrollspy items={ ['about', 'meaning', 'measure'] } currentClassName=''>
+                  <a href='#about' className='list-group-item'>
                    About
                   </a>
-                  <a href='#' className='list-group-item'>The Meaning and Complexity of Integration</a>
-                  <a href='#' className='list-group-item'>Why Measure Integration</a>
-                </div>
+                  <a href='#meaning' className='list-group-item'>The Meaning and Complexity of Integration</a>
+                  <a href='#measure' className='list-group-item'>Why Measure Integration</a>
+                </Scrollspy>
               </div>
               <div className='col-md-8' style={{ height:'100vh', paddingRight: 0 }}>
                 <div style={{ height: '100%', overflowY:'scroll', padding: 30, textAlign:'justify' }} >
-                    <AboutSection />
-                    <Meaning />
-                    <WhyMeasure />
+                    <div id='about'>
+                        <AboutSection />
+                    </div>
+                    <div id='meaning'>
+                        <Meaning />
+                    </div>
+                    <div id='measure' style={{ paddingBottom: 300 }}>
+                        <WhyMeasure />
+                    </div>
                 </div>
                 </div>
             </div>
@@ -45,8 +52,7 @@ class WhyMeasure extends React.Component {
   render () {
     return (
       <div>
-       <br />
-        <h4 style={{ textAlign:'center' }}>Why Measure Integration</h4>
+        <h1 style={{ textAlign:'center' }}>Why Measure Integration</h1>
         <p>Itzigsohn & Giorguli-Saucedo (2005) show that if immigrants are afforded educational, occupational and political opportunities, social distance
         between them and mainstream society will be reduced. If they are economically marginalized and excluded, the effects of class and race will increase
         social distance as predicted by the segmented assimilation theory. Itzigsohn & Giorguli-Saucedo (2005) pointed out that there is a need for
