@@ -122,11 +122,13 @@ const analyses = {
   gender: {
     name: 'The Effects of Gender',
     info: 'Effects of nativity status on economic outcomes of foreign-born women.',
+    heading: 'Foreign Born Women and Foreign Born Men',
     subcats: education
   },
   vulnerable: {
     name: 'The Effects of Low English Proficiency and Educational Attainment',
     info: 'Measures economic outcomes for the foreign-born with no high school diploma and low English proficiency.',
+    heading: 'Foreign-born with no high school diploma and low English proficiency',
     subcats: cats
   }
 }

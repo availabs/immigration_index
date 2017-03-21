@@ -56,7 +56,9 @@ class WhyMeasure extends React.Component {
         <p>Itzigsohn & Giorguli-Saucedo (2005) show that if immigrants are afforded educational, occupational and political opportunities, social distance
         between them and mainstream society will be reduced. If they are economically marginalized and excluded, the effects of class and race will increase
         social distance as predicted by the segmented assimilation theory. Itzigsohn & Giorguli-Saucedo (2005) pointed out that there is a need for
-        institutional mechanisms to further gender equality and social and racial justice.</p><br />
+        institutional mechanisms to further gender equality and social and racial justice.</p>
+        <img src="http://placehold.it/150x100" class="img-responsive inline-block" alt="Responsive image" />
+        <br />
         <p>Traditional and new immigrant gateways alike continue to struggle with the full integration of immigrants and with measuring their success toward
         this goal. Locally-driven integration policies involve different sectors in their implementation. These policies are critical to developing an
         inclusive and tolerant society, which enables immigrants to live in harmony. However, policies on the books may or may not mirror realities/outcomes

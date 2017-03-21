@@ -53,11 +53,11 @@ export class Sidebar extends React.Component {
             type='checkbox' 
           />
           <i />
-          <h2 className='accordianHeader' onClick={this.props.analysisClick.bind(null, key)}>
+          <h2 className='accordianHeader' onClick={this.props.analysisClick.bind(null, key)} style={{paddingBottom: 0, fontSize: '1.1em'}}>
             {this.props.analyses[key].name}
           </h2>
           <div className='divP'>
-            <div style={{padding: 15, color: '#111', fontSize: '17px'}}>
+            <div style={{padding: 15, color: '#111', fontSize: '17px', paddingTop: 2}}>
               <small>{this.props.analyses[key].info}</small>
             </div>
             <div className='list-group flipIn'>
