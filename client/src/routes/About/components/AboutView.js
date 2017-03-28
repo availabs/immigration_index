@@ -11,12 +11,12 @@ class HomeView extends React.Component {
   render () {
     return (
       <div>
-        <div className='container-fluid text-center about_container' style={{ backgroundColor: '#fff', overflow:'hidden'}}>
+        <div className='container-fluid text-center about_container' style={{ backgroundColor: '#fff', overflow:'hidden' }}>
           <div className='container about-content'>
             <div className='row'>
               <div className='col-md-4'>
                 <br />
-                <Scrollspy items={ ['about', 'meaning', 'measure'] } currentClassName=''>
+                <Scrollspy items={['about', 'meaning', 'measure']} currentClassName=''>
                   <a href='#about' className='list-group-item'>
                    About
                   </a>
@@ -26,17 +26,17 @@ class HomeView extends React.Component {
               </div>
               <div className='col-md-8' style={{ height:'100vh', paddingRight: 0 }}>
                 <div style={{ height: '100%', overflowY:'scroll', padding: 30, textAlign:'justify' }} >
-                    <div id='about'>
-                        <AboutSection />
-                    </div>
-                    <div id='meaning'>
-                        <Meaning />
-                    </div>
-                    <div id='measure' style={{ paddingBottom: 300 }}>
-                        <WhyMeasure />
-                    </div>
+                  <div id='about'>
+                    <AboutSection />
+                  </div>
+                  <div id='meaning'>
+                    <Meaning />
+                  </div>
+                  <div id='measure' style={{ paddingBottom: 300 }}>
+                    <WhyMeasure />
+                  </div>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -47,17 +47,22 @@ class HomeView extends React.Component {
 
 export default HomeView
 
-
 class WhyMeasure extends React.Component {
   render () {
     return (
       <div>
         <h1 style={{ textAlign:'center' }}>Why Measure Integration</h1>
+        <p>
+          <img
+            src='/img/3109320685_36e803978d_z.jpg'
+            style={{ width: 420, height: 320 }}
+            className='img-responsive img-right' alt='Responsive image'
+          />
+        </p>
         <p>Itzigsohn & Giorguli-Saucedo (2005) show that if immigrants are afforded educational, occupational and political opportunities, social distance
         between them and mainstream society will be reduced. If they are economically marginalized and excluded, the effects of class and race will increase
         social distance as predicted by the segmented assimilation theory. Itzigsohn & Giorguli-Saucedo (2005) pointed out that there is a need for
         institutional mechanisms to further gender equality and social and racial justice.</p>
-        <img src="http://placehold.it/150x100" class="img-responsive inline-block" alt="Responsive image" />
         <br />
         <p>Traditional and new immigrant gateways alike continue to struggle with the full integration of immigrants and with measuring their success toward
         this goal. Locally-driven integration policies involve different sectors in their implementation. These policies are critical to developing an
@@ -79,6 +84,13 @@ class Meaning extends React.Component {
     return (
       <div>
         <h1 style={{ textAlign:'center' }}>The Meaning and Complexity of Integration</h1>
+        <p>
+         <img
+            src='/img/14577783439_0fc897c193_z.jpg'
+            style={{ width: 420, height: 260 }}
+            className='img-responsive img-right' alt='Responsive image'
+          />
+        </p>
         <p>There is no doubt that fourth wave immigrants to the US have different characteristics, backgrounds, and settlement patterns from their predecessors.  For the most
         part, today’s immigrants are people of color from Latin America, Asia and the Caribbean. They are diverse in their socio economic background and they settle in
         traditional as well as new immigrant gateways. Additionally, one third of immigrants are undocumented. This raises the concern that they may have a harder time
@@ -98,7 +110,14 @@ class Meaning extends React.Component {
         take place on both ends in order for integration to be fully achieved. Jimenez also emphasizes the fact that integration takes time and that it is a fu8nction of
         the unique resources, characteristics, class and race structures of the migrant as well as the communities in which he/she resides (Jimenez, 2011). Immigrant
         integration therefore refers to the degree of participation of foreign- born individuals in the major institutions of society, and the ability of these institutions
-        to respond to the needs of foreign-born residents.</p><br />
+        to respond to the needs of foreign-born residents.</p>
+        <p>
+         <img
+            src='/img/14761932405_6b07344911_z.jpg'
+            style={{ width: 420, height: 260 }}
+            className='img-responsive img-left' alt='Responsive image'
+          />
+        </p>
         <p>Hence, the meaning of the term integration in immigrant receiving nations is shaped by different and changing political ideologies, norms, and values, (Carrera, 2008).
         These are the same differences that shape the debates on immigration in general. On one side of the spectrum, the role of public policy is seen as having a regulatory
         function that controls the borders and adopts a criminal justice, safety and security approaches to immigration management. On the other side of the spectrum, the
@@ -145,10 +164,13 @@ class AboutSection extends React.Component {
     return (
       <div >
         <h1 style={{ textAlign:'center' }}>About The Immigration Integration Index</h1>
-        <p>It is a tale of two worlds. It is a world where immigrants are welcomed with open arms to the land of opportunity, and acknowledged for being engines of economic
+        <p><img src='/img/3109323037_1324c68d5c_z.jpg' style={{ width: 420, height: 260 }} className='img-responsive img-right' alt='Responsive image' />
+        </p>
+            It is a tale of two worlds. It is a world where immigrants are welcomed with open arms to the land of opportunity, and acknowledged for being engines of economic
                 development and growth to economically stagnant communities. It is a world where immigrants are vilified and condemned for usurping opportunities from natives, and
-                described as agents of crime and de-stabilization. These two worlds accurately capture the American experience.</p>
+                described as agents of crime and de-stabilization. These two worlds accurately capture the American experience.
         <br />
+
         <p>In this work, we ask very familiar questions that so many before us grappled with. Is the American dream still alive for immigrants who come to our shores? Under
                 what circumstances does the impact of the outsider status become negligible? To what extent can an immigrant enjoy equal access to economic opportunities that her/his
                 native counterpart enjoy? When, where and how do the effects of race, ethnicity and gender intersect with nativity status in the lives of the foreign-born?
@@ -160,11 +182,20 @@ class AboutSection extends React.Component {
                 are the obligations of new Americans, and what are the responsibilities of the adopted society? To what extent does an immigrant have to change and to what extent
                 does the host society changes to accommodate new Americans? What can government do to fulfill its mission of serving all residents in the most cost-effective manner
                 under budget constraints and competing priorities?</p><br />
+       
+         
         <p>The spectrum of the discourse embraced immigrants on one end, and vilified and marginalized them on the other. On one end of the spectrum, immigrants are often
                 seen as a threat and an economic liability, and on the other end, they are embraced as assets and agents of economic development. The history of immigrants is fraught
                 with tensions between balancing the rights of immigrants and a desire to protect the rights of the Native-born, and a constructed national identity. This identity is
                 often threatened by perceived differences of new comers. Political ideologies (in favor of, or hostile to) immigrants have shaped public policy on the national, state
-                and local levels.</p><br />
+                and local levels.</p>
+         <p>
+         <img
+            src='/img/3110152392_cd8bc646aa_z.jpg'
+            style={{ width: 420, height: 260 }}
+            className='img-responsive img-left' alt='Responsive image'
+          />
+        </p>
         <p>In the United States, there were two dominant policy approaches to immigrant integration; (a) Pre-1920 approach characterized by forcible integration where migrants
                 were pressured to become Americans, and were expected to relinquish old practices and beliefs through participation in programs and training; and (b) a laissez faire
                 approach on the part of the federal government, characterized by absence of interventions that would enable (or constrict) integration at the local level

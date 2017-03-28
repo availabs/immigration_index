@@ -7,7 +7,6 @@ export class Sidebar extends React.Component {
     let divName = this.props.mapDiv || 'mapDiv'
 
     var cats = Object.keys(this.props.analyses).map(key => {
-
       var analysis = this.props.analyses[key]
       var catButtons = Object.keys(analysis.subcats).map(cat => {
         var active = cat === this.props.activeAnalysis ? ' active' : ''
@@ -28,10 +27,10 @@ export class Sidebar extends React.Component {
         ? '' : 'checkeredBox'
       return (
         <li key={key} className={itemClass} >
-          <input 
+          <input
             onClick={this.props.analysisClick.bind(null, key)}
             className={checkeredBox}
-            type='checkbox' 
+            type='checkbox'
           />
           <i />
           <h2 className='accordianHeader' onClick={this.props.analysisClick.bind(null, key)}>

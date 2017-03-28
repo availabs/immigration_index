@@ -1,3 +1,5 @@
+@import '../../styles/base';
+
 .transition, .divP, p, ul li i:before, ul li i:after {
   transition: all 0.25s ease-in-out;
 }
@@ -55,7 +57,7 @@
 }
 
 .accordionItem:hover  {
-  border: 1px solid #0275d8;
+  border: 1px solid $primary-color;
   background-color: #014c8c;
 }
 
@@ -65,15 +67,15 @@
   padding-bottom: 4px;
   padding-top: 0px;
   border: 1px solid #dce7eb;
-  background-color: #0275d8;
+  background-color: $primary-color;
   color: #efefef;
   
 }
 
 .accordionItem.active  {
-  border: 3px solid #0275d8;
+  border: 3px solid $primary-color;
   background-color: #fff;
-  color: #0275d8;
+  color: $primary-color;
 }
 
 .accordionItem:nth-of-type(1) {
@@ -148,18 +150,18 @@
 }
 .list-group-item{
   background-color: #fff!important;
-  color: #0275d8!important;
+  color: $primary-color!important;
   padding-left: 10px;
   padding-right: 0px;
   transition: height 0.5s;
   border: none;
-  border-left:  2px solid #0275d8;
-  //border-top: 2px solid #0275d8;
-  //border-bottom: 2px solid #0275d8;
+  border-left:  2px solid $primary-color;
+  //border-top: 2px solid $primary-color;
+  //border-bottom: 2px solid $primary-color;
 }
 
 .list-group-item.active{
-  background-color: #0275d8!important;
+  background-color: $primary-color!important;
   color: #efefef!important;
   
   

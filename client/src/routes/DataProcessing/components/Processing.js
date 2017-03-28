@@ -18,7 +18,6 @@ const cats = [
 
 const calc = ['Ratio', 'Score', 'Grade']
 
-
 class DataProcessing extends React.Component {
   constructor (props) {
     super(props)
@@ -52,8 +51,7 @@ class DataProcessing extends React.Component {
           return col.includes(currentCat)
         })
         .map((col, i) => {
-
-          var index = currentCat === 'Overall' ?  i + 1 : i
+          var index = currentCat === 'Overall' ? i + 1 : i
 
           row[currentCat][calc[index]] = regions[reg][col]
         })

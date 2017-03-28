@@ -15,18 +15,18 @@ export class Sidebar extends React.Component {
             key={key}
             onClick={this.props.analysisClick.bind(null, key, cat.type)}
             className={'flipIn list-group-item' + active}
-            style={{paddingLeft:25}}
+            style={{ paddingLeft:25 }}
           >
-            {cat.subcats ? <i className={'indicator'+ active} /> : ''}
-          {cat.name}
+            {cat.subcats ? <i className={'indicator' + active} /> : ''}
+            {cat.name}
           </a>
-        {active === ' active' && cat.subcats ? 
-           <div className='list-group flipIn' style={{paddingLeft:30, borderWidth: 2 * level}}>
-            {
+          {active === ' active' && cat.subcats ?
+            <div className='list-group flipIn' style={{ paddingLeft:30, borderWidth: 2 * level }}>
+              {
               Object.keys(cat.subcats)
-              .map(subKey => renderListGroup(subKey, cat.subcats, level+1))
+              .map(subKey => renderListGroup(subKey, cat.subcats, level + 1))
             }
-           </div> 
+            </div>
            : null
           }
         </div>
@@ -47,17 +47,17 @@ export class Sidebar extends React.Component {
         ? '' : 'checkeredBox'
       return (
         <li key={key} className={itemClass} >
-          <input 
+          <input
             onClick={this.props.analysisClick.bind(null, key, 'activeAnalysis')}
             className={checkeredBox}
-            type='checkbox' 
+            type='checkbox'
           />
           <i />
-          <h2 className='accordianHeader' onClick={this.props.analysisClick.bind(null, key)} style={{paddingBottom: 0, fontSize: '1.1em'}}>
+          <h2 className='accordianHeader' onClick={this.props.analysisClick.bind(null, key)} style={{ paddingBottom: 0, fontSize: '1.1em' }}>
             {this.props.analyses[key].name}
           </h2>
           <div className='divP'>
-            <div style={{padding: 15, color: '#111', fontSize: '17px', paddingTop: 2}}>
+            <div style={{ padding: 15, color: '#111', fontSize: '17px', paddingTop: 2 }}>
               <small>{this.props.analyses[key].info}</small>
             </div>
             <div className='list-group flipIn'>

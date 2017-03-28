@@ -35,7 +35,7 @@ export const Nav = () => {
             Immigrant Integration Index
           </IndexLink>
         <div className='collapse navbar-toggleable-md' id='collapseEx2'>
-          
+
           <ul className='nav navbar-nav' />
           <form className='form-inline'>
             <ul className='nav navbar-nav hidden'>

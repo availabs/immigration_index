@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from 'components/Nav'
-import Sidebar from 'components/Nav/SideBar'
 import './CoreLayout.scss'
 import 'styles/core.scss'
 

@@ -96,12 +96,9 @@ class HomeView extends React.Component {
             <ul>
               <li>
                 {title}
-                
+
               </li>
-              <li>
-                
-                
-              </li>
+              <li />
             </ul>
           </div>
         </div>

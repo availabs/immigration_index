@@ -8,8 +8,11 @@ import { loadAnalyses } from 'store/modules/analysis'
 // Components
 import ResponsiveMap from 'components/ResponsiveMap'
 import Sidebar from 'components/Sidebar/SidebarThree'
+import AffixWrapper from 'components/Affix/AffixWrapper'
 // CONST Data sources
 import regions from '../assets/regions'
+import html2canvas from 'html2canvas'
+// import testxml from ''
 // import colorBrewer from '../assets/colorBrewer'
 // Styling
 import './DataExplorer.scss'
@@ -24,6 +27,102 @@ import './DataExplorer.scss'
 //   'Income'
 //    // ,'Naturalization'
 // ]
+
+
+
+function makePDF () {
+  var quotes = document.getElementById('DataViewer')
+  var images = []
+  var nodes = []
+  var svgElem = quotes.querySelectorAll('#mapSVG')
+  var elements = svgElem.forEach(function(node) {
+    var parent = node.parentNode
+
+    var svg = node.innerHTML
+    console.log(node.width.baseVal.value, node.height.baseVal.value)
+    var image = new Image();
+    var open = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="'+ node.width.baseVal.value + '" height="' + node.height.baseVal.value + '">'
+    image.src = 'data:image/svg+xml,' + escape(open + svg + '</svg>')
+    parent.appendChild(image);
+    node.style.display = 'none' 
+    document.getElementById('toolTipDiv').style.display = 'none'
+    images.push(image)
+    nodes.push(node)
+   
+    
+    image.onload = function() {
+      image.onload = function() {};
+      var canvas = document.createElement('canvas');
+      console.log('lading ',image.width, image.height)
+      canvas.width = image.width;
+      canvas.height = image.height;
+      var context = canvas.getContext('2d');
+      context.drawImage(image, 0, 0);
+      image.src = canvas.toDataURL();
+    }  
+  })
+  
+    // At this point the container has no SVG, it only has HTML and Canvases.
+    window.scrollTo(0, 0)
+    html2canvas(quotes, {
+    allowTaint: true,
+    onrendered: function (canvas) {
+        //! MAKE YOUR PDF
+
+      var pdf = new jsPDF('p', 'pt', 'letter')
+      var start_width = quotes.clientWidth * 1.2
+      var start_height = 1400
+      console.log('export', quotes.clientHeight, ' > ', start_height )
+      for (var i = 0; i <= (quotes.clientHeight) / start_height; i++) {
+            //! This is all just html2canvas stuff
+        var srcImg = canvas
+        var sX = 0
+        var sY = start_height * i // start start_height pixels down for every new page
+        var sWidth = start_width
+        var sHeight = start_height
+        var dX = 0
+        var dY = 0
+        var dWidth = start_width
+        var dHeight = start_height
+
+        window.onePageCanvas = document.createElement('canvas')
+        onePageCanvas.setAttribute('width', start_width)
+        onePageCanvas.setAttribute('height', start_height)
+        var ctx = onePageCanvas.getContext('2d')
+            // details on this usage of this function:
+            // https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Using_images#Slicing
+        ctx.drawImage(srcImg, sX, sY, sWidth, sHeight, dX, dY, dWidth, dHeight)
+
+            // document.body.appendChild(canvas);
+        var canvasDataURL = onePageCanvas.toDataURL('image/png', 1.0)
+
+        var width = onePageCanvas.width
+        var height = onePageCanvas.clientHeight
+
+            //! If we're on anything other than the first page,
+            // add another page
+        if (i > 0) {
+          pdf.addPage(612, 791) // 8.5" x 11" in pts (in*72)
+        }
+            //! now we declare that we're working on that page
+        pdf.setPage(i + 1)
+            //! now we add content to that page!
+        pdf.addImage(canvasDataURL, 'PNG', 10, 10, (width * (700 / width)), (height * 0.32))
+      }
+        //! after the for loop is finished running, we save the pdf.
+      pdf.save('immigration_index.pdf')
+      nodes.forEach(node => {
+        node.style.display = 'block'
+      })
+      images.forEach(node => {
+        node.style.display = 'none'
+      })
+      document.getElementById('toolTipDiv').style.display = 'block'
+
+    }
+  })
+    
+}
 
 const cats = {
   'Overall': {
@@ -132,8 +231,11 @@ const analyses = {
     subcats: cats
   }
 }
-var Blues = ['rgb(5,48,97)', 'rgb(33,102,172)', 'rgb(67,147,195)', 'rgb(146,197,222)', 'rgb(209,229,240)', 'rgb(253,219,199)', 'rgb(244,165,130)', 'rgb(214,96,77)', 'rgb(178,24,43)', 'rgb(103,0,31)']
-
+const Blues = ['rgb(5,48,97)', 'rgb(33,102,172)', 'rgb(67,147,195)', 'rgb(146,197,222)', 'rgb(209,229,240)',
+  'rgb(253,219,199)', 'rgb(244,165,130)', 'rgb(214,96,77)', 'rgb(178,24,43)', 'rgb(103,0,31)']
+const gradeScale = d3.scaleOrdinal()
+      .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E'])
+      .range(Blues)
 // ['rgb(49,54,149)', 'rgb(69,117,180)', 'rgb(116,173,209)', 'rgb(171,217,233)', 'rgb(224,243,248)', 'rgb(254,224,144)', 'rgb(253,174,97)', 'rgb(244,109,67)', 'rgb(215,48,39)', 'rgb(165,0,38)']
 // ['rgb(0,104,55)', 'rgb(26,152,80)', 'rgb(102,189,99)', 'rgb(166,217,106)', 'rgb(217,239,139)', 'rgb(254,224,139)', 'rgb(253,174,97)', 'rgb(244,109,67)', 'rgb(215,48,39)', 'rgb(165,0,38)']
 // ['#08306b', '#08519c', '#2171b5', '#4292c6', '#6baed6', '#9ecae1', '#c6dbef', '#deebf7', '#f7fbff', '#fff']
@@ -149,7 +251,8 @@ class DataExplorer extends React.Component {
       activeRegions: null,
       geoData: null,
       childGeo: null,
-      regionGeo: null
+      regionGeo: null,
+      display: 'map'
     }
     this.setActiveCategory = this.setActiveCategory.bind(this)
     this.setActiveAnalysis = this.setActiveAnalysis.bind(this)
@@ -160,6 +263,7 @@ class DataExplorer extends React.Component {
 
   componentDidMount () {
     d3.json('/geo/ny_puma_geo.json', (err, geodata) => {
+      console.log('geodata')
       if (err) console.log('error', err)
       var regionGeo = {
         'type': 'FeatureCollection',
@@ -231,30 +335,48 @@ class DataExplorer extends React.Component {
       })
 
     return (
-      <table className='table table-hover' style={{ backgroundColor: '#fff' }}>
-        <thead>
-          <tr>
-            <th>Region</th>
-            {
-              calc
-                .filter(header => {
-                  return !(this.state.activeCategory === 'Overall' && header === 'Ratio')
-                })
-                .map(header => <th key={header}>{header}</th>)
+      <div style={{padding: 10}}>
+       
+          <div className='col-md-12' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
+            <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
+            {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born And Native Born</strong> : ''}
+            {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women And Native Born Women<br /></strong> : ''}
+            {this.state.activeAnalysis !== 'vulnerable' ?
+              (
+                <span>
+                {' | '} <strong>{education[this.state.educationLevel].name}</strong>
+                {' | ' + education[this.state.educationLevel].desc}
+                </span>
+              )
+              : ''
             }
-          </tr>
-        </thead>
-        <tbody>
-          {rows}
-        </tbody>
-      </table>
+          </div>
+          
+        <table className='table table-hover' style={{ backgroundColor: '#fff', marginTop: 40, }}>
+          <thead>
+            <tr>
+              <th>Region</th>
+              {
+                calc
+                  .filter(header => {
+                    return !(this.state.activeCategory === 'Overall' && header === 'Ratio')
+                  })
+                  .map(header => <th key={header}>{header}</th>)
+              }
+            </tr>
+          </thead>
+          <tbody>
+            {rows}
+          </tbody>
+        </table>
+      </div>
     )
   }
 
   educationClick (level) {
     if (level !== this.state.educationLevel) {
       this.setState({
-        educationLevel:level
+        display:level
       })
     }
   }
@@ -279,14 +401,6 @@ class DataExplorer extends React.Component {
         </div>
       )
     })
-    var babsClass = 'catbutton'
-    babsClass += this.state.educationLevel === 'babs' ? ' active' : ''
-    var hsClass = 'catbutton'
-    hsClass += this.state.educationLevel === 'hs' ? ' active' : ''
-    var labelStrings = [
-      ['Bachelor’s Degree or More', 'High School Diploma / Some College'],
-      ['BACHELORS', 'HIGH SCHOOL']
-    ]
 
     var catButtons = Object.keys(cats).map(cat => {
       var active = cat === this.state.activeCategory ? 'catbutton active' : 'catbutton'
@@ -306,81 +420,68 @@ class DataExplorer extends React.Component {
     return (
       <div className='legendContainer'>
         <div className='row'>
-          <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-          <div className='col-md-5' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
+          <div className='col-md-5' style={{ backgroundColor:'#fff', borderRadius: 5, padding:10 }}>
             <h5>
               {cats[this.state.activeCategory].name}
+              <span style={{ float: 'right' }}>{this.state.activeRegion}</span>
             </h5>
-            <div className='legendRow'>
-              {colors}
+            <br />
+            <div style={{ marginTop: -15 }}>
+              <div className='legendRow'>
+                {colors}
+              </div>
+              <div className='legendRow'>
+                {grades}
+              </div>
             </div>
-            <div className='legendRow'>
-              {grades}
-            </div>
-            {cats[this.state.activeCategory].desc} 
+            {cats[this.state.activeCategory].desc}
           </div>
           <div className='col-md-1' />
-          {this.state.activeAnalysis !== 'vulnerable' ?
-            (
-              <div className='col-md-6' style={{backgroundColor:'#fff', borderRadius: 5, padding:10}}>
-              {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born And Native Born<br /></strong> : ''}
-              {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women And Native Born Women<br /></strong> : ''}
-              
-              <strong>{education[this.state.educationLevel].name}<br /></strong>
-                {education[this.state.educationLevel].desc}
-              </div>
-            )
-            : ''
-          }
+          <div className='col-md-6' style={{ backgroundColor:'#fff', borderRadius: 5, padding:10 }}>
+            <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
+            {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born And Native Born<br /></strong> : ''}
+            {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women And Native Born Women<br /></strong> : ''}
+            {this.state.activeAnalysis !== 'vulnerable' ?
+              (
+                <span>
+                  <strong>{education[this.state.educationLevel].name}<br /></strong>
+                  {education[this.state.educationLevel].desc}
+                </span>
+              )
+              : ''
+            }
+          </div>
         </div>
       </div>
     )
   }
 
-  renderRightBox () {
+  renderMapTableButtons () {
+    var mapClass = 'catbutton'
+    mapClass += this.state.display === 'map' ? ' active' : ''
+    var tableClass = 'catbutton'
+    tableClass += this.state.display === 'table' ? ' active' : ''
     return (
-      <div>
-        <h4>Measures</h4>
-        <div className='catButtons'>
-          {catButtons}
-        </div>
-        <div className='row'>
-          <div className='col-xs-12'>
-           Educational Attainment
+      <div className='catButtons' style={{ float: 'right' }}>
+        <div className='catDiv'>
+          <div onClick={this.educationClick.bind(null, 'map')}>
+            <div className={mapClass}>
+              <p className='catContent' style={{ fontSize:'0.7em' }}>
+                Map
+              </p>
+            </div>
           </div>
         </div>
-        <div className='row'>
-          <div className='col-xs-12'>
-            <div className='catButtons'>
-              <div className='catDiv'>
-                <div onClick={this.educationClick.bind(null, 'babs')}>
-                  <div className={babsClass}>
-                    <p className='catContent' style={{fontSize:'0.7em'}}>
-                      {labelStrings[0][0].toUpperCase()}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className='catDiv'>
-                <div onClick={this.educationClick.bind(null, 'hs')}>
-                  <div className={hsClass}>
-                    <p className='catContent' style={{fontSize:'0.7em'}}>
-                      {labelStrings[0][1].toUpperCase()}
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <div className='catDiv'>
+          <div onClick={this.educationClick.bind(null, 'table')}>
+            <div className={tableClass}>
+              <p className='catContent' style={{ fontSize:'0.7em' }}>
+                Table
+              </p>
             </div>
           </div>
         </div>
       </div>
-    )
-  }
-  renderCategories () {
-
-    return (
-      <div />
-     
     )
   }
 
@@ -407,7 +508,8 @@ class DataExplorer extends React.Component {
     if (!this.props.analyses[this.state.activeAnalysis] ||
         !this.props.analyses[this.state.activeAnalysis][this.state.educationLevel] ||
         !this.state.childGeo || !this.state.regionGeo) {
-      return <div style={{ minHeight:'100vh' }}> Loading ... </div>
+      this.props.loadAnalyses(this.state.activeAnalysis, this.state.educationLevel)
+      return <div style={{ minHeight:'100vh' }}> Loading ... {Object.keys(this.props.analyses)}</div>
     }
 
     var data = this.props.analyses[this.state.activeAnalysis][this.state.educationLevel]
@@ -415,10 +517,6 @@ class DataExplorer extends React.Component {
       'type': 'FeatureCollection',
       'features': []
     }
-
-    var gradeScale = d3.scaleOrdinal()
-      .domain(['A', 'A-', 'B', 'B-', 'C', 'C-', 'D', 'D-', 'E'])
-      .range(Blues)
 
     regionGeo.features = this.state.regionGeo.features.map(d => {
       var regionGrade = data[d.properties.region] &&
@@ -458,9 +556,6 @@ class DataExplorer extends React.Component {
     }
     return (
       <div>
-        {this.renderLegend(gradeScale)}
-        {this.renderCategories()}
-        <div style={{ position:'absolute', top: 10, right:15 }}><h4>{this.state.activeRegion}</h4></div>
         <ResponsiveMap
           geo={regionGeo}
           click={this.mapClick}
@@ -479,9 +574,8 @@ class DataExplorer extends React.Component {
   }
 
   setActiveAnalysis (cat, stateKey) {
-    
     let updateKey = stateKey || 'activeAnalysis'
-    if(updateKey === 'activeAnalysis') {
+    if (updateKey === 'activeAnalysis') {
       this.props.router.push('/data/' + cat)
     }
     var update = {}
@@ -491,13 +585,17 @@ class DataExplorer extends React.Component {
 
   render () {
     return (
-      <div className='container-fluid text-center'>
+      <div className='container-fluid text-center DataExplorer'>
         <div className='row'>
-          <div className='col-md-9 sidebar' style={{ overflow:'hidden' }}>
-            {this.renderMap()}
-            {this.dataTable()}
+
+          <div className='col-md-9 sidebar DataViewer' id='DataViewer' style={{ overflow:'hidden' }}>
+            {this.renderLegend(gradeScale)}
+            {
+               this.renderMap()}
+            {this.dataTable()
+            }
           </div>
-          <div className='col-md-3'>
+          <div className='col-md-3 hidden-print'>
             <Sidebar
               categories={Object.keys(cats)}
               activeCategory={this.state.activeCategory}
@@ -507,6 +605,21 @@ class DataExplorer extends React.Component {
               analyses={analyses}
               analysisClick={this.setActiveAnalysis}
             />
+            <a onClick={makePDF}>
+              <div className='row' style={{ backgroundColor: '#fff', border: '1px solid white', paddingTop: 3, marginBottom: 10 }}>
+               
+                  <div className='col-md-2' style={{ textAlign:'center' }}>
+                    <div style={{width:'100%', paddingBottom:2, paddingTop: 0}}>
+                      <img className='img-fluid' src='/img/doc_thumb.png' />
+                      
+                    </div>
+                  </div>
+                  <div className='col-md-9'>
+                    <h4 style={{color: '#111', paddingTop:8, fontSize: 20}}> Download Report as PDF</h4>
+                  </div> 
+              </div>
+             </a>
+            
           </div>
         </div>
       </div>

@@ -100,6 +100,7 @@ export class ResponsiveMap extends React.Component {
           .data(props.childGeo.features)
           .enter()
           .append('path')
+          .attr('stroke', 'black')
           .attr('class', d => {
             return 'puma '
           })
@@ -164,6 +165,7 @@ export class ResponsiveMap extends React.Component {
       .enter().append('path')
       .attr('class', d => { return 'state region ' + d.properties.region.split(' ').join('_') })
       .attr('d', path)
+      .attr('stroke', 'white')
       .attr('fill', d => {
         return d.properties.fillColor || '#efefef'
       })
@@ -205,15 +207,15 @@ export class ResponsiveMap extends React.Component {
         <div style={{ textAlign:'center', fontSize:'1.1em', fontWeight:'600' }}>{this.state.info.region}</div>
         <div style={{ textAlign:'center' }}>
           <div className='row'>
-            <div className={this.state.info.rank === 'No Data' ?  'col-xs-12' : 'col-xs-6'}>
-                <span style={{ fontSize:'.75em', fontWeight:'400' }}>Grade</span> <br />
-                <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.grade}</span>
-              </div>
-              <div className='col-xs-6'>
-                <span style={{ fontSize:'.75em', fontWeight:'400' }}>{this.state.info.rank === 'No Data' ?  '' : 'Rank'}</span> <br />
-                <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.rank === 'No Data' ?  '' : this.state.info.rank}</span>
-              </div>
+            <div className={this.state.info.rank === 'No Data' ? 'col-xs-12' : 'col-xs-6'}>
+              <span style={{ fontSize:'.75em', fontWeight:'400' }}>Grade</span> <br />
+              <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.grade}</span>
             </div>
+            <div className='col-xs-6'>
+              <span style={{ fontSize:'.75em', fontWeight:'400' }}>{this.state.info.rank === 'No Data' ? '' : 'Rank'}</span> <br />
+              <span style={{ fontSize:'2em', fontWeight:'600' }}>{this.state.info.rank === 'No Data' ? '' : this.state.info.rank}</span>
+            </div>
+          </div>
         </div>
       </ToolTip>
     )
@@ -224,7 +226,9 @@ export class ResponsiveMap extends React.Component {
     return (
       <div id={divName} className={classes['svg-container']}>
         {this.renderToolTip()}
-        <svg className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet' >
+        <svg id='mapSVG' className={classes['.svg-content-responsive']} preserveAspectRatio='xMinYMin meet' >
+        </svg>
+        <svg width='8' height='8'>
           <defs>
             <pattern id='crosshatch' patternUnits='userSpaceOnUse' width='8' height='8'>
               <image href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path fill='#fff' d='M0 0h8v8h-8z'/><path d='M0 0l8 8zm8 0l-8 8z' stroke-width='.5' stroke='#aaa'/></svg>" x='0' y='0' width='8' height='8' />
@@ -255,29 +259,3 @@ function getValue (obj) {
   }
   return obj
 }
-
-// function clicked(d) {
-//   var x, y, k;
-
-//   if (d && centered !== d) {
-//     var centroid = path.centroid(d);
-//     x = centroid[0];
-//     y = centroid[1];
-//     k = 4;
-//     centered = d;
-//   } else {
-//     x = width / 2;
-//     y = height / 2;
-//     k = 1;
-//     centered = null;
-//   }
-//   svg = d3.select('#' + divName + ' svg')
-
-//   svg.selectAll("path")
-//       .classed("active", centered && function(d) { return d === centered; });
-
-//   svg.transition()
-//       .duration(750)
-//       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
-//       .style("stroke-width", 1.5 / k + "px");
-// }

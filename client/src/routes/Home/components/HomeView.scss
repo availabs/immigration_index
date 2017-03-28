@@ -6,20 +6,18 @@
 	color: #fff;
 }
 
-
-
 .paddedDiv{
 	padding: 20px;
 }
 .view {
-  background: url('../assets/image_1.jpg') no-repeat center center fixed;
+  background: url('../assets/statue-of-liberty-b&w.jpg') no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .hm-black-strong .full-bg-img, .hm-black-strong .mask {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,0.2);
 }
 .view {
   min-height: 100vh;

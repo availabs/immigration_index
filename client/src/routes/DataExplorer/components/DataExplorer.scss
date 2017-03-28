@@ -1,3 +1,22 @@
+@import '../../../styles/base';
+
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+
+.DataExplorer {
+	background-color: #efefef;
+	min-height: 100vh;
+}
+
+.DataViewer {
+	// border-left: 2px solid $primary-color
+	padding:0px;
+}
+
 .sidebar{
 	//border-right: 5px solid #ccc;
 	border-top: 1px solid #ccc;
@@ -5,6 +24,10 @@
 	height: 100%;
 }
 
+.affix {
+	position: fixed;
+	top: 0px;
+}
 
 .legendRow{
 	display:flex;
@@ -12,7 +35,7 @@
 	flex-direction: row;
 }
 .legendContainer{
-	padding: 10px;
+	padding: 20px;
 	width:98%;
 	min-height: 50px;
 	position: relative;
