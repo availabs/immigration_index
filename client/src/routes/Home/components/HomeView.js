@@ -45,16 +45,11 @@ class HomeView extends React.Component {
       <div className='container' >
         <div className='row'>
           <div className='col-md-2 hidden-sm' />
-          <div className='col-md-8 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'justify' }}>
+          <div className='col-md-8 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'justify', }}>
             <h4>The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and
               gender in shaping the economic outcomes of foreign-born New York State residents.</h4>
             <br />
-            <p>The Immigrant Integration index creates a profile for each community of New York State to illuminate areas of disparities that
-              warrant targeted investments. It also creates a mechanism that allows for benchmarking and tracking progress over time to account for return on
-              public investments.</p>
-            <br />
-            <p>The Immigrant Integration Index is designed as a policy tool to assist policy makers in making informed decisions
-              about targeting investments to areas of greatest need and tailoring policy responses to the specific needs of each community.</p>
+            
           </div>
         </div>
       </div>
@@ -96,9 +91,10 @@ class HomeView extends React.Component {
             <ul>
               <li>
                 {title}
-
               </li>
-              <li />
+              <li>
+                {text}
+              </li>
             </ul>
           </div>
         </div>
