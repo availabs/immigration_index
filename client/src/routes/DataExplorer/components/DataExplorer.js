@@ -44,15 +44,15 @@ function makePDF () {
     var open = '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="'+ node.width.baseVal.value + '" height="' + node.height.baseVal.value + '">'
     image.src = 'data:image/svg+xml,' + escape(open + svg + '</svg>')
     parent.appendChild(image);
-    node.style.display = 'none' 
+    node.style.display = 'none'
     document.getElementById('toolTipDiv').style.display = 'none'
     images.push(image)
     nodes.push(node)
    
     
     image.onload = function() {
-      image.onload = function() {};
-      var canvas = document.createElement('canvas');
+      image.onload = function() {}
+      var canvas = document.createElement('canvas')
       console.log('lading ',image.width, image.height)
       canvas.width = image.width;
       canvas.height = image.height;
@@ -207,12 +207,12 @@ const analyses = {
     info:'Effects of nativity status and race on economic outcomes of foreign-born New Yorkers.',
     subcats: {
       'race': {
-        name:'Foreign Born and Native Born',
+        name:'Foreign Born people of color and Native Born white non-hispanic',
         type: 'activeAnalysis',
         subcats: education
       },
       'race_women': {
-        name:'Foreign Born Women and Native Born Women',
+        name:'Foreign Born Women of color and Native Born Women white non-hispanic',
         type: 'activeAnalysis',
         subcats: education
       }
@@ -420,7 +420,7 @@ class DataExplorer extends React.Component {
     return (
       <div className='legendContainer'>
         <div className='row'>
-          <div className='col-md-5' style={{ backgroundColor:'#fff', borderRadius: 5, padding:10 }}>
+          <div className='col-md-5' style={{ backgroundColor:'#efefef',minHeight:171, borderRadius: 5, padding:10 }}>
             <h5>
               {cats[this.state.activeCategory].name}
               <span style={{ float: 'right' }}>{this.state.activeRegion}</span>
@@ -437,14 +437,20 @@ class DataExplorer extends React.Component {
             {cats[this.state.activeCategory].desc}
           </div>
           <div className='col-md-1' />
-          <div className='col-md-6' style={{ backgroundColor:'#fff', borderRadius: 5, padding:10 }}>
+          <div className='col-md-6' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
             {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born And Native Born<br /></strong> : ''}
             {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women And Native Born Women<br /></strong> : ''}
+            {
+              analyses[this.state.activeAnalysis] && analyses[this.state.activeAnalysis].heading ?
+              <strong>{analyses[this.state.activeAnalysis].heading}<br /></strong>
+              : ''
+            }
             {this.state.activeAnalysis !== 'vulnerable' ?
               (
                 <span>
                   <strong>{education[this.state.educationLevel].name}<br /></strong>
+                 
                   {education[this.state.educationLevel].desc}
                 </span>
               )
