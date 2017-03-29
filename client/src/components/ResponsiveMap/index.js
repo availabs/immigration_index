@@ -101,6 +101,7 @@ export class ResponsiveMap extends React.Component {
           .enter()
           .append('path')
           .attr('stroke', 'black')
+          .style('cursor', 'pointer')
           .attr('class', d => {
             return 'puma '
           })
@@ -166,6 +167,7 @@ export class ResponsiveMap extends React.Component {
       .attr('class', d => { return 'state region ' + d.properties.region.split(' ').join('_') })
       .attr('d', path)
       .attr('stroke', 'white')
+      .style('cursor', 'pointer')
       .attr('fill', d => {
         return d.properties.fillColor || '#efefef'
       })
