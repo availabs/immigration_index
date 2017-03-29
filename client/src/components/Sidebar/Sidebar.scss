@@ -151,19 +151,20 @@
 }
 .list-group-item{
   background-color: #fff!important;
-  color: $primary-color!important;
+  color: #333!important; //$primary-color!important;
   padding-left: 10px;
   padding-right: 0px;
   transition: height 0.5s;
   border: none;
-  border-left:  2px solid $primary-color;
+  //border-left:  2px solid $primary-color;
+  border-radius: 0px;
   //border-top: 2px solid $primary-color;
   //border-bottom: 2px solid $primary-color;
 }
 
 .list-group-item.active{
-  background-color: $primary-color!important;
-  color: #efefef!important;
+  background-color: #efefef!important;//$primary-color!important;
+  color: #333!important;
   
   
 }
@@ -174,8 +175,8 @@
 }
 
 .list-group-item:hover{
-  background-color: #014c8c!important;
-  color: #efefef!important;
+  background-color: #dedede!important;
+  color: #333!important;
     transition: length 0.1s;
 }
 

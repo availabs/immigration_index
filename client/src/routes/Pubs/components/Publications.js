@@ -44,13 +44,13 @@ class HomeView extends React.Component {
 
   render () {
     return (
-      <div className='container-fluid text-center' style={{ minHeight:'100vh', backgroundColor:'#6baed6' }}>
-        <div className='container' style={{ color:'#efefef' }}>
+      <div className='container-fluid text-center' style={{ minHeight:'100vh', backgroundColor:'#efefef' }}>
+        <div className='container' style={{ color:'#333' }}>
           <div className='row'>
             <div className='col-md-2' />
             <div className='col-md-8' style={{ overflow:'hidden', paddingBottom: 30 }}>
               <h1>Publications</h1>
-              <div className='row' style={{ border: '1px solid white', paddingTop: 10 }}>
+              <div className='row' style={{ border: '1px solid #6baed6', paddingTop: 10 }}>
                 <div className='col-md-3' style={{ textAlign:'center' }}>
                   <a href='/pubs/PolicyBrief-VulnerableGroup.pdf' target='_blank'>
                     <img className='img-fluid' src='/img/policy_brief.png' />

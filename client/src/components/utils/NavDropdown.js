@@ -9,9 +9,15 @@ class NavDropdown extends React.Component {
   toggle () {
     this.setState({ open: !this.state.open })
   }
+  componentDidMount() {
+    document.getElementById('theDropDown').addEventListener("blur", d => {
+      console.log('focusout')
+      this.setState({ open: false })
+    })
+  }
   render () {
     return (
-      <div onClick={this.toggle}>
+      <div id="theDropDown" onClick={this.toggle}>
         <a className='nav-link dropdown-toggle' aria-expanded={this.state.open}>
           {this.props.title}
         </a>

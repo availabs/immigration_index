@@ -594,13 +594,7 @@ class DataExplorer extends React.Component {
       <div className='container-fluid text-center DataExplorer'>
         <div className='row'>
 
-          <div className='col-md-9 sidebar DataViewer' id='DataViewer' style={{ overflow:'hidden' }}>
-            {this.renderLegend(gradeScale)}
-            {
-               this.renderMap()}
-            {this.dataTable()
-            }
-          </div>
+          
           <div className='col-md-3 hidden-print'>
             <Sidebar
               categories={Object.keys(cats)}
@@ -626,6 +620,13 @@ class DataExplorer extends React.Component {
               </div>
              </a>
             
+          </div>
+          <div className='col-md-9 sidebar DataViewer' id='DataViewer' style={{ overflow:'hidden' }}>
+            {this.renderLegend(gradeScale)}
+            {
+               this.renderMap()}
+            {this.dataTable()
+            }
           </div>
         </div>
       </div>
