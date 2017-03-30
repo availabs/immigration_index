@@ -8,6 +8,7 @@ import About from './About'
 import Methods from './Methods'
 import Pubs from './Pubs'
 import Research from './Research'
+import DataOverview from './DataOverview'
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
 
@@ -23,7 +24,8 @@ export const createRoutes = (store) => ({
     Methods(store),
     Pubs(store),
     Research(store),
-    Processing(store)
+    Processing(store),
+    DataOverview(store)
   ]
 })
 

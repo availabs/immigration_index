@@ -339,8 +339,8 @@ class DataExplorer extends React.Component {
        
           <div className='col-md-12' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-            {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born And Native Born</strong> : ''}
-            {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women And Native Born Women<br /></strong> : ''}
+            {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
+            {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
             {this.state.activeAnalysis !== 'vulnerable' ?
               (
                 <span>

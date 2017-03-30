@@ -48,12 +48,14 @@ export const Nav = () => {
                   {links}
                 </NavDropdown>
               </li>
-
+              <li className='nav-item'>
+                <Link to='/overview' className='nav-link active'>DATA SNAPSHOTS</Link>
+              </li>
               <li className='nav-item'>
                 <Link to='/about' className='nav-link active'>ABOUT</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/research' className='nav-link active'>RESEARCH METHODOLOGY</Link>
+                <Link to='/research' className='nav-link active'>METHODOLOGY</Link>
               </li>
               <li className='nav-item'>
                 <Link to='/publications' className='nav-link active'>PUBLICATIONS</Link>
