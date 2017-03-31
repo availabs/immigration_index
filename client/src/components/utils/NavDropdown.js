@@ -17,7 +17,7 @@ class NavDropdown extends React.Component {
   }
   render () {
     return (
-      <div id="theDropDown" onClick={this.toggle}>
+      <div id='theDropDown' onClick={this.toggle}>
         <a className='nav-link dropdown-toggle' aria-expanded={this.state.open}>
           {this.props.title}
         </a>
