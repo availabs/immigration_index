@@ -1,0 +1,156 @@
+Regions,Percentage_Full Time,Score_Full Time,Grades_Full Time,Level_Income,Score_Income,Grades_Income,Percentage_Poverty,Score_Poverty,Grades_Poverty,Percentage_Working Poor,Score_Working Poor,Grades_Working Poor,Percentage_Homeownership,Score_Homeownership,Grades_Homeownership,Percentage_Rent Burden,Score_Rent Burden,Grades_Rent Burden,Percentage_Unemployment,Score_Unemployment,Grades_Unemployment,Score_OVERALL,Grades_OVERALL
+Capital Region,49%,-1.80,E," $31,856.32 ",1.10,B,66%,0.87,B,65%,1.50,A-,30%,0.37,B-,64%,1.29,A-,12%,0.26,B-,0.51,B-
+Central NY,79%,0.17,C," $11,580.07 ",-1.85,E,78%,1.59,A-,73%,1.95,A,40%,0.88,B,62%,1.22,B,0%,-0.36,C-,0.51,B-
+Finger Lakes,73%,-0.22,C," $25,909.26 ",0.23,C,39%,-0.65,C-,23%,-0.82,D,65%,2.17,A,56%,0.93,B,18%,0.58,B-,0.32,B-
+Long Island,79%,0.15,C," $30,477.42 ",0.90,B,33%,-1.05,D,22%,-0.86,D,59%,1.85,A,38%,0.06,C,6%,-0.07,C,0.14,C
+Mid-Hudson,78%,0.08,C," $25,809.26 ",0.22,C,47%,-0.25,C,32%,-0.34,C-,20%,-0.17,C,35%,-0.07,C,5%,-0.09,C,-0.09,C
+Mohawk Valley,98%,1.41,A-," $12,812.35 ",-1.68,D-,42%,-0.49,C-,23%,-0.85,D,31%,0.40,B-,11%,-1.25,D,42%,1.81,A,-0.09,C
+New York City,76%,-0.02,C," $23,041.98 ",-0.18,C,54%,0.17,C,42%,0.20,C,17%,-0.31,C-,37%,-0.01,C,7%,0.01,C,-0.02,C
+North Country,100%,1.55,A-," $24,932.93 ",0.09,C,76%,1.47,A-,51%,0.73,B-,1%,-1.13,D,77%,1.91,A,58%,2.65,A,1.04,B
+Southern Tier,83%,0.41,B-," $29,273.82 ",0.72,B-,79%,1.62,A-,52%,0.75,B-,46%,1.19,B,59%,1.03,B,0%,-0.36,C-,0.76,B
+Western NY,60%,-1.05,D," $21,780.21 ",-0.37,C-,67%,0.91,B,36%,-0.11,C,38%,0.78,B,21%,-0.77,D,7%,0.01,C,-0.09,C
+Albany County (East Central)--Albany City ,4%,0.85,B," $39,156.50 ",1.39, A- ,81%,-1.07,D,54%,-0.50,C-,19%,-0.12,C,84%,-1.39,D-,0%,0.46,B-,-0.06,C
+Albany County (Outside Albany City) ,0%,1.04,B," $39,174.30 ",1.39, A- ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,100%,2.47,A,0%,1.08,B,0%,0.46,B-,#DIV/0!,#DIV/0!
+Broome (Outer West) & Tioga Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $46,968.90 ",2.12, A ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,76%,1.70,A-,100%,-1.85,E,0%,0.46,B-,#DIV/0!,#DIV/0!
+Broome County (West Central)--Greater Binghamton City & Greater Johnson City Village ,36%,-0.48,C-," $61,988.50 ",3.53, A ,23%,0.98,B,0%,1.20,B,49%,0.83,B,52%,-0.43,C-,0%,0.46,B-,0.87,B
+Cattaraugus & Allegany Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $24,989.00 ",0.06, C ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,100%,2.47,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Cayuga & Onondaga (South) Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $37,492.10 ",1.23, B ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,64%,1.32,A-,#DIV/0!,#DIV/0!,#DIV/0!,16%,-0.60,C-,#DIV/0!,#DIV/0!
+Chautauqua County ,0%,1.04,B," $38,882.60 ",1.36, A- ,22%,1.02,B,0%,1.20,B,91%,2.19,A,0%,1.08,B,0%,0.46,B-,1.19,B
+Chemung (South) & Steuben (East) Counties--Greater Elmira & Greater Corning Cities ,#DIV/0!,#DIV/0!,#DIV/0!," $41,832.60 ",1.64, A- ,11%,1.43,A-,#DIV/0!,#DIV/0!,#DIV/0!,74%,1.65,A-,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+"Chenango, Delaware & Broome (East) Counties ; New York",0%,1.04,B," $28,929.80 ",0.43, B- ,29%,0.79,B,100%,-1.95,E,83%,1.94,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+"Clinton, Franklin, Essex & Hamilton Counties ; New York",5%,0.81,B," $25,626.50 ",0.12, C ,0%,1.81,A,51%,-0.41,C-,100%,2.47,A,0%,1.08,B,0%,0.46,B-,0.91,B
+Columbia & Greene Counties ,0%,1.04,B," $23,840.20 ",-0.04, C ,0%,1.81,A,100%,-1.95,E,100%,2.47,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Dutchess County (North & East) ,2%,0.94,B," $30,255.70 ",0.56, B- ,10%,1.45,A-,23%,0.47,B-,72%,1.58,A-,65%,-0.83,D,0%,0.46,B-,0.66,B-
+Dutchess County (Southwest) ,12%,0.55,B-," $24,588.70 ",0.03, C ,13%,1.34,A-,#DIV/0!,#DIV/0!,#DIV/0!,85%,2.00,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Erie County (Central) ,21%,0.16,C," $25,000.00 ",0.06, C ,28%,0.82,B,40%,-0.05,C,84%,1.97,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Erie County (North Central) ,33%,-0.37,C-," $23,513.90 ",-0.07, C ,0%,1.81,A,100%,-1.95,E,80%,1.81,A,0%,1.08,B,0%,0.46,B-,0.40,B-
+Erie County (Northeast) ,#DIV/0!,#DIV/0!,#DIV/0!," $12,259.60 ",-1.13, D ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,100%,2.47,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Erie County (Northwest) ,#DIV/0!,#DIV/0!,#DIV/0!," $36,648.00 ",1.15, B ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,100%,2.47,A,0%,1.08,B,28%,-1.40,D-,#DIV/0!,#DIV/0!
+Erie County (South) ,100%,-3.22,E," $21,508.20 ",-0.26, C- ,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,83%,1.93,A,38%,-0.04,C,0%,0.46,B-,#DIV/0!,#DIV/0!
+Erie County (West Central)--Buffalo City (East) ,0%,1.04,B," $30,771.20 ",0.60, B- ,15%,1.28,A-,#DIV/0!,#DIV/0!,#DIV/0!,25%,0.05,C,100%,-1.85,E,0%,0.46,B-,#DIV/0!,#DIV/0!
+Erie County (West Central)--Buffalo City (West) ,13%,0.50,B-," $41,820.50 ",1.64, A- ,13%,1.36,A-,27%,0.36,B-,75%,1.67,A-,0%,1.08,B,0%,0.46,B-,1.01,B
+Fulton & Montgomery Counties ,66%,-1.78,E," $43,004.10 ",1.75, A- ,21%,1.08,B,0%,1.20,B,76%,1.71,A-,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Genesee & Orleans Counties ,23%,0.05,C," $25,118.10 ",0.08, C ,10%,1.45,A-,100%,-1.95,E,72%,1.58,A-,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Herkimer (North & Central) & Oneida (Outer) Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $25,789.30 ",0.14, C ,9%,1.48,A-,#DIV/0!,#DIV/0!,#DIV/0!,67%,1.40,A-,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Jefferson & Lewis Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $23,789.40 ",-0.05, C ,29%,0.77,B,#DIV/0!,#DIV/0!,#DIV/0!,62%,1.24,B,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Livingston & Wyoming Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $24,362.60 ",0.00, C ,39%,0.43,B-,#DIV/0!,#DIV/0!,#DIV/0!,71%,1.55,A-,100%,-1.85,E,9%,-0.11,C,#DIV/0!,#DIV/0!
+Madison & Cortland Counties ,40%,-0.68,C-," $29,727.00 ",0.51, B- ,25%,0.91,B,0%,1.20,B,86%,2.02,A,59%,-0.66,C-,0%,0.46,B-,0.54,B-
+Monroe County (Central)--Greece & Gates Towns ,86%,-2.62,E," $28,259.30 ",0.37, B- ,23%,0.98,B,100%,-1.95,E,81%,1.86,A,0%,1.08,B,0%,0.46,B-,0.03,C
+Monroe County (Central)--Rochester City (East) ,39%,-0.62,C-," $31,915.30 ",0.71, B- ,29%,0.79,B,0%,1.20,B,53%,0.95,B,100%,-1.85,E,0%,0.46,B-,0.23,C
+Monroe County (Central)--Rochester City (West) ,13%,0.49,B-," $23,471.10 ",-0.08, C ,40%,0.38,B-,0%,1.20,B,55%,1.03,B,12%,0.73,B-,7%,-0.02,C,0.53,B-
+Monroe County (East) ,49%,-1.03,D," $26,333.00 ",0.19, C ,22%,1.03,B,0%,1.20,B,39%,0.51,B-,0%,1.08,B,0%,0.46,B-,0.49,B-
+Monroe County (North & West) ,#DIV/0!,#DIV/0!,#DIV/0!," $19,165.80 ",-0.48, C- ,16%,1.22,B,#DIV/0!,#DIV/0!,#DIV/0!,47%,0.76,B,0%,1.08,B,0%,0.46,B-,#DIV/0!,#DIV/0!
+Monroe County (South) ,65%,-1.72,D-," $20,594.80 ",-0.35, C- ,26%,0.89,B,35%,0.09,C,73%,1.61,A-,#DIV/0!,#DIV/0!,#DIV/0!,4%,0.18,C,#DIV/0!,#DIV/0!
+Nassau County (Central)--Hempstead Town (East Central) ,0%,1.04,B," $23,333.80 ",-0.09, C ,24%,0.95,B,0%,1.20,B,66%,1.38,A-,0%,1.08,B,0%,0.46,B-,0.86,B
+Nassau County (Central)--Hempstead Town (North Central)--Meadowbrook Corridor ,16%,0.36,B-," $26,200.60 ",0.18, C ,54%,-0.13,C,33%,0.16,C,50%,0.86,B,47%,-0.29,C-,0%,0.46,B-,0.23,C
+Nassau County (Central)--Hempstead Town (Northeast) ,0%,1.04,B," $23,204.30 ",-0.10, C ,28%,0.80,B,100%,-1.95,E,53%,0.96,B,0%,1.08,B,3%,0.26,B-,0.30,B-
+Nassau County (East Central)--Oyster Bay Town (Central) ,33%,-0.36,C-," $35,272.10 ",1.03, B ,35%,0.56,B-,36%,0.07,C,41%,0.58,B-,33%,0.12,C,10%,-0.22,C,0.25,B-
+Nassau County (Northeast)--Oyster Bay Town (North) & Glen Cove City ,3%,0.92,B," $19,333.70 ",-0.47, C- ,27%,0.86,B,18%,0.62,B-,24%,0.02,C,0%,1.08,B,0%,0.46,B-,0.50,B-
+Nassau County (Northwest)--North Hempstead Town (North) ,50%,-1.11,D," $21,647.40 ",-0.25, C ,27%,0.86,B,42%,-0.12,C,42%,0.61,B-,0%,1.08,B,0%,0.46,B-,0.22,C
+Nassau County (South Central)--Hempstead Town (Southeast) ,77%,-2.23,E," $23,026.70 ",-0.12, C ,30%,0.74,B-,12%,0.81,B,33%,0.33,B-,#DIV/0!,#DIV/0!,#DIV/0!,7%,0.03,C,#DIV/0!,#DIV/0!
+Nassau County (Southeast)--Oyster Bay Town (South) ,#DIV/0!,#DIV/0!,#DIV/0!," $18,899.40 ",-0.51, C- ,38%,0.46,B-,#DIV/0!,#DIV/0!,#DIV/0!,26%,0.10,C,17%,0.58,B-,5%,0.16,C,#DIV/0!,#DIV/0!
+Nassau County (Southwest)--Hempstead Town (Southwest) & Long Beach City ,100%,-3.22,E," $25,418.20 ",0.10, C ,38%,0.44,B-,0%,1.20,B,30%,0.24,C,10%,0.79,B,0%,0.46,B-,0.00,C
+Nassau County (West Central)--Hempstead Town (Northwest) ,39%,-0.61,C-," $36,822.80 ",1.17, B ,36%,0.51,B-,100%,-1.95,E,56%,1.07,B,95%,-1.72,D-,0%,0.46,B-,-0.15,C
+Nassau County (West Central)--Hempstead Town (West Central) ,21%,0.16,C," $30,631.90 ",0.59, B- ,41%,0.36,B-,0%,1.20,B,30%,0.24,C,100%,-1.85,E,0%,0.46,B-,0.17,C
+Nassau County (West Central)--North Hempstead Town (South) ,34%,-0.40,C-," $21,123.80 ",-0.30, C- ,47%,0.14,C,14%,0.75,B-,32%,0.28,B-,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Niagara County (North & East) ,100%,-3.22,E," $21,922.90 ",-0.22, C ,28%,0.83,B,#DIV/0!,#DIV/0!,#DIV/0!,33%,0.33,B-,#DIV/0!,#DIV/0!,#DIV/0!,16%,-0.58,C-,#DIV/0!,#DIV/0!
+Niagara County (Southwest)--Greater Niagara Falls & North Tonawanda Area ,0%,1.04,B," $19,946.20 ",-0.41, C- ,44%,0.24,C,100%,-1.95,E,38%,0.48,B-,3%,1.01,B,0%,0.46,B-,0.12,C
+"NYC-Bronx Community District 1 & 2--Hunts Point, Longwood & Melrose ; New York",19%,0.24,C," $26,051.00 ",0.16, C ,53%,-0.07,C,57%,-0.60,C-,43%,0.63,B-,0%,1.08,B,10%,-0.18,C,0.18,C
+"NYC-Bronx Community District 10--Co-op City, Pelham Bay & Schuylerville ; New York",0%,1.04,B," $23,688.80 ",-0.06, C ,38%,0.46,B-,56%,-0.58,C-,35%,0.37,B-,100%,-1.85,E,0%,0.46,B-,-0.02,C
+"NYC-Bronx Community District 11--Pelham Parkway, Morris Park & Laconia ; New York",49%,-1.05,D," $28,150.10 ",0.36, B- ,29%,0.79,B,8%,0.93,B,41%,0.59,B-,53%,-0.48,C-,0%,0.46,B-,0.23,C
+"NYC-Bronx Community District 12--Wakefield, Williamsbridge & Woodlawn ; New York",25%,-0.01,C," $26,262.40 ",0.18, C ,28%,0.80,B,92%,-1.70,D-,54%,0.99,B,100%,-1.85,E,0%,0.46,B-,-0.16,C
+"NYC-Bronx Community District 3 & 6--Belmont, Crotona Park East & East Tremont ; New York",33%,-0.35,C-," $18,617.40 ",-0.53, C- ,32%,0.66,B-,82%,-1.37,D-,29%,0.20,C,100%,-1.85,E,6%,0.05,C,-0.46,C-
+"NYC-Bronx Community District 4--Concourse, Highbridge & Mount Eden ; New York",20%,0.19,C," $30,275.80 ",0.56, B- ,46%,0.18,C,39%,-0.04,C,15%,-0.25,C-,12%,0.75,B-,0%,0.46,B-,0.26,B-
+"NYC-Bronx Community District 5--Morris Heights, Fordham South & Mount Hope ; New York",28%,-0.14,C," $25,505.70 ",0.11, C ,44%,0.24,C,62%,-0.75,D,58%,1.13,B,91%,-1.60,D-,0%,0.46,B-,-0.08,C
+"NYC-Bronx Community District 7--Bedford Park, Fordham North & Norwood ; New York",26%,-0.06,C," $15,000.00 ",-0.87, D ,47%,0.12,C,56%,-0.57,C-,24%,0.02,C,100%,-1.85,E,0%,0.46,B-,-0.39,C-
+"NYC-Bronx Community District 8--Riverdale, Fieldston & Kingsbridge ; New York",16%,0.38,B-," $31,981.60 ",0.72, B- ,37%,0.49,B-,46%,-0.26,C-,34%,0.36,B-,17%,0.60,B-,0%,0.46,B-,0.39,B-
+"NYC-Bronx Community District 9--Castle Hill, Clason Point & Parkchester ; New York",27%,-0.13,C," $17,589.40 ",-0.63, C- ,58%,-0.26,C-,37%,0.03,C,31%,0.26,B-,74%,-1.09,D,0%,0.46,B-,-0.19,C
+NYC-Brooklyn Community District 10--Bay Ridge & Dyker Heights ,38%,-0.56,C-," $14,289.00 ",-0.94, D ,60%,-0.34,C-,51%,-0.42,C-,20%,-0.10,C,100%,-1.85,E,0%,0.46,B-,-0.54,C-
+NYC-Brooklyn Community District 11--Bensonhurst & Bath Beach ,32%,-0.31,C-," $29,229.30 ",0.46, B- ,70%,-0.68,C-,31%,0.24,C,10%,-0.40,C-,54%,-0.50,C-,0%,0.46,B-,-0.11,C
+"NYC-Brooklyn Community District 12--Borough Park, Kensington & Ocean Parkway ; New York",24%,0.03,C," $20,024.70 ",-0.40, C- ,48%,0.09,C,49%,-0.34,C-,17%,-0.19,C,0%,1.08,B,0%,0.46,B-,0.10,C
+NYC-Brooklyn Community District 13--Brighton Beach & Coney Island ,47%,-0.95,D," $15,000.00 ",-0.87, D ,69%,-0.63,C-,30%,0.25,B-,20%,-0.08,C,0%,1.08,B,0%,0.46,B-,-0.11,C
+NYC-Brooklyn Community District 14--Flatbush & Midwood ,11%,0.56,B-," $17,404.60 ",-0.65, C- ,66%,-0.54,C-,38%,-0.01,C,41%,0.58,B-,38%,-0.04,C,2%,0.31,B-,0.03,C
+"NYC-Brooklyn Community District 15--Sheepshead Bay, Gerritsen Beach & Homecrest ; New York",44%,-0.83,D," $25,760.40 ",0.14, C ,79%,-0.99,D,38%,0.01,C,15%,-0.27,C-,29%,0.24,C,7%,0.00,C,-0.24,C
+NYC-Brooklyn Community District 16--Brownsville & Ocean Hill ,33%,-0.37,C-," $18,392.60 ",-0.55, C- ,59%,-0.29,C-,37%,0.05,C,17%,-0.18,C,23%,0.42,B-,4%,0.21,C,-0.10,C
+"NYC-Brooklyn Community District 17--East Flatbush, Farragut & Rugby ; New York",0%,1.04,B," $21,321.20 ",-0.28, C- ,50%,0.02,C,#DIV/0!,#DIV/0!,#DIV/0!,16%,-0.22,C,6%,0.91,B,5%,0.16,C,#DIV/0!,#DIV/0!
+NYC-Brooklyn Community District 18--Canarsie & Flatlands ,34%,-0.42,C-," $24,266.70 ",0.00, C ,49%,0.07,C,0%,1.20,B,25%,0.06,C,57%,-0.58,C-,3%,0.29,B-,0.09,C
+NYC-Brooklyn Community District 1--Greenpoint & Williamsburg ,49%,-1.04,D," $20,921.80 ",-0.32, C- ,60%,-0.32,C-,14%,0.75,B-,29%,0.19,C,17%,0.57,B-,5%,0.12,C,-0.01,C
+NYC-Brooklyn Community District 2--Brooklyn Heights & Fort Greene ,48%,-1.01,D," $19,415.80 ",-0.46, C- ,58%,-0.27,C-,26%,0.37,B-,26%,0.08,C,0%,1.08,B,3%,0.23,C,0.00,C
+NYC-Brooklyn Community District 3--Bedford-Stuyvesant ,40%,-0.66,C-," $26,075.70 ",0.17, C ,57%,-0.24,C,14%,0.74,B-,29%,0.21,C,#DIV/0!,#DIV/0!,#DIV/0!,11%,-0.29,C-,#DIV/0!,#DIV/0!
+NYC-Brooklyn Community District 4--Bushwick ,22%,0.09,C," $17,859.10 ",-0.60, C- ,46%,0.15,C,58%,-0.63,C-,42%,0.61,B-,14%,0.66,B-,8%,-0.04,C,0.03,C
+NYC-Brooklyn Community District 5--East New York & Starrett City ,33%,-0.38,C-," $21,409.10 ",-0.27, C- ,58%,-0.27,C-,35%,0.10,C,29%,0.19,C,#DIV/0!,#DIV/0!,#DIV/0!,7%,0.01,C,#DIV/0!,#DIV/0!
+"NYC-Brooklyn Community District 6--Park Slope, Carroll Gardens & Red Hook ; New York",72%,-2.01,E," $14,681.90 ",-0.90, D ,41%,0.35,B-,24%,0.43,B-,18%,-0.17,C,38%,-0.04,C,8%,-0.04,C,-0.34,C-
+NYC-Brooklyn Community District 7--Sunset Park & Windsor Terrace ,19%,0.21,C," $13,521.50 ",-1.01, D ,41%,0.36,B-,55%,-0.52,C-,0%,-0.74,C-,48%,-0.31,C-,13%,-0.43,C-,-0.35,C-
+NYC-Brooklyn Community District 8--Crown Heights North & Prospect Heights ,27%,-0.13,C," $25,626.30 ",0.12, C ,40%,0.38,B-,79%,-1.29,D-,0%,-0.74,C-,61%,-0.70,C-,6%,0.08,C,-0.32,C-
+"NYC-Brooklyn Community District 9--Crown Heights South, Prospect Lefferts & Wingate ; New York",15%,0.38,B-," $17,500.00 ",-0.64, C- ,49%,0.06,C,#DIV/0!,#DIV/0!,#DIV/0!,0%,-0.74,C-,58%,-0.62,C-,5%,0.11,C,#DIV/0!,#DIV/0!
+"NYC-Manhattan Community District 1 & 2--Battery Park City, Greenwich Village & Soho ; New York",35%,-0.45,C-," $19,238.00 ",-0.47, C- ,53%,-0.09,C,94%,-1.75,D-,0%,-0.74,C-,34%,0.10,C,13%,-0.39,C-,-0.54,C-
+NYC-Manhattan Community District 10--Central Harlem ,5%,0.83,B," $14,000.00 ",-0.96, D ,40%,0.40,B-,21%,0.53,B-,71%,1.54,A-,26%,0.31,B-,3%,0.24,C,0.41,B-
+NYC-Manhattan Community District 11--East Harlem ,27%,-0.09,C," $12,000.00 ",-1.15, D ,52%,-0.03,C,100%,-1.95,E,0%,-0.74,C-,41%,-0.13,C,7%,0.01,C,-0.58,C-
+"NYC-Manhattan Community District 12--Washington Heights, Inwood & Marble Hill ; New York",19%,0.25,B-," $11,550.30 ",-1.19, D ,74%,-0.83,D,52%,-0.43,C-,8%,-0.48,C-,50%,-0.38,C-,8%,-0.08,C,-0.45,C-
+NYC-Manhattan Community District 3--Chinatown & Lower East Side ,49%,-1.05,D," $11,578.80 ",-1.19, D ,76%,-0.91,D,30%,0.25,C,0%,-0.74,C-,44%,-0.21,C,7%,0.00,C,-0.55,C-
+"NYC-Manhattan Community District 4 & 5--Chelsea, Clinton & Midtown Business District ; New York",0%,1.04,B," $26,615.30 ",0.22, C ,85%,-1.23,D,#DIV/0!,#DIV/0!,#DIV/0!,13%,-0.32,C-,36%,0.03,C,7%,0.00,C,#DIV/0!,#DIV/0!
+"NYC-Manhattan Community District 6--Murray Hill, Gramercy & Stuyvesant Town ; New York",0%,1.04,B," $18,609.50 ",-0.53, C- ,67%,-0.57,C-,#DIV/0!,#DIV/0!,#DIV/0!,17%,-0.20,C,44%,-0.20,C,3%,0.25,B-,#DIV/0!,#DIV/0!
+NYC-Manhattan Community District 7--Upper West Side & West Side ,0%,1.04,B," $30,677.40 ",0.60, B- ,58%,-0.27,C-,0%,1.20,B,4%,-0.61,C-,35%,0.07,C,8%,-0.07,C,0.28,B-
+NYC-Manhattan Community District 8--Upper East Side ,0%,1.04,B," $18,133.70 ",-0.58, C- ,62%,-0.41,C-,0%,1.20,B,9%,-0.44,C-,37%,0.00,C,3%,0.25,C,0.15,C
+"NYC-Manhattan Community District 9--Hamilton Heights, Manhattanville & West Harlem ; New York",47%,-0.97,D," $24,687.60 ",0.04, C ,60%,-0.31,C-,100%,-1.95,E,5%,-0.57,C-,42%,-0.15,C,7%,-0.01,C,-0.56,C-
+NYC-Queens Community District 10--Howard Beach & Ozone Park ,37%,-0.54,C-," $22,926.30 ",-0.13, C ,67%,-0.56,C-,45%,-0.23,C,0%,-0.74,C-,47%,-0.29,C-,7%,0.02,C,-0.35,C-
+"NYC-Queens Community District 11--Bayside, Douglaston & Little Neck ; New York",52%,-1.16,D," $2,600.00 ",-2.03, E ,66%,-0.55,C-,28%,0.32,B-,3%,-0.64,C-,35%,0.05,C,15%,-0.51,C-,-0.65,C-
+"NYC-Queens Community District 12--Jamaica, Hollis & St. Albans ; New York",24%,0.02,C," $14,479.50 ",-0.92, D ,56%,-0.20,C,28%,0.32,B-,0%,-0.74,C-,14%,0.67,B-,6%,0.06,C,-0.11,C
+"NYC-Queens Community District 13--Queens Village, Cambria Heights & Rosedale ; New York",51%,-1.12,D," $17,953.60 ",-0.59, C- ,53%,-0.06,C,0%,1.20,B,0%,-0.74,C-,0%,1.08,B,16%,-0.58,C-,-0.12,C
+"NYC-Queens Community District 14--Far Rockaway, Breezy Point & Broad Channel ; New York",26%,-0.09,C," $10,370.10 ",-1.30, D- ,66%,-0.55,C-,21%,0.54,B-,3%,-0.64,C-,13%,0.71,B-,18%,-0.69,C-,-0.29,C-
+NYC-Queens Community District 1--Astoria & Long Island City ,25%,-0.02,C, NA ,#VALUE!,#VALUE!,64%,-0.45,C-,31%,0.24,C,0%,-0.74,C-,39%,-0.07,C,27%,-1.28,D-,#VALUE!,#VALUE!
+NYC-Queens Community District 2--Sunnyside & Woodside ,18%,0.28,B-," $12,000.00 ",-1.15, D ,72%,-0.74,C-,15%,0.72,B-,10%,-0.41,C-,0%,1.08,B,9%,-0.14,C,-0.05,C
+NYC-Queens Community District 3--Jackson Heights & North Corona ,16%,0.38,B-," $44,800.00 ",1.92, A ,65%,-0.52,C-,24%,0.43,B-,6%,-0.53,C-,18%,0.55,B-,12%,-0.30,C-,0.28,B-
+NYC-Queens Community District 4--Elmhurst & South Corona ,16%,0.35,B-, NA ,#VALUE!,#VALUE!,60%,-0.34,C-,52%,-0.45,C-,0%,-0.74,C-,55%,-0.53,C-,6%,0.06,C,#VALUE!,#VALUE!
+"NYC-Queens Community District 5--Ridgewood, Glendale & Middle Village ; New York",39%,-0.63,C-, NA ,#VALUE!,#VALUE!,50%,0.01,C,33%,0.16,C,0%,-0.74,C-,39%,-0.06,C,51%,-2.85,E,#VALUE!,#VALUE!
+NYC-Queens Community District 6--Forest Hills & Rego Park ,49%,-1.06,D," $24,800.00 ",0.05, C ,67%,-0.59,C-,0%,1.20,B,7%,-0.51,C-,19%,0.52,B-,16%,-0.56,C-,-0.14,C
+"NYC-Queens Community District 7--Flushing, Murray Hill & Whitestone ; New York",21%,0.15,C, NA ,#VALUE!,#VALUE!,67%,-0.59,C-,33%,0.15,C,0%,-0.74,C-,46%,-0.26,C-,52%,-2.92,E,#VALUE!,#VALUE!
+"NYC-Queens Community District 8--Briarwood, Fresh Meadows & Hillcrest ; New York",29%,-0.20,C, NA ,#VALUE!,#VALUE!,80%,-1.05,D,46%,-0.24,C,10%,-0.42,C-,21%,0.47,B-,18%,-0.74,C-,#VALUE!,#VALUE!
+NYC-Queens Community District 9--Richmond Hill & Woodhaven ,26%,-0.06,C, NA ,#VALUE!,#VALUE!,33%,0.62,B-,27%,0.35,B-,4%,-0.60,C-,100%,-1.85,E,12%,-0.32,C-,#VALUE!,#VALUE!
+"NYC-Staten Island Community District 1--Port Richmond, Stapleton & Mariner's Harbor ; New York",13%,0.50,B-, NA ,#VALUE!,#VALUE!,26%,0.90,B,29%,0.29,B-,0%,-0.74,C-,88%,-1.51,D-,24%,-1.11,D,#VALUE!,#VALUE!
+NYC-Staten Island Community District 2--New Springville & South Beach ,39%,-0.61,C-, NA ,#VALUE!,#VALUE!,53%,-0.09,C,18%,0.61,B-,13%,-0.33,C-,37%,0.00,C,59%,-3.40,E,#VALUE!,#VALUE!
+"NYC-Staten Island Community District 3--Tottenville, Great Kills & Annadale ; New York",40%,-0.68,C-," $16,800.00 ",-0.70, C- ,77%,-0.93,D,45%,-0.23,C,22%,-0.02,C,26%,0.33,B-,77%,-4.56,E,-0.97,D
+Oneida County (Central)--Greater Utica & Rome Cities ,35%,-0.46,C-, NA ,#VALUE!,#VALUE!,62%,-0.39,C-,28%,0.31,B-,0%,-0.74,C-,35%,0.07,C,21%,-0.94,D,#VALUE!,#VALUE!
+Onondaga County (Central)--Syracuse City ,#DIV/0!,#DIV/0!,#DIV/0!, NA ,#VALUE!,#VALUE!,80%,-1.03,D,#DIV/0!,#DIV/0!,#DIV/0!,0%,-0.74,C-,39%,-0.07,C,30%,-1.52,D-,#VALUE!,#VALUE!
+Onondaga County (Central)--Syracuse City (Outer) ,28%,-0.14,C," $27,000.00 ",0.25, B- ,90%,-1.41,D-,79%,-1.28,D-,0%,-0.74,C-,0%,1.08,B,47%,-2.64,E,-0.69,C-
+Onondaga County (North) ,#DIV/0!,#DIV/0!,#DIV/0!, NA ,#VALUE!,#VALUE!,90%,-1.39,D-,#DIV/0!,#DIV/0!,#DIV/0!,1%,-0.71,C-,#DIV/0!,#DIV/0!,#DIV/0!,100%,-6.09,E,#DIV/0!,#DIV/0!
+Ontario & Yates Counties ,62%,-1.61,D-," $15,000.00 ",-0.87, D ,68%,-0.62,C-,0%,1.20,B,7%,-0.50,C-,0%,1.08,B,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Orange County (Northeast)--Greater Newburgh City ,11%,0.56,B-," $22,000.00 ",-0.22, C ,69%,-0.64,C-,17%,0.65,B-,0%,-0.74,C-,0%,1.08,B,0%,0.46,B-,0.17,C
+Orange County (Northwest) ,16%,0.36,B-," $28,006.40 ",0.35, B- ,73%,-0.78,D,61%,-0.74,C-,0%,-0.74,C-,34%,0.07,C,0%,0.46,B-,-0.14,C
+Orange County (Southeast) ,6%,0.79,B," $32,742.30 ",0.79, B ,94%,-1.54,D-,100%,-1.95,E,18%,-0.16,C,41%,-0.11,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Oswego County ,#DIV/0!,#DIV/0!,#DIV/0!, NA ,#VALUE!,#VALUE!,62%,-0.39,C-,#DIV/0!,#DIV/0!,#DIV/0!,10%,-0.41,C-,49%,-0.36,C-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+"Otsego, Schoharie, Oneida (South) & Herkimer (South) Counties ; New York",60%,-1.51,D-," $15,000.00 ",-0.87, D ,48%,0.11,C,#DIV/0!,#DIV/0!,#DIV/0!,18%,-0.16,C,38%,-0.04,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Putnam County ,8%,0.69,B-, NA ,#VALUE!,#VALUE!,100%,-1.76,E,58%,-0.64,C-,15%,-0.24,C,85%,-1.40,D-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Rensselaer County--Troy City ,0%,1.04,B," $29,863.40 ",0.52, B- ,100%,-1.76,E,0%,1.20,B,1%,-0.69,C-,36%,0.03,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Rockland County (North)--New City & Congers ,30%,-0.23,C, NA ,#VALUE!,#VALUE!,100%,-1.76,E,30%,0.25,B-,0%,-0.74,C-,30%,0.22,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+"Rockland County (South)--Orangetown, Clarkstown (South) & Ramapo (Southeast) Towns ; New York",46%,-0.94,D," $1,000.00 ",-2.18, E ,100%,-1.76,E,0%,1.20,B,0%,-0.74,C-,33%,0.12,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+"Rockland County (West)--Spring Valley, Suffern Villages & Monsey ; New York",6%,0.79,B," $23,333.80 ",-0.09, C ,100%,-1.76,E,35%,0.11,C,0%,-0.74,C-,15%,0.66,B-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Saratoga County (Outer) ,#DIV/0!,#DIV/0!,#DIV/0!," $45,584.40 ",1.99, A ,100%,-1.76,E,#DIV/0!,#DIV/0!,#DIV/0!,0%,-0.74,C-,42%,-0.15,C,0%,0.46,B-,#DIV/0!,#DIV/0!
+Saratoga County (South & Central) ,#DIV/0!,#DIV/0!,#DIV/0!," $45,146.90 ",1.95, A ,100%,-1.76,E,#DIV/0!,#DIV/0!,#DIV/0!,0%,-0.74,C-,24%,0.37,B-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Schenectady County--Schenectady City ,0%,1.04,B," $75,600.00 ",4.80, A ,100%,-1.76,E,100%,-1.95,E,#DIV/0!,#DIV/0!,#DIV/0!,23%,0.40,B-,0%,0.46,B-,#DIV/0!,#DIV/0!
+St. Lawrence County ,0%,1.04,B, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,39%,-0.06,C,0%,0.46,B-,#DIV/0!,#DIV/0!
+"Steuben (North & West), Schuyler & Chemung (North) Counties ; New York",#DIV/0!,#DIV/0!,#DIV/0!, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,59%,-0.64,C-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Suffolk County (Central)--Brookhaven Town (Central) ,45%,-0.87,D, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.20,B,#DIV/0!,#DIV/0!,#DIV/0!,32%,0.14,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Suffolk County (Central)--Brookhaven Town (West Central) ,27%,-0.10,C," $23,714.30 ",-0.06, C ,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.20,B,#DIV/0!,#DIV/0!,#DIV/0!,39%,-0.07,C,0%,0.46,B-,#DIV/0!,#DIV/0!
+Suffolk County (Central)--Islip Town (East) ,#DIV/0!,#DIV/0!,#DIV/0!, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.08,B,0%,0.46,B-,#DIV/0!,#DIV/0!
+Suffolk County (Central)--Islip Town (Northwest) ,19%,0.23,C, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,17%,0.66,B-,#DIV/0!,#DIV/0!,#DIV/0!,100%,-1.85,E,17%,-0.63,C-,#DIV/0!,#DIV/0!
+Suffolk County (East) ,0%,1.04,B, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,11%,0.84,B,#DIV/0!,#DIV/0!,#DIV/0!,69%,-0.95,D,0%,0.46,B-,#DIV/0!,#DIV/0!
+Suffolk County (North Central)--Brookhaven Town (North) ,96%,-3.04,E," $28,000.00 ",0.35, B- ,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.20,B,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Suffolk County (Northwest)--Huntington Town (North) ,8%,0.70,B-, $520.00 ,-2.23, E ,#DIV/0!,#DIV/0!,#DIV/0!,27%,0.36,B-,63%,1.27,A-,100%,-1.85,E,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Suffolk County (Northwest)--Huntington Town (South) ,18%,0.26,B-," $23,495.50 ",-0.08, C ,0%,1.81,A,0%,1.20,B,66%,1.38,A-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Suffolk County (Northwest)--Smithtown Town ,40%,-0.64,C-," $16,857.10 ",-0.70, C- ,66%,-0.55,C-,100%,-1.95,E,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.08,B,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Suffolk County (South Central)--Brookhaven Town (South) ,0%,1.04,B," $24,932.90 ",0.06, C ,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.20,B,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Suffolk County (Southwest)--Babylon Town (Southeast) ,5%,0.84,B, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,19%,0.61,B-,0%,-0.74,C-,100%,-1.85,E,0%,0.46,B-,#DIV/0!,#DIV/0!
+Suffolk County (Southwest)--Islip Town (South) ,73%,-2.05,E, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,32%,0.20,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Suffolk County (West Central)--Babylon Town (Northwest) ,6%,0.80,B, NA ,#VALUE!,#VALUE!,100%,-1.76,E,18%,0.63,B-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Sullivan & Ulster (West) Counties ,17%,0.32,B-, NA ,#VALUE!,#VALUE!,52%,-0.06,C,0%,1.20,B,0%,-0.74,C-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Tompkins County ,#DIV/0!,#DIV/0!,#DIV/0!, NA ,#VALUE!,#VALUE!,0%,1.81,A,#DIV/0!,#DIV/0!,#DIV/0!,0%,-0.74,C-,0%,1.08,B,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Ulster County (East) ,39%,-0.60,C-, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.20,B,#DIV/0!,#DIV/0!,#DIV/0!,100%,-1.85,E,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Warren & Washington Counties ,0%,1.04,B, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Wayne & Seneca Counties ,#DIV/0!,#DIV/0!,#DIV/0!," $26,000.00 ",0.16, C ,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Westchester County (Central)--White Plains City ,23%,0.05,C," $27,600.00 ",0.31, B- ,#DIV/0!,#DIV/0!,#DIV/0!,40%,-0.06,C,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,0%,0.46,B-,#DIV/0!,#DIV/0!
+Westchester County (Northeast) ,10%,0.60,B-, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,10%,0.88,B,#DIV/0!,#DIV/0!,#DIV/0!,100%,-1.85,E,0%,0.46,B-,#DIV/0!,#DIV/0!
+Westchester County (Northwest) ,18%,0.26,B-, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,27%,0.36,B-,#DIV/0!,#DIV/0!,#DIV/0!,100%,-1.85,E,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Westchester County (South Central)--New Rochelle & Mount Vernon Cities ,13%,0.49,B-, NA ,#VALUE!,#VALUE!,0%,1.81,A,35%,0.09,C,0%,-0.74,C-,16%,0.60,B-,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Westchester County (Southeast) ,2%,0.95,B, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,64%,-0.81,D,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
+Westchester County (Southwest)--Yonkers City ,28%,-0.16,C, NA ,#VALUE!,#VALUE!,#DIV/0!,#DIV/0!,#DIV/0!,12%,0.83,B,#DIV/0!,#DIV/0!,#DIV/0!,0%,1.08,B,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!,#DIV/0!
