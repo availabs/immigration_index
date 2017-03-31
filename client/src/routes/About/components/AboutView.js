@@ -164,13 +164,13 @@ class AboutSection extends React.Component {
     return (
       <div >
         <h1 style={{ textAlign:'center' }}>About The Immigration Integration Index</h1>
-        <p><img src='/img/3109323037_1324c68d5c_z.jpg' style={{ width: 420, height: 260 }} className='img-responsive img-right' alt='Responsive image' />
-        </p>
             It is a tale of two worlds. It is a world where immigrants are welcomed with open arms to the land of opportunity, and acknowledged for being engines of economic
                 development and growth to economically stagnant communities. It is a world where immigrants are vilified and condemned for usurping opportunities from natives, and
                 described as agents of crime and de-stabilization. These two worlds accurately capture the American experience.
         <br />
-
+        <p><img src='/img/3109323037_1324c68d5c_z.jpg' style={{ width: 420, height: 260 }} className='img-responsive img-right' alt='Responsive image' />
+        </p>
+        
         <p>In this work, we ask very familiar questions that so many before us grappled with. Is the American dream still alive for immigrants who come to our shores? Under
                 what circumstances does the impact of the outsider status become negligible? To what extent can an immigrant enjoy equal access to economic opportunities that her/his
                 native counterpart enjoy? When, where and how do the effects of race, ethnicity and gender intersect with nativity status in the lives of the foreign-born?
