@@ -4,7 +4,6 @@ class Team extends React.Component {
   render () {
     return (
       <div>
-        <div>
         <h2>The Immigrant Integration Index is a project of the Center for Women in Government & Civil Society</h2>
  
         <h2>The Immigrant Integration Index is generously sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
