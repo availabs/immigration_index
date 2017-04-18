@@ -60,6 +60,9 @@ export const Nav = () => {
               <li className='nav-item'>
                 <Link to='/publications' className='nav-link active'>PUBLICATIONS</Link>
               </li>
+              <li className='nav-item'>
+                <Link to='/team' className='nav-link active'>TEAM</Link>
+              </li>
             </ul>
           </form>
         </div>

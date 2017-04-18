@@ -42,15 +42,18 @@ class HomeView extends React.Component {
       }
     ]
     var text = (
-      <div className='container' >
-        <div className='row'>
-          <div className='col-md-2 hidden-sm' />
-          <div className='col-md-8 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'justify', }}>
-            <h4>The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and
-              gender in shaping the economic outcomes of foreign-born New York State residents.</h4>
-            <br />
-            
+      <div>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-md-2 hidden-sm' />
+            <div className='col-md-8 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'justify', }}>
+              <h4>The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and
+                gender in shaping the economic outcomes of foreign-born New York State residents.</h4>
+              <br />
+              
+            </div>
           </div>
+          
         </div>
       </div>
     )
@@ -100,8 +103,16 @@ class HomeView extends React.Component {
         </div>
         <div className='container-fluid text-center'>
 
-          <div className='container' />
+          <div className='' style={{position: 'absolute', 'bottom': 5, width: '95%'}}>
+             <div className='' style={{width:'100%', color:'#efefef', fontSize: 11, textAlign:'center'}}>
+              The Immigrant Integration Index is a project of the Center for Women in Government & Civil Society
+              <br />
+              The Immigrant Integration Index is generously sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
+              Chair: Honorable Marcos Crespo, NY State Assembly District 85<br />
+            </div>
+          </div>
         </div>
+        
       </div>
     )
   }

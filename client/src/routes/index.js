@@ -5,6 +5,7 @@ import { Explorer, ExplorerType } from './DataExplorer'
 import Processing from './DataProcessing'
 import Login from './Login/index'
 import About from './About'
+import Team from './About/team'
 import Methods from './Methods'
 import Pubs from './Pubs'
 import Research from './Research'
@@ -25,7 +26,8 @@ export const createRoutes = (store) => ({
     Pubs(store),
     Research(store),
     Processing(store),
-    DataOverview(store)
+    DataOverview(store),
+    Team(store)
   ]
 })
 
