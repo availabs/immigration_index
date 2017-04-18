@@ -4,6 +4,11 @@ class Team extends React.Component {
   render () {
     return (
       <div>
+        <div>
+        <h2>The Immigrant Integration Index is a project of the Center for Women in Government & Civil Society</h2>
+ 
+        <h2>The Immigrant Integration Index is generously sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
+        Chair: Honorable Marcos Crespo, NY State Assembly District 85</h2>
         <h1 style={{ textAlign:'center' }}>Team</h1>
         <p>
           <h3>Project Director</h3>
@@ -64,6 +69,10 @@ class Team extends React.Component {
           <h4>Kapil Gupta</h4>
           <h4>Eunhyoung Kim</h4>
           <h4>Seunghee Kim</h4>
+          <h4>Sungeun Kim</h4>
+          <h4>Yoonhye Kim</h4>
+          <h4>Yuhao Li</h4>
+          <h4>Elipha Pradhananga</h4>
         </p>
       </div>
     )
