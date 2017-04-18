@@ -30,11 +30,16 @@ class Team extends React.Component {
           <h3>Project Associate</h3>
           <h4>Bilge Avci</h4>
           <strong><i>Center for Women in Government & Civil Society</i></strong><br />
-          Bilge Avci is a Research Assistant at CWGCS where she is responsible for data collection and
-          analysis. She received her M.S. in Economics from the University at Albany. She participates in identifying
-          the Center’s research and education agenda and in implementing the agenda. She serves as program coordinator
-          of the Women’s Leadership Academy where she works with diverse stakeholders to develop curriculum and
-          implement the Academy’s programs.
+          Bilge Avci is a Research Associate at CWGCS, and is the lead researcher on the Immigrant
+          Integration Index (III) Project. She has been involved in design and data analysis processes.
+          Avci has trained and worked closely with a team of graduate assistants on the III project. Avci’s
+          research is focused on social justice issues impacting disadvantaged populations at home and across
+          the world. Her main research interests are disparities experienced by women, immigrants, minorities,
+          people with disabilities, LGBTQI, and other populations at the intersection of economic and social
+          disadvantages. Avci also serves as the Program Coordinator of the Women’s Leadership Academy where
+          she works with diverse stakeholders to develop curriculum and implement the Academy’s programs.
+          Avci received her Master’s degree in Economics at University at Albany, SUNY; and her B.S. in
+          Economics from Hacettepe University, Turkey.
         </p>
 
         <p>
