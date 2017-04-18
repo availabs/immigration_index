@@ -187,16 +187,16 @@ const education = {
 const analyses = {
   nativity: {
     name: 'The Effects of Nativity Status',
-    info:'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.',
+    info: 'Effects of nativity status on economic outcomes of foreign-Born New Yorkers.',
     type: 'activeAnalysis',
     subcats: {
       'nativity': {
-        name: 'Foreign Born and Native Born',
+        heading: 'Foreign Born and Native Born',
         type: 'activeAnalysis',
         subcats: education
       },
       'nativity_women': {
-        name: 'Foreign Born Women and Native Born Women',
+        heading: 'Foreign Born Women and Native Born Women',
         type: 'activeAnalysis',
         subcats: education
       }
@@ -339,8 +339,8 @@ class DataExplorer extends React.Component {
        
           <div className='col-md-12' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-            {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
-            {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
+            {['race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
+            {['race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
             {this.state.activeAnalysis !== 'vulnerable' ?
               (
                 <span>
@@ -439,13 +439,15 @@ class DataExplorer extends React.Component {
           <div className='col-md-1' />
           <div className='col-md-6' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-            {['nativity', 'race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic<br /></strong> : ''}
-            {['nativity_women', 'race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
+            {['race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic<br /></strong> : ''}
+            {['race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
+            {['nativity', 'nativity_women'].includes(this.state.activeAnalysis) ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}<br /></strong> : ''}
             {
               analyses[this.state.activeAnalysis] && analyses[this.state.activeAnalysis].heading ?
               <strong>{analyses[this.state.activeAnalysis].heading}<br /></strong>
               : ''
             }
+
             {this.state.activeAnalysis !== 'vulnerable' ?
               (
                 <span>

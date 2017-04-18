@@ -43,6 +43,9 @@ export const Nav = () => {
               <li className='nav-item'>
                 <Link to='/' className='nav-link active'>HOME</Link>
               </li>
+              <li className='nav-item'>
+                <Link to='/about' className='nav-link active'>ABOUT</Link>
+              </li>
               <li className='nav-item btn-group'>
                 <NavDropdown title={<span>DATA EXPLORER</span>}>
                   {links}
@@ -50,9 +53,6 @@ export const Nav = () => {
               </li>
               <li className='nav-item'>
                 <Link to='/overview' className='nav-link active'>DATA SNAPSHOTS</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/about' className='nav-link active'>ABOUT</Link>
               </li>
               <li className='nav-item'>
                 <Link to='/research' className='nav-link active'>METHODOLOGY</Link>
