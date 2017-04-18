@@ -4,10 +4,10 @@ class Team extends React.Component {
   render () {
     return (
       <div>
-        <h2>The Immigrant Integration Index is a project of the Center for Women in Government & Civil Society</h2>
+        <strong>The Immigrant Integration Index is a project of the Center for Women in Government & Civil Society</strong>
  
-        <h2>The Immigrant Integration Index is generously sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
-        Chair: Honorable Marcos Crespo, NY State Assembly District 85</h2>
+        <strong>The Immigrant Integration Index is generously sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
+        Chair: Honorable Marcos Crespo, NY State Assembly District 85</strong>
         <h1 style={{ textAlign:'center' }}>Team</h1>
         <p>
           <h3>Project Director</h3>
