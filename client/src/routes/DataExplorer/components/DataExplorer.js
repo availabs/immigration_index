@@ -341,6 +341,8 @@ class DataExplorer extends React.Component {
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
             {['race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
             {['race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
+            {['nativity', 'nativity_women'].includes(this.state.activeAnalysis) ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}</strong> : ''}
+            
             {this.state.activeAnalysis !== 'vulnerable' ?
               (
                 <span>
