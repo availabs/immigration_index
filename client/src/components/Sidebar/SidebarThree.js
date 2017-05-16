@@ -40,10 +40,10 @@ export class Sidebar extends React.Component {
       })
 
       var itemClass = this.props.activeAnalysis === key ||
-        Object.keys(analysis.subcats).includes(this.props.activeAnalysis)
+        Object.keys(analysis.subcats).indexOf(this.props.activeAnalysis) !== -1
         ? 'accordionItem active' : 'accordionItem'
       var checkeredBox = this.props.activeAnalysis === key ||
-        Object.keys(analysis.subcats).includes(this.props.activeAnalysis)
+        Object.keys(analysis.subcats).indexOf(this.props.activeAnalysis) !== -1
         ? '' : 'checkeredBox'
       return (
         <li key={key} className={itemClass} >

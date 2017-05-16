@@ -11,7 +11,9 @@ class Team extends React.Component {
                 <h3>Project Director</h3>
                 <h4>Dina Refki, D.A</h4>
                 <strong>Clinical Assistant Professor and Director</strong><br />
-                <strong><i>Center for Women in Government & Civil Society</i></strong><br />
+                <strong><i>Center for Women in Government & Civil Society, Rockefeller College of Public Affairs & Policy, University at Albany, SUNY</i></strong><br />
+                Email: <a href='mailto:DRefki@albany.edu'>DRefki@albany.edu</a><br />
+                Phone: (518) 442-5127<br />
                 Dina Refki is Executive Director of the Center for Women in Government & Civil Society (CWGCS)
                  and Clinical Assistant Professor. She studies the interplay of gender with institutional structures
                  and applies gender mainstreaming and gender budgeting frameworks. Refki studies the challenges of migration,
@@ -27,7 +29,9 @@ class Team extends React.Component {
               <p>
                 <h3>Project Associate</h3>
                 <h4>Bilge Avci</h4>
-                <strong><i>Center for Women in Government & Civil Society</i></strong><br />
+                <strong><i>Center for Women in Government & Civil Society, Rockefeller College of Public Affairs & Policy, University at Albany, SUNY</i></strong><br />
+                Email: <a href='mailto:BAvci@albany.edu@albany.edu'>BAvci@albany.edu</a><br />
+                Phone: (518) 591-8762<br />
                 Bilge Avci is a Research Associate at CWGCS, and is the lead researcher on the Immigrant
                 Integration Index (III) Project. She has been involved in design and data analysis processes.
                 Avci has trained and worked closely with a team of graduate assistants on the III project. Avci’s

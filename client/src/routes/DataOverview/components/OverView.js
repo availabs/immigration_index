@@ -52,7 +52,7 @@ class OverView extends React.Component {
                           {
                           categories[cat].map(imgId => {
                             return (
-                              <img style={{width: 850}}className='img-responsive img' src={'/img/data_overview/img' + imgId + '.jpg'} />
+                              <img style={{maxWidth: 850, width: '100%', height:'auto'}}className='img-responsive img img-fluid' src={'/img/data_overview/img' + imgId + '.jpg'} />
                             )
                           })}
                         </div>

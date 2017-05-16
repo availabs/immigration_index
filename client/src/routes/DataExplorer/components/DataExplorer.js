@@ -280,7 +280,7 @@ class DataExplorer extends React.Component {
           'geometry': topojson.merge(
             geodata, geodata.objects.collection.geometries
               .filter((d) => {
-                return regions[region].includes(d.properties.NAMELSAD10)
+                return regions[region].indexOf(d.properties.NAMELSAD10) !== -1
               })
             )
         }
@@ -300,12 +300,12 @@ class DataExplorer extends React.Component {
   }
 
   numberFormat (val) {
-    if (!val || val.includes('#')) return 'No Data'
-    if (val.includes('%')) return val
+    if (!val || val.indexOf('#') !== -1) return 'No Data'
+    if (val.indexOf('%') !== -1) return val
     return (+val).toFixed(2)
   }
   gradeFormat (val) {
-    if (!val || val.includes('#')) return 'No Data'
+    if (!val || val.indexOf('#') !== -1) return 'No Data'
     return val
   }
 
@@ -320,7 +320,7 @@ class DataExplorer extends React.Component {
       regions[this.state.activeRegion]
       ? regions[this.state.activeRegion] : Object.keys(regions)
     var rows = Object.keys(data)
-      .filter(region => regionFilter.includes(region))
+      .filter(region => regionFilter.indexOf(region) !== -1)
       .sort((a, b) => data[a][this.state.activeCategory].Rank - data[b][this.state.activeCategory].Rank)
       .map(region => {
         return (
@@ -339,9 +339,9 @@ class DataExplorer extends React.Component {
        
           <div className='col-md-12' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-            {['race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
-            {['race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
-            {['nativity', 'nativity_women'].includes(this.state.activeAnalysis) ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}</strong> : <strong>{analyses[this.state.activeAnalysis].heading}</strong>}
+            {['race'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
+            {['race_women'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
+            {['nativity', 'nativity_women'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}</strong> : <strong>{analyses[this.state.activeAnalysis].heading}</strong>}
             
             {this.state.activeAnalysis !== 'vulnerable' ?
               (
@@ -441,9 +441,9 @@ class DataExplorer extends React.Component {
           <div className='col-md-1' />
           <div className='col-md-6' style={{ backgroundColor:'#efefef', borderRadius: 5, padding:10 }}>
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
-            {['race'].includes(this.state.activeAnalysis) ? <strong>Foreign Born people of color and Native Born white non-hispanic<br /></strong> : ''}
-            {['race_women'].includes(this.state.activeAnalysis) ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
-            {['nativity', 'nativity_women'].includes(this.state.activeAnalysis) ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}<br /></strong> : ''}
+            {['race'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>Foreign Born people of color and Native Born white non-hispanic<br /></strong> : ''}
+            {['race_women'].indexOf(this.state.activeAnalysis) !== -1? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
+            {['nativity', 'nativity_women'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}<br /></strong> : ''}
             {
               analyses[this.state.activeAnalysis] && analyses[this.state.activeAnalysis].heading ?
               <strong>{analyses[this.state.activeAnalysis].heading}<br /></strong>

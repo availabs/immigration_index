@@ -73,9 +73,9 @@ import regInfo from './regions.json'
 
 function calculateRanks (data) {
   var regions = Object.keys(data)
-    .filter(d => Object.keys(regInfo).includes(d))
+    .filter(d => Object.keys(regInfo).indexOf(d) !== -1)
   var pumas = Object.keys(data)
-    .filter(d => !Object.keys(regInfo).includes(d))
+    .filter(d => !Object.keys(regInfo).indexOf(d) !== -1)
   var getData = function (reg, cat) {
     return isNaN(+data[reg][cat].Score) ? -4 : +data[reg][cat].Score
   }
@@ -94,7 +94,7 @@ function calculateRanks (data) {
     })
 
     catSort.forEach((reg, i) => {
-      var rank = data[reg][cat].Score.includes('#') ? 'No Data' : i + 1
+      var rank = data[reg][cat].Score.indexOf('#') !== -1 ? 'No Data' : i + 1
       data[reg][cat].Rank = rank
     })
   })

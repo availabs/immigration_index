@@ -48,7 +48,7 @@ class DataProcessing extends React.Component {
       cats.forEach(currentCat => {
         row[currentCat] = {}
         Object.keys(regions[reg]).filter(col => { // Filter for Active category
-          return col.includes(currentCat)
+          return col.indexOf(currentCat) !== -1
         })
         .map((col, i) => {
           var index = currentCat === 'Overall' ? i + 1 : i
