@@ -158,6 +158,54 @@ class HomeView extends React.Component {
                       </td>
                     </tr>
                   </tbody></table>
+
+                <table className='table' style={{border: 'solid #eee 1.0pt'}}>
+                <thead>
+                <tr>
+                <td />
+                <th>
+                Socio--Economic Indicators of Integration
+                </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><strong>Income Level for FT  Workers</strong></td>
+                  <td>Income level of full time workers (15 years & older) during the last 12 months</td>
+                </tr>
+                <tr>
+                  <td><strong>Educational Attainment</strong></td>
+                  <td>
+                  Percentage of High School diploma holders (25-64 years old)<br />
+                  Percentage of holders of Bachelor degree or better
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Homeownership</strong></td>
+                  <td>Percentage of residents who own their own homes</td>
+                </tr>
+                <tr>
+                  <td><strong>Rent Burden</strong></td>
+                  <td>Percentage of residents who spent 50% or more of their income on rent.</td>
+                </tr>
+                <tr>
+                  <td><strong>Working Poor</strong></td>
+                  <td>Percentage of full time workers with income to poverty ratio lower than or equal to 150% of federal poverty line</td>
+                </tr>
+                <tr>
+                  <td><strong>Language skills</strong></td>
+                  <td>Percentage of foreign born households where there are people 14 years and older who speak English well or very well</td>
+                </tr>
+                <tr>
+                  <td><strong>Poverty</strong></td>
+                  <td>Percentage of residents whose household income fell below 150% of federal poverty line</td>
+                </tr>
+                <tr>
+                  <td><strong>Full-Time Work</strong></td>
+                  <td>Percentage of full time workers who were employed full time during the last 12 months (25-64 years old)</td>
+                </tr>
+                </tbody>
+                </table>
               </div>
               <p style={{ marginTop: '5.0pt', marginRight: '0in', marginBottom: '10.0pt', marginLeft: '0in' }}><i><span>&nbsp;</span></i></p>
               <h2 style={{ textAlign: 'justify' }}>
