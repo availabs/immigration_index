@@ -158,27 +158,13 @@ class HomeView extends React.Component {
                       </td>
                     </tr>
                   </tbody></table>
+                <h4>Socio-Economic Indicators</h4>
 
                 <table className='table' style={{border: 'solid #eee 1.0pt'}}>
-                <thead>
-                <tr>
-                <td />
-                <th>
-                Socio--Economic Indicators of Integration
-                </th>
-                </tr>
-                </thead>
                 <tbody>
                 <tr>
                   <td><strong>Income Level for FT  Workers</strong></td>
                   <td>Income level of full time workers (15 years & older) during the last 12 months</td>
-                </tr>
-                <tr>
-                  <td><strong>Educational Attainment</strong></td>
-                  <td>
-                  Percentage of High School diploma holders (25-64 years old)<br />
-                  Percentage of holders of Bachelor degree or better
-                  </td>
                 </tr>
                 <tr>
                   <td><strong>Homeownership</strong></td>
@@ -206,6 +192,10 @@ class HomeView extends React.Component {
                 </tr>
                 </tbody>
                 </table>
+                          
+<p>
+We control for educational attainment which is defined as the percentage of high school diploma holders (25-64 years old) and percentage of holders of Bachelor degree or better. We also control for language proficiency which is defined as foreign -born who speak English well or very well.
+</p>
               </div>
               <p style={{ marginTop: '5.0pt', marginRight: '0in', marginBottom: '10.0pt', marginLeft: '0in' }}><i><span>&nbsp;</span></i></p>
               <h2 style={{ textAlign: 'justify' }}>
