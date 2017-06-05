@@ -341,7 +341,7 @@ class DataExplorer extends React.Component {
             <h4>{analyses[this.state.activeAnalysis.split('_')[0]].name}</h4>
             {['race'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>Foreign Born people of color and Native Born white non-hispanic</strong> : ''}
             {['race_women'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>Foreign Born Women of color And Native Born Women white non-hispanic<br /></strong> : ''}
-            {['nativity', 'nativity_women'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}</strong> : <strong>{analyses[this.state.activeAnalysis].heading}</strong>}
+            {['nativity', 'nativity_women'].indexOf(this.state.activeAnalysis) !== -1 ? <strong>{analyses['nativity'].subcats[this.state.activeAnalysis].heading}</strong> : <strong>{analyses[this.state.activeAnalysis]  ? analyses[this.state.activeAnalysis].heading : ''}</strong>}
             
             {this.state.activeAnalysis !== 'vulnerable' ?
               (

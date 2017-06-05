@@ -1,6 +1,6 @@
 import React from 'react'
 import { Scrollspy } from 'react-scrollspy'
-import Team from './Team'
+
 import './AboutView.scss'
 
 class HomeView extends React.Component {
@@ -23,7 +23,6 @@ class HomeView extends React.Component {
                   </a>
                   <a href='#meaning' className='list-group-item'>The Meaning and Complexity of Integration</a>
                   <a href='#measure' className='list-group-item'>Why Measure Integration</a>
-                  <a href='#team' className='list-group-item'>Team</a>
                 </Scrollspy>
               </div>
               <div className='col-md-8' style={{ height:'100vh', paddingRight: 0 }}>
@@ -36,9 +35,6 @@ class HomeView extends React.Component {
                   </div>
                   <div id='measure' >
                     <WhyMeasure />
-                  </div>
-                  <div id='team' style={{ paddingBottom: 300 }}>
-                    <Team />
                   </div>
                 </div>
               </div>

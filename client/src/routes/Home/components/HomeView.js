@@ -45,10 +45,12 @@ class HomeView extends React.Component {
       <div>
         <div className='container'>
           <div className='row'>
-            <div className='col-md-2 hidden-sm' />
-            <div className='col-md-8 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'justify', }}>
-              <h4>The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and
-                gender in shaping the economic outcomes of foreign-born New York State residents.</h4>
+            
+            <div className='col-md-7 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'left' }}>
+              <h4 style={{ fontWeight: '100', fontWeight: 300, fontFamily: 'Roboto'}}>
+                The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and
+                gender in shaping the economic outcomes of foreign-born New York State residents.
+              </h4>
               <br />
               
             </div>
@@ -58,7 +60,9 @@ class HomeView extends React.Component {
       </div>
     )
     var title = (
-      <h1 className='h1-responsive fadeInDown brand-header' data-wow-delay='0.2s' style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInDown' }}>
+      <h1 
+        className='h1-responsive fadeInDown' data-wow-delay='0.2s'
+        style={{ marginBottom: 0, color: 'white', textAlign:'left', fontWeight: '300', fontSize: '3.2em', visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInDown' }}>
         Immigrant Integration Index
       </h1>
     )
@@ -103,13 +107,39 @@ class HomeView extends React.Component {
         </div>
         <div className='container-fluid text-center'>
 
-          <div className='' style={{position: 'absolute', 'bottom': 5, width: '95%'}}>
-             <div className='' style={{width:'100%', color:'#efefef', fontSize: 11, textAlign:'center'}}>
-              The Immigrant Integration Index is a project of the Center for Women in Government & Civil Society, Rockefellar College of Public Affairs & Policy, University at Albany, SUNY
-              <br />
-              The Immigrant Integration Index is generously sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
-              Chair: Honorable Marcos Crespo, NY State Assembly District 85<br />
+          <div className='' style={{position: 'absolute', 'bottom': 5, width: '93%'}}>
+            <div className='row'>
+              <div className='col-md-7 hidden-sm' />
+              <div className='col-md-5' style={{color:'#efefef', overflowY: 'auto', overflowX: 'hidden', padding: 5, fontSize: 11, textAlign:'right', backgroundColor: 'rgba(255,255,255,0.5)'}}>
+                 <div className='row'>
+                  <div className='col-xs-10'>
+                   <img 
+                    height = '50'
+                    style={{padding: 5}}
+                    className='img-fluid'
+                    src='/img/Center-for-Women-in-Government-and-Civil-Society-pms124_black.png' style={{float: 'right'}} />
+                  </div>
+                   <div className='col-xs-2'>
+                    <img src='/img/TaskForce.jpg' height='50' style={{float: 'right',padding:5}} />
+                  </div>
+                </div>
+                
+              </div>
+              
             </div>
+            <div className='row'>
+              <div className='col-md-7 hidden-sm' />
+              <div className='col-md-5' style={{color:'#333', fontSize: 11, textAlign:'justify', backgroundColor: 'rgba(255,255,255,0.5)'}}>
+                 
+                 Sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
+                Chair: Honorable Marcos Crespo, NY State Assembly District 85
+                <span style={{float: 'right'}}> 
+                  This website is best viewed with <a href='https://www.google.com/chrome/browser/features.html?brand=CHBD&gclid=CjwKEAjwgtTJBRDRmd6ZtLrGyxwSJAA7Fy-hOXbeYuRLXf8iLYUmb6_5B0shBBHCEM0XLaGyeP-BDxoCmUbw_wcB&dclid=CKmQupyOp9QCFV2uTwodz_QN6Q'>Google Chrome</a>.
+                </span>
+              </div>
+            </div>
+
+            
           </div>
         </div>
         
