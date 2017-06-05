@@ -322,13 +322,13 @@ class DataExplorer extends React.Component {
     var rows = Object.keys(data)
       .filter(region => regionFilter.indexOf(region) !== -1)
       .sort((a, b) => data[a][this.state.activeCategory].Rank - data[b][this.state.activeCategory].Rank)
-      .map(region => {
+      .map((region,i) => {
         return (
           <tr key={region}>
             <td>{region}</td>
             {this.state.activeCategory === 'Overall' ? null
               : <td>{this.numberFormat(data[region][this.state.activeCategory].Ratio)}</td>}
-            <td>{data[region][this.state.activeCategory].Rank}</td>
+            <td>{this.state.activeRegion ? data[region][this.state.activeCategory].Rank : (i+1) }</td>
             <td>{this.gradeFormat(data[region][this.state.activeCategory].Grade)}</td>
           </tr>
         )
@@ -528,18 +528,20 @@ class DataExplorer extends React.Component {
       'features': []
     }
 
-    regionGeo.features = this.state.regionGeo.features.map(d => {
-      var regionGrade = data[d.properties.region] &&
-        data[d.properties.region][this.state.activeCategory] &&
-        data[d.properties.region][this.state.activeCategory].Grade
-        ? data[d.properties.region][this.state.activeCategory].Grade : 'E'
+    regionGeo.features = this.state.regionGeo.features
+      .sort((a, b) => data[a.properties.region][this.state.activeCategory].Rank - data[b.properties.region][this.state.activeCategory].Rank)
+      .map((d,i) => {
+        var regionGrade = data[d.properties.region] &&
+          data[d.properties.region][this.state.activeCategory] &&
+          data[d.properties.region][this.state.activeCategory].Grade
+          ? data[d.properties.region][this.state.activeCategory].Grade : 'E'
 
-      // regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
-      d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
-      d.properties.grade = this.gradeFormat(regionGrade)
-      d.properties.rank = data[d.properties.region][this.state.activeCategory].Rank || 'No Data'
-      return d
-    })
+        // regionGrade = gradeScale.domain().indexOf(regionGrade) !== -1 ? regionGrade : 'E-'
+        d.properties.fillColor = regionGrade.includes('#') ? 'url(#crosshatch) #fff' : gradeScale(regionGrade)
+        d.properties.grade = this.gradeFormat(regionGrade)
+        d.properties.rank = data[d.properties.region][this.state.activeCategory].Rank ? (i+1) : 'No Data'
+        return d
+      })
 
     var childGeo = {
       'type': 'FeatureCollection',
