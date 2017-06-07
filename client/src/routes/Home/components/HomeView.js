@@ -107,39 +107,32 @@ class HomeView extends React.Component {
         </div>
         <div className='container-fluid text-center'>
 
-          <div className='' style={{position: 'absolute', 'bottom': 5, width: '93%'}}>
+          <div className='' style={{position: 'absolute', 'bottom': 5, width: '100%'}}>
             <div className='row'>
-              <div className='col-md-7 hidden-sm' />
-              <div className='col-md-5' style={{color:'#efefef', overflowY: 'auto', overflowX: 'hidden', padding: 5, fontSize: 11, textAlign:'right', backgroundColor: 'rgba(255,255,255,0.5)'}}>
+              <div className='col-md-12 hidden-sm' />
+              <div className='col-md-12' style={{color:'#efefef', overflowY: 'auto', overflowX: 'hidden', padding: 5, fontSize: 11, textAlign:'right', backgroundColor: 'rgba(255,255,255,1)'}}>
+                <div className='container'>
                  <div className='row'>
                   <div className='col-xs-10'>
-                   <img 
-                    height = '50'
-                    style={{padding: 5}}
+                    <img 
+                    
                     className='img-fluid'
-                    src='/img/Center-for-Women-in-Government-and-Civil-Society-pms124_black.png' style={{float: 'right'}} />
-                  </div>
-                   <div className='col-xs-2'>
-                    <img src='/img/TaskForce.jpg' height='50' style={{float: 'right',padding:5}} />
+                    src='/img/Center-for-Women-in-Government-and-Civil-Society-pms124_black.png' style={{float: 'left', paddingTop:45}} />
+                  <img 
+                    
+                    className='img-fluid'
+                    src='/img/logo-task-force-logo-color.jpg' style={{float: 'left', height:150, padding:5}} />
+                  <img 
+                    className='img-fluid'
+                    src='/img/seal-assembly-logo.jpg' style={{float: 'left', height:150, padding:5}} /> 
                   </div>
                 </div>
+               </div>
                 
               </div>
               
             </div>
-            <div className='row'>
-              <div className='col-md-7 hidden-sm' />
-              <div className='col-md-5' style={{color:'#333', fontSize: 11, textAlign:'justify', backgroundColor: 'rgba(255,255,255,0.5)'}}>
-                 
-                 Sponsored by the New York State Assembly Puerto Rican/Hispanic Task Force
-                Chair: Honorable Marcos Crespo, NY State Assembly District 85
-                <span style={{float: 'right'}}> 
-                  This website is best viewed with <a href='https://www.google.com/chrome/browser/features.html?brand=CHBD&gclid=CjwKEAjwgtTJBRDRmd6ZtLrGyxwSJAA7Fy-hOXbeYuRLXf8iLYUmb6_5B0shBBHCEM0XLaGyeP-BDxoCmUbw_wcB&dclid=CKmQupyOp9QCFV2uTwodz_QN6Q'>Google Chrome</a>.
-                </span>
-              </div>
-            </div>
-
-            
+                       
           </div>
         </div>
         

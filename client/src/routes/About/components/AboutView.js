@@ -24,6 +24,17 @@ class HomeView extends React.Component {
                   <a href='#meaning' className='list-group-item'>The Meaning and Complexity of Integration</a>
                   <a href='#measure' className='list-group-item'>Why Measure Integration</a>
                 </Scrollspy>
+                  <img 
+                    
+                    className='img-fluid'
+                    src='/img/Center-for-Women-in-Government-and-Civil-Society-pms124_black.png' style={{float: 'right'}} />
+                  <img 
+                    
+                    className='img-fluid'
+                    src='/img/logo-task-force-logo-color.jpg' style={{float: 'right', height:175, padding:5}} />
+                  <img 
+                    className='img-fluid'
+                    src='/img/seal-assembly-logo.jpg' style={{float: 'right', height:175, padding:5}} />                
               </div>
               <div className='col-md-8' style={{ height:'100vh', paddingRight: 0 }}>
                 <div style={{ height: '100%', overflowY:'scroll', padding: 30, textAlign:'justify' }} >
