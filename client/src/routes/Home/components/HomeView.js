@@ -107,7 +107,7 @@ class HomeView extends React.Component {
         </div>
         <div className='container-fluid text-center'>
 
-          <div className='' style={{position: 'absolute', 'bottom': 5, width: '100%'}}>
+          <div className='' style={{position: 'absolute', 'bottom': 10, left: 0, right: 16}}>
             <div className='row'>
               <div className='col-md-12 hidden-sm' />
               <div className='col-md-12' style={{color:'#efefef', overflowY: 'auto', overflowX: 'hidden', padding: 5, fontSize: 11, textAlign:'right', backgroundColor: 'rgba(255,255,255,1)'}}>
