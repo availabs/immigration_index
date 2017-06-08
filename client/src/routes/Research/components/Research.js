@@ -183,6 +183,10 @@ class HomeView extends React.Component {
                   <td>Percentage of residents whose household income fell below 150% of federal poverty line (25-64 years old)</td>
                 </tr>
                 <tr>
+                  <td><strong>Unemployment</strong></td>
+                  <td>Percentage of residents who are unemployed and actively seeking a job (25-64 years old)</td>
+                </tr>
+                <tr>
                   <td><strong>Full-Time Work</strong></td>
                   <td>Percentage of full time workers who were employed full time during the last 12 months (25-64 years old)</td>
                 </tr>
