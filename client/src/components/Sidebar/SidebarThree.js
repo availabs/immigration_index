@@ -35,7 +35,10 @@ export class Sidebar extends React.Component {
 
     var cats = Object.keys(this.props.analyses).map(key => {
       var analysis = this.props.analyses[key]
+      //console.log('render anlysis list', analysis.name, analysis.subcats)
+
       var catButtons = Object.keys(analysis.subcats).map(cat => {
+        //console.log('each cat button', cat, analysis.subcats)
         return renderListGroup(cat, analysis.subcats, 1)
       })
 

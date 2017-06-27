@@ -75,11 +75,11 @@ function calculateRanks (data) {
   var regions = Object.keys(data)
     .filter(d => Object.keys(regInfo).indexOf(d) !== -1)
   var pumas = Object.keys(data)
-    .filter(d => !Object.keys(regInfo).indexOf(d) !== -1)
+    .filter(d => !Object.keys(regInfo).indexOf(d) !== -1 && d.indexOf('PUMA') !== -1)
   var getData = function (reg, cat) {
     return isNaN(+data[reg][cat].Score) ? -4 : +data[reg][cat].Score
   }
-
+  //console.log('calculateRanks', pumas, pumas.length)
   cats.forEach(cat => {
     var catSort = regions.sort((a, b) => {
       return getData(b, cat) - getData(a, cat)

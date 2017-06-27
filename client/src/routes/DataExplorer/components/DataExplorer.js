@@ -191,12 +191,12 @@ const analyses = {
     type: 'activeAnalysis',
     subcats: {
       'nativity': {
-        heading: 'Foreign Born and Native Born',
+        name: 'Foreign Born and Native Born',
         type: 'activeAnalysis',
         subcats: education
       },
       'nativity_women': {
-        heading: 'Foreign Born Women and Native Born Women',
+        name: 'Foreign Born Women and Native Born Women',
         type: 'activeAnalysis',
         subcats: education
       }
@@ -322,7 +322,7 @@ class DataExplorer extends React.Component {
     var rows = Object.keys(data)
       .filter(region => regionFilter.indexOf(region) !== -1)
       .sort((a, b) => data[a][this.state.activeCategory].Rank - data[b][this.state.activeCategory].Rank)
-      .map((region,i) => {
+      .map((region, i) => {
         return (
           <tr key={region}>
             <td>{region}</td>

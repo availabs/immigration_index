@@ -115,7 +115,6 @@ class HomeView extends React.Component {
                  <div className='row'>
                   <div className='col-xs-10'>
                     <img 
-                    
                     className='img-fluid'
                     src='/img/Center-for-Women-in-Government-and-Civil-Society-pms124_black.png' style={{float: 'left', paddingTop:45}} />
                   <img 
