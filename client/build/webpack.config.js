@@ -16,7 +16,9 @@ const webpackConfig = {
   name    : 'client',
   target  : 'web',
   devtool : config.compiler_devtool,
-  externals: [nodeExternals()],
+  externals: [{
+    xmlhttprequest: '{XMLHttpRequest:XMLHttpRequest}'
+  }],
   resolve : {
     root       : paths.client(),
     extensions : ['', '.js', '.jsx', '.json']
