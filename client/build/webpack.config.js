@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const cssnano = require('cssnano')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const nodeExternals = require('webpack-node-externals');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const config = require('../config')
 const debug = require('debug')('app:webpack:config')
@@ -15,6 +16,7 @@ const webpackConfig = {
   name    : 'client',
   target  : 'web',
   devtool : config.compiler_devtool,
+  externals: [nodeExternals()],
   resolve : {
     root       : paths.client(),
     extensions : ['', '.js', '.jsx', '.json']

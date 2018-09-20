@@ -1,5 +1,5 @@
 import React from 'react'
-import { Scrollspy } from 'react-scrollspy'
+// import { Scrollspy } from 'react-scrollspy'
 
 import './AboutView.scss'
 
@@ -17,13 +17,13 @@ class HomeView extends React.Component {
             <div className='row'>
               <div className='col-md-4'>
                 <br />
-                <Scrollspy items={['about', 'meaning', 'measure']} currentClassName=''>
+                <div items={['about', 'meaning', 'measure']} currentClassName=''>
                   <a href='#about' className='list-group-item'>
                    About
                   </a>
                   <a href='#meaning' className='list-group-item'>The Meaning and Complexity of Integration</a>
                   <a href='#measure' className='list-group-item'>Why Measure Integration</a>
-                </Scrollspy>
+                </div>
                   <img 
                     
                     className='img-fluid'

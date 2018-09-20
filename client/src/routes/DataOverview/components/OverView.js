@@ -1,5 +1,5 @@
 import React from 'react'
-import { Scrollspy } from 'react-scrollspy'
+// import { Scrollspy } from 'react-scrollspy'
 import './OverView.scss'
 
 const categories = {
@@ -28,7 +28,7 @@ class OverView extends React.Component {
             <div className='row'>
               <div className='col-md-2'>
                 <br />
-                <Scrollspy items={Object.keys(categories)} currentClassName=''>
+                <div items={Object.keys(categories)} currentClassName=''>
                   {
                     Object.keys(categories).map(cat => {
                       return (
@@ -37,7 +37,7 @@ class OverView extends React.Component {
                         </a>
                       )
                   })}
-                </Scrollspy>
+                </div>
               </div>
               <div className='col-md-10' style={{ height:'100vh', paddingRight: 0 }}>
                 <div style={{ height: '100%', overflowY:'scroll', padding: 30, textAlign:'justify' }} >
