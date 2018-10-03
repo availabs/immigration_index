@@ -36,35 +36,7 @@ export const Nav = () => {
           </IndexLink>
         <div className='collapse navbar-toggleable-md' id='collapseEx2'>
 
-          <ul className='nav navbar-nav' />
-          <form className='form-inline'>
-            <ul className='nav navbar-nav hidden'>
-
-              <li className='nav-item'>
-                <Link to='/' className='nav-link active'>HOME</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/about' className='nav-link active'>ABOUT</Link>
-              </li>
-              <li className='nav-item btn-group'>
-                <NavDropdown title={<span>DATA EXPLORER</span>}>
-                  {links}
-                </NavDropdown>
-              </li>
-              <li className='nav-item'>
-                <Link to='/overview' className='nav-link active'>DATA SNAPSHOTS</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/research' className='nav-link active'>METHODOLOGY</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/publications' className='nav-link active'>PUBLICATIONS</Link>
-              </li>
-              <li className='nav-item'>
-                <Link to='/team' className='nav-link active'>TEAM</Link>
-              </li>
-            </ul>
-          </form>
+         
         </div>
 
       </div>
