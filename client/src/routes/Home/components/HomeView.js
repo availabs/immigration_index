@@ -48,8 +48,7 @@ class HomeView extends React.Component {
             
             <div className='col-md-7 paddedDiv  main-content' style={{ overflow:'hidden', textAlign:'left' }}>
               <h4 style={{ fontWeight: '100', fontWeight: 300, fontFamily: 'Roboto'}}>
-                The Immigrant Integration Index seeks to deepen understanding of the moderating effects of nativity status, race/ethnicity and
-                gender in shaping the economic outcomes of foreign-born New York State residents.
+                The site is under construction. Please check back later. 
               </h4>
               <br />
               
